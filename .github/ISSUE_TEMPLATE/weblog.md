@@ -7,11 +7,15 @@ assignees: ''
 
 ---
 
-[ENTER TITLE UNDER THIS LINE]
-My Title
+[ENTER TITLE HERE]
+پست جدید من
 
-[ENTER CONTENT UNDER THIS LINE]
-blah blah blah
+[ENTER SUMMARY HERE]
+در اینجا،خلاصه ای برای پست مدنظر می‌نویسیم!
+
+[ENTER CONTENT HERE]
+در اینجا مطالبی برای وبسایت مینویسیم!
+
 
 [KEYWORDS]
 sme, ساخت , iran

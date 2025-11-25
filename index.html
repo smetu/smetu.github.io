@@ -477,7 +477,7 @@
     </section>
 
     <!-- WEBLOG -->
-    <section class="courses-section">
+    <section class="courses-section" id="weblog-section">
         <div class="container">
             <div class="courses-header">
                 <div>
@@ -487,52 +487,7 @@
                 <a href="/blog.html" class="btn btn-primary">مشاهده همه مطالب</a>
             </div>
             
-            <div class="courses-grid">
-                <!-- دوره ۱ -->
-                <div class="course-card">
-                    <div class="course-image">
-                        <img src="./assets/images/02.jpg" alt="توسعه وب با React.js">
-                        <!-- <span class="course-badge popular"></span> -->
-                    </div>
-                    <div class="course-content">
-                        <div class="course-category">دسته‌بندی</div>
-                        <h3 class="course-title">اسم مطلب</h3>
-                        <p class="course-description">
-                            توضیحات خلاصه مطلب
-                            توضیحات خلاصه مطلب
-                            توضیحات خلاصه مطلب
-                        </p>
-                        <div class="course-meta">
-                            <div class="course-info">                                
-                                <div class="course-info-item">
-                                    <i class="far fa-calendar"></i>
-                                    <span>28 آبان 1404</span>
-                                </div>
-                            </div>
-                            <!-- <div class="course-level"></div> -->
-                        </div>
-                        <div class="course-instructor">
-                            <div class="testimonial-avatar">
-                                <img src="./assets/images/me2.png" alt="">
-                            </div>
-                            <span>اسم نویسنده</span>
-                        </div>
-                        <!-- <div class="course-footer">
-                            <div class="course-price">۲۹۰,۰۰۰ تومان</div>
-                            <div class="course-rating">
-                                <i class="fas fa-star"></i>
-                                <span>۴.۹ (۱۲۴)</span>
-                            </div>
-                        </div> -->
-                        <button class="btn btn-primary">
-                            <i class="fas fa-eye"></i>
-                            <span>ادامه مطلب</span>
-                        </button>
-                    </div>
-                </div>
-                
-              
-            </div>
+            <div class="courses-grid" id="latest-list"></div>
         </div>
     </section> 
     
@@ -830,6 +785,12 @@
     </footer>
 
     <script src="./assets/js/dashboard.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script src="./assets/js/dashboard.js"></script>
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/mainPageHandler.js"></script>
+    
 
 </body>
 </html>

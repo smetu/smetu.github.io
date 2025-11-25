@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>عنوان</title>
+    <meta name="description" content="خلاصه مقاله برای سئو">
+    
+    <!-- فونت‌های محلی -->
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- آیکون‌های محلی -->
+    <link rel="stylesheet" href="./assets/icons/css/all.min.css">
+    
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+
+<body class="dark-theme">
+    <!-- هدر -->
+    <header class="page-header" id="page-header">
+        <div style="display: none;" class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <a href="#" style="color: white; text-decoration: underline;">
+                        <span>در هر جا و هر زمان با منابع رایگان به یادگیری ادامه دهید.</span>
+                    </a>
+                    <span class="top-bar-badge">جدید</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header-wrap">
+                <!-- لوگو -->
+                <a href="index.html" class="logo" id="main-logo">
+                    <img style="width: 3rem;" src="/assets/images/logos/icon_sme_small.png">
+                    <span>انجمن علمی ساخت و تولید</span>
+                </a>
+
+                <!-- منوی اصلی دسکتاپ -->
+                <div class="nav-container">
+                    <nav>
+                        <ul class="main-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">خانه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/blog.html" class="nav-link active">وبلاگ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/journal.html" class="nav-link">نشریه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/news.html" class="nav-link">اخبار</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="courses.html" class="nav-link">دوره های مجازی</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="instructors.html" class="nav-link">اساتید</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/about.html" class="nav-link">درباره ما</a>
+                            </li>    
+                        </ul>
+                    </nav>
+
+                    <!-- اقدامات هدر دسکتاپ -->
+                    <div class="header-actions">
+                        
+                        <button class="theme-toggle" id="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                       
+                        <!-- <a href="login.html" class="btn btn-secondary">ورود</a>
+                        <a href="register.html" class="btn btn-primary">عضویت</a> -->
+                    </div>
+                </div>
+
+                <!-- منوی موبایل -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <div class="hamburger-lines">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- منوی موبایل -->
+        <div class="mobile-nav-container" id="mobile-nav-container">
+            <nav>
+                <ul class="mobile-nav">
+                    <li class="mobile-nav-item">
+                        <a href="index.html" class="mobile-nav-link active">
+                            <i class="fas fa-home"></i>
+                            <span>خانه</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="/blog.html" class="mobile-nav-link">
+                            <i class="fas fa-blog"></i>
+                            <span>وبلاگ</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="/journal.html" class="mobile-nav-link">
+                            <i class="fas fa-book"></i>
+                            <span>نشریه</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="/news.html" class="mobile-nav-link">
+                            <i class="fas fa-newspaper"></i>
+                            <span>اخبار</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="courses.html" class="mobile-nav-link">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>دوره های مجازی</span>
+                        </a>
+                    </li>                    
+                    <li class="mobile-nav-item">
+                        <a href="instructors.html" class="mobile-nav-link">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>اساتید</span>
+                        </a>
+                    </li>                                     
+                    <li class="mobile-nav-item">
+                        <a href="about.html" class="mobile-nav-link">
+                            <i class="fas fa-info-circle"></i>
+                            <span>درباره ما</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="contact.html" class="mobile-nav-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>تماس با ما</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+           
+        </div>
+        
+        <!-- overlay برای منوی موبایل -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    </header>
+    <!-- محتوای اصلی صفحه وبلاگ -->
+    <main class="blog-1-detail">
+        <div class="container">
+            <div class="blog-1-container">
+                <!-- محتوای مقاله -->
+                <article class="blog-1-content">
+                    <header class="blog-1-header">
+                        <div class="blog-1-meta">
+                            <span class="blog-1-category" id="blogpost-category"></span>
+                            <span class="blog-1-date">
+                                <i class="far fa-calendar"></i>
+                                <span id="blogpost-update-date"></span>
+                            </span>                            
+                        </div>
+                        <h1 class="blog-1-title" id="blogpost-title"></h1>
+                        <p class="blog-1-excerpt" id="blogpost-summary">                            
+                        </p>
+                    </header>
+
+                    <div class="blog-1-featured-image">
+                        <img id="blogpost-image" src="" alt="">
+                    </div>
+
+                    <div class="blog-1-body" id="blogpost-content">
+                        
+                        <div class="blog-1-tags" id="blogpost-keywords">
+                                                   
+                        </div>
+                    </div>
+
+                    <footer class="blog-1-footer">
+                        <div class="blog-1-author">
+                            <div class="blog-1-author-avatar">
+                                <img id="blogpost-footer-avatar" src="" alt="">
+                            </div>
+                            <div class="blog-1-author-info">
+                                <h4 id="blogpost-footer-name"></h4>
+                                <p id="blogpost-footer-description"></p>
+                            </div>
+                        </div>
+                        <div class="blog-1-share">
+                            <span class="blog-1-share-title">اشتراک‌گذاری:</span>
+                            <div class="blog-1-share-buttons">                               
+                                <a href="#" class="blog-1-share-button linkedin" aria-label="اشتراک در لینکدین">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="blog-1-share-button telegram" aria-label="اشتراک در تلگرام">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </footer>
+                </article>
+
+                
+            </div>
+
+                   
+        </div>
+    </main>
+
+    <!-- فوتر -->
+    <footer class="modern-footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <!-- ستون اول: درباره ما -->
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img style="width: 3rem;" src="/assets/images/logos/icon_sme_small.png">
+                        <span style="font-size: 1.2rem;">انجمن علمی ساخت و تولید</span>
+                    </a>
+                    <p class="footer-description">
+                        انجمن علمی مهندسی ساخت و تولید دانشگاه تبریز برای اولین بار
+                        در سال 1384 به همت استادان و دانشجویان وقت شروع به فعالیت کرده و هرساله
+                        شاهد برگزاری انتخابات شورای مرکزی شامل 7 عضو می‌باشد.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="اینستاگرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="تلگرام">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="لینکدین">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="یوتیوب">
+                            <i class="fab fa-youtube"></i>
+                        </a> 
+                    </div>
+                </div>
+                
+                <!-- ستون دوم: لینک‌های سریع -->
+                <div class="footer-col">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links">
+                        <li><a href="/index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
+                        <li><a href="/blog.html"><i class="fas fa-blog"></i>وبلاگ</a></li>
+                        <li><a href="/journal.html"><i class="fas fa-newspaper"></i>نشریه</a></li>
+                        <li><a href="/news.html"><i class="fas fa-newspaper"></i>اخبار</a></li>
+                        <li><a href="/courses.html"><i class="fas fa-graduation-cap"></i>دوره های مجازی</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون سوم: دسته‌بندی‌ها -->
+                <div class="footer-col">
+                    <h3>لینک های مفید</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-link"></i> سایت دانشگاه تبریز</a></li>
+                        <li><a href="#"><i class="fas fa-link"></i> سایت دانشکده مکانیک</a></li>
+                        <li><a href="#"><i class="fas fa-link"></i> سایت سما دانشگاه تبریز</a></li>
+                        <li><a href="#"><i class="fas fa-link"></i> سایت امور دانشجویی سماد تبریز</a></li>
+                       
+                    </ul>
+                </div>
+                
+                <!-- ستون چهارم: اطلاعات تماس -->
+                <div class="footer-col">
+                    <h3>اطلاعات تماس</h3>
+                    <ul class="blogs-footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>تبریز، بلوار 29 بهمن،درب برق،دانشکده فنی مهندسی ساخت و تولید</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>۰4۱-۱۲۳۴۵۶۷۸</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:info@smtu.ir">info@smtu.ir<a></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>شنبه تا پنجشنبه: ۸:۰۰ تا ۱۷:۰۰</span>
+                        </li>
+                    </ul>
+                </div>
+                                
+            </div>
+        </div>
+        
+        <!-- بخش پایین فوتر -->
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        © 2025 انجمن علمی ساخت و تولید دانشگاه تبریز، تمامی حقوق محفوظ است.
+                    </div>
+                    <div class="footer-bottom-links">
+                        
+                        <a href="terms.html">قوانین و مقررات</a>
+                        <a href="faq.html">سوالات متداول</a>
+                        <a href="contact.html">نقشه سایت</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/sweetalert2.all.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/showBlogpost.js"></script>
+
+</body>
+</html>

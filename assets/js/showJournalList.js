@@ -1,7 +1,10 @@
 $(document).ready(function () {
     const repoOwner = "smetbz";
     const repoName = "smetbz.github.io"
-    const allowedJsonUrl = "https://raw.githubusercontent.com/smetbz/smetbz.github.io/refs/heads/main/allowedList.json";
+    
+    const persianNamesUrl = `https://cdn.jsdelivr.net/gh/smetbz/smetbz.github.io@main/persianNames.json`;
+    const allowedJsonUrl = "https://cdn.jsdelivr.net/gh/smetbz/smetbz.github.io@main/allowedList.json";
+
 
     const filterLabel = "JOURNAL";
     const perPage = 10;

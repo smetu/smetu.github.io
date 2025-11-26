@@ -36,11 +36,13 @@ $(document).ready(function () {
                     $("#blogpost-title").html(result.title);
                     $("#blogpost-summary").html(result.summary);
                     $("#blogpost-image").attr("src", extractIssueImage(issueData.body)).attr("alt", result.title);
-                    $("#blogpost-content").append(result.content)
+                    $("#blogpost-content").append(result.content);
 
                     result.keywords.forEach(kv => {
                         $("#blogpost-keywords").append(`<a href=\"javascript:void(0)\" class=\"blog-1-tag\">${kv}</a>`)
                     });
+
+                    $("#whole-post").fadeIn();
                     
                 }
             ).fail(function() {                

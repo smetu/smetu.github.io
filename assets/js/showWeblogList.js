@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     const filterLabel = "BLOG";
     const perPage = 10;
-    const PROXY_URL = `https://githubproxy.sakhtotoolid.workers.dev/github/`;
+    const PROXY_URL = `https://api.smtu.ir/github/`;
 
     let allFilteredIssues = [];
     let currentFiltered = [];

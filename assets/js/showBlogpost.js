@@ -3,7 +3,7 @@ $(document).ready(function () {
     const repoName = "smetbz.github.io";
 
     const allowedJsonUrl = "https://raw.githubusercontent.com/smetbz/smetbz.github.io/refs/heads/main/allowedList.json";
-    const PROXY_URL = `https://githubproxy.sakhtotoolid.workers.dev/github/`;
+    const PROXY_URL = `https://api.smtu.ir/github/`;
 
     $.getJSON(allowedJsonUrl,
         function (data) {                   

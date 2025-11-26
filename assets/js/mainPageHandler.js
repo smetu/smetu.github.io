@@ -4,7 +4,7 @@ $(document).ready(function () {
     const filterLabel = "BLOG"
 
     const allowedJsonUrl = "https://raw.githubusercontent.com/smetbz/smetbz.github.io/refs/heads/main/allowedList.json";
-    const PROXY_URL = `https://githubproxy.sakhtotoolid.workers.dev/github/`;
+    const PROXY_URL = `https://api.smtu.ir/github/`;
 
     let filteredIssues = [];
 

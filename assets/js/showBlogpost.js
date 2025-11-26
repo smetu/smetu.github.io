@@ -18,6 +18,8 @@ $(document).ready(function () {
             
             $.getJSON(`${PROXY_URL}repos/${repoOwner}/${repoName}/issues/${getIssueId()}`,
                 function (issueData, textStatus, jqXHR) {
+
+            
                    
                     if(!data.allowedList.includes(issueData.user.login)) {
                        window.location.href = `/blog.html`;
@@ -32,6 +34,7 @@ $(document).ready(function () {
                     const contentMatch = body.match(/\[ENTER CONTENT HERE\]\s*([\s\S]*?)\s*(?=\[KEYWORDS\])/i);
                     const keywordsMatch = body.match(/\[KEYWORDS\]\s*([\s\S]*)/i);
     
+                    
                     if(titleMatch) result.title = titleMatch[1].trim();
                     if(summaryMatch) result.summary = marked.parse(summaryMatch[1]).trim();
                     if(contentMatch) result.content = marked.parse(contentMatch[1]).trim();
@@ -51,6 +54,10 @@ $(document).ready(function () {
                     result.keywords.forEach(kv => {
                         $("#blogpost-keywords").append(`<a href=\"javascript:void(0)\" class=\"blog-1-tag\">${kv}</a>`)
                     });
+
+                    document.querySelectorAll("table").forEach(t => {
+                        t.classList.add("term-1-terms-table");
+                      });
 
                     $("#whole-post").fadeIn();
                     

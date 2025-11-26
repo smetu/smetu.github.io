@@ -15698,7 +15698,7 @@ padding: 3rem 0;
         }
 
         .blogs-blog-container {
-            /* display: grid; */
+            display: grid;
             grid-template-columns: 2fr 1fr;
             gap: 3rem;
         }
@@ -18128,7 +18128,7 @@ padding: 3rem 0;
         }
 
         .blog-1-container {
-            /* display: grid; */
+            display: grid;
             grid-template-columns: 1fr 350px;
             gap: 3rem;
             align-items: start;
@@ -20814,6 +20814,57 @@ padding: 3rem 0;
     z-index: 99;
     display: none;
     backdrop-filter: blur(2px);
+}
+
+.loading-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+
+.loading-overlay.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loading-box {
+    background: rgb(19 26 38);
+    padding: 25px 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    animation: pop 0.3s ease-out;
+}
+
+.loading-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.loading-sub {
+    font-size: 1rem;
+    opacity: 0.7;
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    .loading-box {
+        padding: 20px 25px;
+    }
+    .loading-title {
+        font-size: 1.3rem;
+    }
+    .loading-sub {
+        font-size: 0.9rem;
+    }
 }
 
 /* استایل‌های ریسپانسیو */

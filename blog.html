@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>وبلاگ انجمن علمی ساخت و تولید</title>
     <meta name="description" content="مطالب آموزشی و دانستنی در وبلاگ انجمن علمی">
+
+    <meta property="og:title" content="وبلاگ انجمن علمی ساخت و تولید" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://smtu.ir/blog.html" />
+    <!-- <meta property="og:image" content="https://yourforum.example.ir/assets/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" /> -->
+    <meta property="og:description" content="مطالب جدید و به‌روز در مورد صنعت، تکنولوژی و... اینجا منتشر می شود." />
+    <meta property="og:site_name" content="وبلاگ انجمن علمی ساخت و تولید" />
+    <meta property="og:locale" content="fa_IR" />
     
     <!-- فونت‌های محلی -->
     <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -22,13 +32,13 @@
 <body class="blogs-dark-theme">
     <!-- هدر بهبود یافته -->
     <header class="blogs-page-header" id="blogs-page-header">
-        <div style="display: none;" class="blogs-top-bar">
+        <div  id="upper-notif" style="display: none;" class="blogs-top-bar">
             <div class="blogs-container">
                 <div class="blogs-top-bar-content">
                     <a href="#" style="color: white; text-decoration: underline;">
-                        <span>در هر جا و هر زمان با منابع رایگان به یادگیری ادامه دهید.</span>
+                        <span id="upper-notif-text"></span>
                     </a>
-                    <span class="blogs-top-bar-badge">جدید</span>
+                    <span id="uppser-notif-badge" class="blogs-top-bar-badge">جدید</span>
                 </div>
             </div>
         </div>
@@ -228,13 +238,13 @@
                         در سال 1384 به همت استادان و دانشجویان وقت شروع به فعالیت کرده و هرساله
                         شاهد برگزاری انتخابات شورای مرکزی شامل 7 عضو می‌باشد.
                     <div class="blogs-footer-social">
-                        <a href="#" class="blogs-social-link" aria-label="اینستاگرام">
+                        <a href="https://www.instagram.com/sakhtotolid_tabrizuni" class="blogs-social-link" aria-label="اینستاگرام">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="blogs-social-link" aria-label="تلگرام">
+                        <a href="https://t.me/SME_TU_official" class="blogs-social-link" aria-label="تلگرام">
                             <i class="fab fa-telegram"></i>
                         </a>
-                        <a href="#" class="blogs-social-link" aria-label="لینکدین">
+                        <a style="display: none;" href="#" class="blogs-social-link" aria-label="لینکدین">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="#" class="blogs-social-link" aria-label="یوتیوب">
@@ -259,11 +269,10 @@
                 <div class="blogs-footer-col">
                     <h3>لینک های مفید</h3>
                     <ul class="blogs-footer-links">
-                        <li><a href="#"><i class="fas fa-link"></i> سایت دانشگاه تبریز</a></li>
-                        <li><a href="#"><i class="fas fa-link"></i> سایت دانشکده مکانیک</a></li>
-                        <li><a href="#"><i class="fas fa-link"></i> سایت سما دانشگاه تبریز</a></li>
-                        <li><a href="#"><i class="fas fa-link"></i> سایت امور دانشجویی سماد تبریز</a></li>
-                       
+                        <li><a href="https://tabrizu.ac.ir/fa"><i class="fas fa-link"></i> سایت دانشگاه تبریز</a></li>
+                        <li><a href="https://mechanic.tabrizu.ac.ir/fa"><i class="fas fa-link"></i> سایت دانشکده مکانیک</a></li>
+                        <li><a href="https://amozesh.tabrizu.ac.ir/samaweb/login.aspx"><i class="fas fa-link"></i> سایت سما دانشگاه تبریز</a></li>
+                        <li><a href="https://samad.app/login"><i class="fas fa-link"></i> سایت امور دانشجویی سماد تبریز</a></li>
                     </ul>
                 </div>
                 

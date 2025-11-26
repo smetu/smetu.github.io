@@ -1,0 +1,21 @@
+---
+name: JOURNAL
+about: ".برای نشریه از این تمپلیت استفاده نمایید"
+title: ''
+labels: JOURNAL
+assignees: ''
+
+---
+
+[ENTER TITLE HERE]
+پست جدید من
+
+[ENTER SUMMARY HERE]
+در اینجا،خلاصه ای برای پست مدنظر می‌نویسیم!
+
+[ENTER CONTENT HERE]
+در اینجا مطالبی برای وبسایت مینویسیم!
+
+
+[KEYWORDS]
+sme, ساخت , iran

@@ -18,7 +18,7 @@ $(document).ready(function () {
                     filteredIssues = filteredIssues.concat(filtered);
                     filteredIssues = filteredIssues.slice(0, 3)
 
-                    if(filteredIssues.length === 0) { $("#weblog-section").hide(); return; }
+                    if(filteredIssues.length === 0) return;
 
                     filteredIssues.forEach(issue => {
 
@@ -75,7 +75,9 @@ $(document).ready(function () {
                     </div>
                 </div>
                         `)
-                    })
+                    });
+
+                    $("#weblog-section").fadeIn();
 
                     
                 }

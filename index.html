@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>انجمن علمی ساخت و تولید</title>
     <meta name="description" content="انجمن علمی ساخت و تولید دانشگاه تبریز">
+
+    <meta property="og:title" content="انجمن علمی ساخت و تولید" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://smtu.ir/" />
+    <!-- <meta property="og:image" content="https://yourforum.example.ir/assets/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" /> -->
+    <meta property="og:description" content="انجمن علمی مهندسی ساخت و تولید - دانشگاه تبریز" />
+    <meta property="og:site_name" content="انجمن علمی ساخت و تولید" />
+    <meta property="og:locale" content="fa_IR" />
         
     <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Medium.woff2" as="font" type="font/woff2" crossorigin>
@@ -35,8 +45,7 @@
             --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             --font-family: 'Vazirmatn', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            
-            /* متغیرهای اصلی - فقط تم تاریک */
+                       
             --bg-color: var(--dark-bg);
             --surface-color: var(--dark-surface) !important;
             --card-color: var(--dark-card) !important;
@@ -52,13 +61,14 @@
 <body class="dark-theme">
    
     <header class="page-header" id="page-header">
-        <div style="display: none;" class="top-bar">
+
+        <div id="upper-notif" style="display: none;" class="top-bar">
             <div class="container">
                 <div class="top-bar-content">
                     <a href="#" style="color: white; text-decoration: underline;">
-                        <span>در هر جا و هر زمان با منابع رایگان به یادگیری ادامه دهید.</span>
+                        <span id="upper-notif-text"></span>
                     </a>
-                    <span class="top-bar-badge">جدید</span>
+                    <span id="upper-notif-badge" class="top-bar-badge"></span>
                 </div>
             </div>
         </div>
@@ -94,9 +104,7 @@
                             </li>
                             <li class="nav-item">
                                 <a href="/about.html" class="nav-link">درباره ما</a>
-                            </li>
-                            
-                            
+                            </li>                                                    
                         </ul>
                     </nav>
                     
@@ -192,12 +200,10 @@
                 </div> -->
             <!-- </div> -->
         </div>
-        
-        <!-- overlay برای منوی موبایل -->
+               
         <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
     </header>
-
-    <!-- محتوای صفحه -->
+   
     <section class="hero-section">
         <div class="hero-background">
             <div class="hero-pattern"></div>
@@ -206,10 +212,10 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <!-- <div class="hero-badge">
+                    <div style="display: none;" id="main-badge-gear" class="hero-badge">
                         <i style="color:rgb(220, 35, 18);" class="fas fa-gear"></i>
-                        <span>پیش به سوی موفقیت</span>
-                    </div> -->
+                        <span>TEXT</span>
+                    </div>
                     
                     <h1 class="hero-title">انجمن علمی ساخت و تولید</h1>
                     
@@ -233,42 +239,32 @@
                             <span class="stat-label">سال تاسیس</span>
                         </div>
                     </div>
-                    
-                    <!-- <div class="hero-search">
-                        <label for="hero-search" class="sr-only">جستجوی دوره‌ها</label>
-                        <input type="search" id="hero-search" class="hero-search-input" placeholder="چه چیزی را می خواهید یاد بگیرید؟">
-                        <button class="hero-search-btn">
-                            <i class="fas fa-search"></i>
-                            <span>جستجو</span>
-                        </button>
-                    </div> -->
+                                       
                 </div>                
                 <div class="hero-image">
                     <div class="hero-visual">
                         <!-- کارت‌های شناور -->
-                         <!-- <div>
-
+                         <div>
+                            <!--! NOTHING !-->
                          </div>
-                         <div class="floating-card">
+                         <div id="floating-1" style="display: none;" class="floating-card">
                             <div class="card-icon accents">
                                 <i class="fas fa-award"></i>
                             </div>
                             <div class="card-content">
-                                <div class="card-title">گواهینامه معتبر</div>
-                                <div class="card-text">در هر دوره</div>
+                                <div id="floating-1-text-1" class="card-title"></div>
+                                <div id="floating-1-text-2" class="card-text"></div>
                             </div>
                         </div>
-
-                        <div class="floating-card">
+                        <div id="floating-2" style="display: none;" class="floating-card">
                             <div class="card-icon accent">
                                 <i class="fas fa-briefcase"></i>
                             </div>
                             <div class="card-content">
-                                <div class="card-title">فرصت شغلی</div>
-                                <div class="card-text">با مهارت‌های جدید</div>
+                                <div id="floating-2-text-2" class="card-title"></div>
+                                <div id="floating-2-text-2" class="card-text"></div>
                             </div>
-                        </div> -->
-                        
+                        </div>                        
                         <!-- تصویر اصلی -->
                         <div style="width: 110%; height: 550px;  border-radius: var(--border-radius-lg); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
                             <img src="./assets/images/heroes/hero_01_smaller.png" alt="" style="width: 110%; height: 550px;">
@@ -477,7 +473,7 @@
     </section>
 
     <!-- WEBLOG -->
-    <section class="courses-section" id="weblog-section">
+    <section style="display: none;" class="courses-section" id="weblog-section">
         <div class="container">
             <div class="courses-header">
                 <div>
@@ -491,7 +487,7 @@
         </div>
     </section> 
     
-    <section class="courses-section">
+    <section style="display: none;" class="courses-section" id="course-section">
         <div class="container">
             <div class="courses-header">
                 <div>
@@ -681,13 +677,13 @@
                         شاهد برگزاری انتخابات شورای مرکزی شامل 7 عضو می‌باشد.
                     </p>
                     <div class="footer-social">
-                        <a href="#" class="social-link" aria-label="اینستاگرام">
+                        <a href="https://www.instagram.com/sakhtotolid_tabrizuni" class="social-link" aria-label="اینستاگرام">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="social-link" aria-label="تلگرام">
+                        <a href="https://t.me/SME_TU_official" class="social-link" aria-label="تلگرام">
                             <i class="fab fa-telegram"></i>
                         </a>
-                        <a href="#" class="social-link" aria-label="لینکدین">
+                        <a style="display: none;" href="#" class="social-link" aria-label="لینکدین">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="#" class="social-link" aria-label="یوتیوب">
@@ -713,11 +709,10 @@
                 <div class="footer-col">
                     <h3>لینک های مفید</h3>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-link"></i> سایت دانشگاه تبریز</a></li>
-                        <li><a href="#"><i class="fas fa-link"></i> سایت دانشکده مکانیک</a></li>
-                        <li><a href="#"><i class="fas fa-link"></i> سایت سما دانشگاه تبریز</a></li>
-                        <li><a href="#"><i class="fas fa-link"></i> سایت امور دانشجویی سماد تبریز</a></li>
-                       
+                        <li><a href="https://tabrizu.ac.ir/fa"><i class="fas fa-link"></i> سایت دانشگاه تبریز</a></li>
+                        <li><a href="https://mechanic.tabrizu.ac.ir/fa"><i class="fas fa-link"></i> سایت دانشکده مکانیک</a></li>
+                        <li><a href="https://amozesh.tabrizu.ac.ir/samaweb/login.aspx"><i class="fas fa-link"></i> سایت سما دانشگاه تبریز</a></li>
+                        <li><a href="https://samad.app/login"><i class="fas fa-link"></i> سایت امور دانشجویی سماد تبریز</a></li>                       
                     </ul>
                 </div>
 

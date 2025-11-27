@@ -24,17 +24,20 @@ $(document).ready(function () {
                     filteredIssues.forEach(issue => {
 
                     const body = issue.body;
-                    const result = { title: '', summary: '', content: '', keywords: [] };
-
-                    const titleMatch = body.match(/\[ENTER TITLE HERE\]\s*([\s\S]*?)\s*(?=\[ENTER SUMMARY HERE\])/i);
+                    const result = { title: '', keywords: [] , categories: [], summary: '', content: '' };
+                
+                    const titleMatch = body.match(/\[ENTER TITLE HERE\]\s*([\s\S]*?)\s*(?=\[ENTER KEYWORDS HERE\])/i);
+                    const keywordsMatch = body.match(/\[ENTER KEYWORDS HERE\]\s*([\s\S]*?)\s*(?=\[ENTER CATEGORIES HERE\])/i);
+                    const categoriesMatch = body.match(/\[ENTER CATEGORIES HERE\]\s*([\s\S]*?)\s*(?=\[ENTER SUMMARY HERE\])/i);                            
                     const summaryMatch = body.match(/\[ENTER SUMMARY HERE\]\s*([\s\S]*?)\s*(?=\[ENTER CONTENT HERE\])/i);
-                    const contentMatch = body.match(/\[ENTER CONTENT HERE\]\s*([\s\S]*?)\s*(?=\[KEYWORDS\])/i);
-                    const keywordsMatch = body.match(/\[KEYWORDS\]\s*([\s\S]*)/i);
+                    const contentMatch = body.match(/\[ENTER CONTENT HERE\]\s*([\s\S]*)/i);
+                    
     
                     if(titleMatch) result.title = titleMatch[1].trim();
+                    if(keywordsMatch) result.keywords = keywordsMatch[1].split(",").map(k => k.trim());
+                    if(categoriesMatch) result.categories = categoriesMatch[1].split(",").map(k => k.trim());
                     if(summaryMatch) result.summary = marked.parse(summaryMatch[1]).trim();
                     if(contentMatch) result.content = marked.parse(contentMatch[1]).trim();
-                    if(keywordsMatch) result.keywords = keywordsMatch[1].split(",").map(k => k.trim());
 
                     // <span class="course-badge popular"></span>
 

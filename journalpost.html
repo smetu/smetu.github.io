@@ -179,7 +179,7 @@
                 <article style="display: none;" id="whole-post" class="blog-1-content">
                     <header class="blog-1-header">
                         <div class="blog-1-meta">
-                            <span style="color: rgb(95, 230, 57);" class="blog-1-category" id="blogpost-category"></span>
+                            <span class="blog-1-category" id="blogpost-category"></span>
                             <span class="blog-1-date">
                                 <i class="far fa-calendar"></i>
                                 <span id="blogpost-update-date"></span>
@@ -190,44 +190,44 @@
                         </p>
                     </header>
 
-                    <div class="blog-1-featured-image">
+                    <div id="blog-post-image-container" class="blog-1-featured-image">
                         <img id="blogpost-image" src="" alt="">
                     </div>
 
-                    <div class="blog-1-body" id="blogpost-content">
-                        
+                    <div class="blog-1-body" id="blogpost-content">                        
                         <div class="blog-1-tags" id="blogpost-keywords">
                                                    
                         </div>
-                    </div>
-
-                    <footer class="blog-1-footer">
-                        <div class="blog-1-author">
-                            <div class="blog-1-author-avatar">
-                                <img id="blogpost-footer-avatar" src="" alt="">
-                            </div>
-                            <div class="blog-1-author-info">
-                                <h4 id="blogpost-footer-name"></h4>
-                                <p id="blogpost-footer-description"></p>
-                            </div>
-                        </div>
-                        <div class="blog-1-share">
-                            <span class="blog-1-share-title">اشتراک‌گذاری:</span>
-                            <div class="blog-1-share-buttons">                               
-                                <a href="javascript:void(0)" class="blog-1-share-button linkedin" aria-label="اشتراک در لینکدین">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="javascript:void(0)" class="blog-1-share-button telegram" aria-label="اشتراک در تلگرام">
-                                    <i class="fab fa-telegram-plane"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </footer>
+                    </div>                  
+                    
                 </article>
 
+
+                <aside class="blog-1-sidebar">
+                    <!-- ویجت نویسنده -->
+                    <div class="blog-1-sidebar-widget blog-1-author-widget">
+                        <div id="author-image-container" class="blog-1-author-widget-avatar">
+                            
+                        </div>
+                        <h3 id="author-name" class="blog-1-author-widget-name"></h3>
+                        <p id="author-bio" class="blog-1-author-widget-bio"></p>
+                        <!-- <div class="blog-1-social-links">
+                            <a href="#" class="blog-1-social-link" aria-label="توییتر">
+                                <i class="fab fa-twitter"></i>
+                            </a>                           
+                        </div> -->
+                    </div>
+
+                    <div class="blog-1-sidebar-widget">
+                        <h6 class="blog-1-widget-title">دسته‌بندی این پست</h6>
+                        <ul id="categories-list" class="blog-1-categories-list">                            
+                          
+                        </ul>
+                    </div>
+                                    
+                </aside>
                 
             </div>
-
                    
         </div>
     </main>
@@ -336,7 +336,14 @@
     <script src="/assets/js/jquery-3.7.1.min.js"></script>
     <script src="/assets/js/sweetalert2.all.min.js"></script>
     <script src="/assets/js/util.js"></script>
-    <script src="/assets/js/showJournalpost.js?v=2025001"></script>
+    <script src="/assets/js/constants.js"></script>
+    <script src="/assets/js/postItselfHandler.js"></script>
+    <script>
+        showPostDetails(getIssueId(), "/journal.html", "JOURNAL").then(() => {
+            $("#loading-overlay").fadeOut();
+            $("#whole-post").fadeIn();  
+        });
+    </script>
 
 </body>
 </html>

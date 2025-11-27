@@ -1,8 +1,4 @@
-const categoriesInPersian = {
-    "BLOG": "وبلاگ",
-    "NEWS": "اخبار",
-    "JOURNAL": "نشریه"
-};
+
 
 function toPersianDate(dateString) {
     const date = new Date(dateString);

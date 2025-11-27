@@ -216,6 +216,78 @@
                 <div class="blogs-blog-posts" id="weblog-container">                    
                                  
                 </div>
+
+                <aside class="blogs-blog-sidebar">
+                    <!-- دسته‌بندی‌ها -->
+                    <div class="blogs-sidebar-widget">
+                        <h3 class="blogs-widget-title">دسته‌بندی‌ها</h3>
+                        <ul id="catsofblog" class="blogs-categories-list">
+                            
+                            
+                        </ul>
+                    </div>
+                    
+                    <!-- پست‌های محبوب -->
+                    <!-- <div class="blogs-sidebar-widget">
+                        <h3 class="blogs-widget-title">پست‌های محبوب</h3>
+                        <div class="blogs-popular-posts">
+                            <div class="blogs-popular-post">
+                                <div class="blogs-popular-post-image">
+                                    <img src="./assets/images/01.jpg" alt="بررسی فریمورک‌های Front-end">
+                                </div>
+                                <div class="blogs-popular-post-content">
+                                    <h4 class="blogs-popular-post-title">بررسی جامع فریمورک‌های Front-end در سال ۲۰۲۳</h4>
+                                    <div class="blogs-popular-post-meta">
+                                        <span>۲۵ مرداد</span>
+                                        <span>۸ دقیقه</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blogs-popular-post">
+                                <div class="blogs-popular-post-image">
+                                    <img src="./assets/images/02.jpg" alt="مهارت‌های نرم">
+                                </div>
+                                <div class="blogs-popular-post-content">
+                                    <h4 class="blogs-popular-post-title">۱۰ مهارت نرم ضروری برای توسعه‌دهندگان</h4>
+                                    <div class="blogs-popular-post-meta">
+                                        <span>۱۸ مرداد</span>
+                                        <span>۶ دقیقه</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blogs-popular-post">
+                                <div class="blogs-popular-post-image">
+                                    <img src="./assets/images/03.jpg" alt="یادگیری ماشین">
+                                </div>
+                                <div class="blogs-popular-post-content">
+                                    <h4 class="blogs-popular-post-title">راهنمای کامل یادگیری ماشین برای مبتدیان</h4>
+                                    <div class="blogs-popular-post-meta">
+                                        <span>۱۲ مرداد</span>
+                                        <span>۱۰ دقیقه</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <!-- تگ‌ها -->
+                    <!-- <div class="blogs-sidebar-widget">
+                        <h3 class="blogs-widget-title">تگ‌ها</h3>
+                        <div class="blogs-tags-cloud">
+                            <a href="#" class="blogs-tag">برنامه‌نویسی</a>
+                            <a href="#" class="blogs-tag">React</a>
+                            <a href="#" class="blogs-tag">JavaScript</a>
+                            <a href="#" class="blogs-tag">Python</a>
+                            <a href="#" class="blogs-tag">یادگیری ماشین</a>
+                            <a href="#" class="blogs-tag">طراحی</a>
+                            <a href="#" class="blogs-tag">Figma</a>
+                            <a href="#" class="blogs-tag">فریلنسینگ</a>
+                            <a href="#" class="blogs-tag">مدیریت زمان</a>
+                            <a href="#" class="blogs-tag">مهارت‌های نرم</a>
+                        </div>
+                    </div> -->
+                </aside>
+
                
             </div>
             
@@ -332,7 +404,22 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
     <script src="/assets/js/jquery-3.7.1.min.js"></script>
     <script src="/assets/js/util.js"></script>
-    <script src="/assets/js/showJournalList.js?v=2025001"></script>
-
+    <script src="/assets/js/constants.js"></script>
+    <script src="/assets/js/initBlog.js"></script>
+    <script>
+        $(document).ready(function () {
+            initBlog({
+        repoOwner: "smetbz",
+        repoName: "smetbz.github.io",
+        filterLabel: "JOURNAL",
+        perPage: 10,
+        allowedJsonUrl: "https://cdn.jsdelivr.net/gh/smetbz/smetbz.github.io@main/allowedList.json",
+        categoriesInPersian: { JOURNAL: "نشریه" },
+        defaultImage: "/assets/images/default.png",
+        categoriesContainerSelector: "#catsofblog"
+    });
+               
+        });
+    </script>
 </body>
 </html>

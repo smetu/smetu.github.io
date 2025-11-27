@@ -219,48 +219,14 @@
                     <!-- دسته‌بندی‌ها -->
                     <div class="blogs-sidebar-widget">
                         <h3 class="blogs-widget-title">دسته‌بندی‌ها</h3>
-                        <ul class="blogs-categories-list">
-                            <li class="blogs-category-item">
-                                <a href="#" class="blogs-category-link">
-                                    <span>برنامه‌نویسی</span>
-                                    <span class="blogs-category-count">۲۴</span>
-                                </a>
-                            </li>
-                            <li class="blogs-category-item">
-                                <a href="#" class="blogs-category-link">
-                                    <span>هوش مصنوعی</span>
-                                    <span class="blogs-category-count">۱۸</span>
-                                </a>
-                            </li>
-                            <li class="blogs-category-item">
-                                <a href="#" class="blogs-category-link">
-                                    <span>طراحی UI/UX</span>
-                                    <span class="blogs-category-count">۱۵</span>
-                                </a>
-                            </li>
-                            <li class="blogs-category-item">
-                                <a href="#" class="blogs-category-link">
-                                    <span>مهارت‌های نرم</span>
-                                    <span class="blogs-category-count">۱۲</span>
-                                </a>
-                            </li>
-                            <li class="blogs-category-item">
-                                <a href="#" class="blogs-category-link">
-                                    <span>مدیریت زمان</span>
-                                    <span class="blogs-category-count">۸</span>
-                                </a>
-                            </li>
-                            <li class="blogs-category-item">
-                                <a href="#" class="blogs-category-link">
-                                    <span>فریلنسینگ</span>
-                                    <span class="blogs-category-count">۶</span>
-                                </a>
-                            </li>
+                        <ul id="catsofblog" class="blogs-categories-list">
+                            
+                            
                         </ul>
                     </div>
                     
                     <!-- پست‌های محبوب -->
-                    <div class="blogs-sidebar-widget">
+                    <!-- <div class="blogs-sidebar-widget">
                         <h3 class="blogs-widget-title">پست‌های محبوب</h3>
                         <div class="blogs-popular-posts">
                             <div class="blogs-popular-post">
@@ -300,10 +266,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     
                     <!-- تگ‌ها -->
-                    <div class="blogs-sidebar-widget">
+                    <!-- <div class="blogs-sidebar-widget">
                         <h3 class="blogs-widget-title">تگ‌ها</h3>
                         <div class="blogs-tags-cloud">
                             <a href="#" class="blogs-tag">برنامه‌نویسی</a>
@@ -317,7 +283,7 @@
                             <a href="#" class="blogs-tag">مدیریت زمان</a>
                             <a href="#" class="blogs-tag">مهارت‌های نرم</a>
                         </div>
-                    </div>
+                    </div> -->
                 </aside>
                
             </div>
@@ -381,7 +347,7 @@
                 <div class="blogs-footer-col">
                     <h3>لینک های مفید</h3>
                     <ul class="blogs-footer-links">
-                        <li><a href="https://tabrizu.ac.ir/fa"><i class="fas fa-link"></i> سایت دانشگاه تبریز</a></li>
+                        <li><a href="https://tabrizu.ac.ir/fa" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i> سایت دانشگاه تبریز</a></li>
                         <li><a href="https://mechanic.tabrizu.ac.ir/fa"><i class="fas fa-link"></i> سایت دانشکده مکانیک</a></li>
                         <li><a href="https://amozesh.tabrizu.ac.ir/samaweb/login.aspx"><i class="fas fa-link"></i> سایت سما دانشگاه تبریز</a></li>
                         <li><a href="https://samad.app/login"><i class="fas fa-link"></i> سایت امور دانشجویی سماد تبریز</a></li>
@@ -435,7 +401,23 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
     <script src="/assets/js/jquery-3.7.1.min.js"></script>
     <script src="/assets/js/util.js"></script>
-    <script src="/assets/js/showWeblogList.js?v=2025002"></script>
+    <script src="/assets/js/constants.js"></script>
+    <script src="/assets/js/initBlog.js"></script>
+    <script>
+        $(document).ready(function () {
+            initBlog({
+        repoOwner: "smetbz",
+        repoName: "smetbz.github.io",
+        filterLabel: "BLOG",
+        perPage: 10,
+        allowedJsonUrl: "https://cdn.jsdelivr.net/gh/smetbz/smetbz.github.io@main/allowedList.json",
+        categoriesInPersian: { BLOG: "وبلاگ" },
+        defaultImage: "/assets/images/default.png",
+        categoriesContainerSelector: "#catsofblog"
+    });
+               
+        });
+    </script>
 
 </body>
 </html>

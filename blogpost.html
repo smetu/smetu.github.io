@@ -190,151 +190,44 @@
                         </p>
                     </header>
 
-                    <div class="blog-1-featured-image">
+                    <div id="blog-post-image-container" class="blog-1-featured-image">
                         <img id="blogpost-image" src="" alt="">
                     </div>
 
-                    <div class="blog-1-body" id="blogpost-content">
-                        
+                    <div class="blog-1-body" id="blogpost-content">                        
                         <div class="blog-1-tags" id="blogpost-keywords">
                                                    
                         </div>
-                    </div>
-
-                    <footer class="blog-1-footer">
-                        <div class="blog-1-author">
-                            <div class="blog-1-author-avatar">
-                                <img id="blogpost-footer-avatar" src="" alt="">
-                            </div>
-                            <div class="blog-1-author-info">
-                                <h4 id="blogpost-footer-name"></h4>
-                                <p id="blogpost-footer-description"></p>
-                            </div>
-                        </div>
-                        <div class="blog-1-share">
-                            <span class="blog-1-share-title">اشتراک‌گذاری:</span>
-                            <div class="blog-1-share-buttons">                               
-                                <a href="javascript:void(0)" class="blog-1-share-button linkedin" aria-label="اشتراک در لینکدین">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="javascript:void(0)" class="blog-1-share-button telegram" aria-label="اشتراک در تلگرام">
-                                    <i class="fab fa-telegram-plane"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </footer>
+                    </div>                  
+                    
                 </article>
 
 
                 <aside class="blog-1-sidebar">
                     <!-- ویجت نویسنده -->
                     <div class="blog-1-sidebar-widget blog-1-author-widget">
-                        <div class="blog-1-author-widget-avatar">
-                            <img src="./assets/images/me2.png" alt="علی رضایی">
+                        <div id="author-image-container" class="blog-1-author-widget-avatar">
+                            
                         </div>
-                        <h3 class="blog-1-author-widget-name">علی رضایی</h3>
-                        <p class="blog-1-author-widget-bio">توسعه‌دهنده فرانت‌اند با ۵ سال تجربه در زمینه React.js و Vue.js. علاقه‌مند به تدریس و اشتراک‌گذاری دانش.</p>
-                        <div class="blog-1-social-links">
+                        <h3 id="author-name" class="blog-1-author-widget-name"></h3>
+                        <p id="author-bio" class="blog-1-author-widget-bio"></p>
+                        <!-- <div class="blog-1-social-links">
                             <a href="#" class="blog-1-social-link" aria-label="توییتر">
                                 <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="blog-1-social-link" aria-label="لینکدین">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="blog-1-social-link" aria-label="گیت‌هاب">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="blog-1-social-link" aria-label="اینستاگرام">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
+                            </a>                           
+                        </div> -->
                     </div>
 
-                    <!-- ویجت مقالات اخیر -->
                     <div class="blog-1-sidebar-widget">
-                        <h3 class="blog-1-widget-title">مقالات اخیر</h3>
-                        <ul class="blog-1-recent-posts">
-                            <li class="blog-1-recent-post">
-                                <div class="blog-1-recent-post-image">
-                                    <img src="./assets/images/01.jpg" alt="یادگیری ماشین">
-                                </div>
-                                <div class="blog-1-recent-post-content">
-                                    <h4><a href="#">آموزش جامع یادگیری ماشین با پایتون</a></h4>
-                                    <div class="blog-1-recent-post-meta">
-                                        <span>۲ هفته پیش</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="blog-1-recent-post">
-                                <div class="blog-1-recent-post-image">
-                                    <img src="./assets/images/03.jpg" alt="طراحی UI/UX">
-                                </div>
-                                <div class="blog-1-recent-post-content">
-                                    <h4><a href="#">اصول طراحی رابط کاربری حرفه‌ای</a></h4>
-                                    <div class="blog-1-recent-post-meta">
-                                        <span>۱ ماه پیش</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="blog-1-recent-post">
-                                <div class="blog-1-recent-post-image">
-                                    <img src="./assets/images/02.jpg" alt="Node.js">
-                                </div>
-                                <div class="blog-1-recent-post-content">
-                                    <h4><a href="#">راهنمای کامل توسعه بک‌اند با Node.js</a></h4>
-                                    <div class="blog-1-recent-post-meta">
-                                        <span>۲ ماه پیش</span>
-                                    </div>
-                                </div>
-                            </li>
+                        <h6 class="blog-1-widget-title">دسته‌بندی این پست</h6>
+                        <ul id="categories-list" class="blog-1-categories-list">                            
+                          
                         </ul>
                     </div>
-
-                    <!-- ویجت دسته‌بندی‌ها -->
-                    <div class="blog-1-sidebar-widget">
-                        <h3 class="blog-1-widget-title">دسته‌بندی‌ها</h3>
-                        <ul class="blog-1-categories-list">
-                            <li class="blog-1-category-item">
-                                <a href="#">برنامه‌نویسی</a>
-                                <span class="blog-1-category-count">۱۵</span>
-                            </li>
-                            <li class="blog-1-category-item">
-                                <a href="#">هوش مصنوعی</a>
-                                <span class="blog-1-category-count">۸</span>
-                            </li>
-                            <li class="blog-1-category-item">
-                                <a href="#">طراحی UI/UX</a>
-                                <span class="blog-1-category-count">۱۲</span>
-                            </li>
-                            <li class="blog-1-category-item">
-                                <a href="#">توسعه وب</a>
-                                <span class="blog-1-category-count">۲۳</span>
-                            </li>
-                            <li class="blog-1-category-item">
-                                <a href="#">موبایل</a>
-                                <span class="blog-1-category-count">۷</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- ویجت تگ‌ها -->
-                    <div class="blog-1-sidebar-widget">
-                        <h3 class="blog-1-widget-title">تگ‌های محبوب</h3>
-                        <div class="blog-1-tags-widget">
-                            <a href="#" class="blog-1-tag">React.js</a>
-                            <a href="#" class="blog-1-tag">JavaScript</a>
-                            <a href="#" class="blog-1-tag">Python</a>
-                            <a href="#" class="blog-1-tag">CSS</a>
-                            <a href="#" class="blog-1-tag">HTML</a>
-                            <a href="#" class="blog-1-tag">Node.js</a>
-                            <a href="#" class="blog-1-tag">Vue.js</a>
-                            <a href="#" class="blog-1-tag">طراحی</a>
-                        </div>
-                    </div>
+                                    
                 </aside>
                 
             </div>
-
                    
         </div>
     </main>
@@ -443,7 +336,14 @@
     <script src="/assets/js/jquery-3.7.1.min.js"></script>
     <script src="/assets/js/sweetalert2.all.min.js"></script>
     <script src="/assets/js/util.js"></script>
-    <script src="/assets/js/showBlogpost.js?v=2025002"></script>
+    <script src="/assets/js/constants.js"></script>
+    <script src="/assets/js/postItselfHandler.js"></script>
+    <script>
+        showPostDetails(getIssueId(), "/blog.html", "BLOG").then(() => {
+            $("#loading-overlay").fadeOut();
+            $("#whole-post").fadeIn();  
+        });
+    </script>
 
 </body>
 </html>

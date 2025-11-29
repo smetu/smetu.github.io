@@ -6,37 +6,25 @@ async function initBlog({
     repoOwner,
     repoName,
     filterLabel = "BLOG",
-    perPage = 10,
-    proxyUrl = "https://api.smtu.ir/github/",
-    bridgeUrl = "https://api.smtu.ir/bridge/",
-    allowedJsonUrl,
-    categoriesInPersian = {},
-    defaultImage = "/assets/images/default.png"
+    perPage = 10,         
+    defaultImage = "/assets/images/default.png",
+    urlOfPost
 }) {
 
     let allFilteredIssues = [];
     let currentFiltered = [];
 
     const urlParams = new URLSearchParams(window.location.search);
-    const categoryFilter = urlParams.get("category");
-
-    // Fetch allowed list
-    let allowedData = { allowedList: [] };
-    try {
-        allowedData = await $.getJSON(allowedJsonUrl);
-    } catch (err) {
-        console.error("Error fetching allowed list:", err);
-    }
-
-    // Fetch all issues recursively
+    const categoryFilter = urlParams.get("category");    
+   
     async function fetchAllIssues(page = 1) {
         try {
-            const issues = await $.getJSON(`${proxyUrl}repos/${repoOwner}/${repoName}/issues?state=open&per_page=100&page=${page}`);
+            const issues = await $.getJSON(`${PROXY_URL}repos/${repoOwner}/${repoName}/issues?state=open&per_page=100&page=${page}`);
             if (!issues.length) return;
 
             const filtered = issues.filter(issue =>
-                allowedData.allowedList.includes(issue.user.login) &&
-                issue.labels.some(l => l.name === filterLabel)
+                allowedList.includes(issue.user.login) &&
+                issue.labels.some(l => l.name === filterLabel) && !issue.body.includes("(پیشنویس)")
             );
 
             allFilteredIssues = allFilteredIssues.concat(filtered);
@@ -47,12 +35,11 @@ async function initBlog({
             console.error("Error fetching issues:", err);
         }
     }
-
-    // Fetch user full names and parse body
+    
     async function fetchFullNamesAndParse() {
         for (let issue of allFilteredIssues) {
             try {
-                const user = await $.getJSON(`${proxyUrl}users/${issue.user.login}`);
+                const user = await $.getJSON(`${PROXY_URL}users/${issue.user.login}`);
                 issue.user.fullName = user.name || issue.user.login;
             } catch (err) {
                 console.error(`Error fetching user ${issue.user.login}:`, err);
@@ -100,8 +87,22 @@ async function initBlog({
             $(containerSelector).html("<h2>هیچ پستی نیست!</h2>");
             return;
         }
-
+    
         pageItems.forEach(issue => {
+
+            if(issue.body.includes("(پیشنویس)")) return;
+
+            let userName = { name: "", avatar: "" };
+            if(issue.body.includes("(مدیر)")) {
+                userName.name = "انجمن علمی مهندسی ساخت و تولید";
+                userName.avatar = `/assets/images/logos/icon_sme_small.png`;
+            } else {
+                userName.name = issue.user.fullName;
+                userName.avatar = `${BRIDGE_URL}avatar/${issue.user.login}`;
+            }
+
+            
+
             $(containerSelector).append(`
                 <article class="blogs-blog-post">
                     <div class="blogs-post-image">
@@ -120,14 +121,14 @@ async function initBlog({
                         <div class="blogs-post-footer">
                             <div class="blogs-post-author">
                                 <div class="blogs-author-avatar">
-                                    <img src="${bridgeUrl}avatar/${issue.user.login}" alt="${issue.user.fullName}" onerror="this.onerror=null;this.src='${defaultImage}';">
+                                    <img src="${userName.avatar}" alt="${userName.name}" onerror="this.onerror=null;this.src='${defaultImage}';">
                                 </div>
                                 <div class="blogs-author-info">
-                                    <div class="blogs-author-name">${issue.user.fullName}</div>
+                                    <div class="blogs-author-name">${userName.name}</div>
                                     <div class="blogs-post-date">بروزرسانی شده در ${toPersianDate(issue.updated_at)}</div>
                                 </div>
                             </div>
-                            <a href="/blogpost.html?id=${issue.number}" class="blogs-read-more">
+                            <a href="${urlOfPost}.html?id=${issue.number}" class="blogs-read-more">
                                 <span>ادامه مطلب</span>
                                 <i class="fas fa-arrow-left"></i>
                             </a>
@@ -142,15 +143,22 @@ async function initBlog({
         const totalPages = Math.ceil(currentFiltered.length / perPage);
         let html = '';
         for (let i = 1; i <= totalPages; i++) {
-            html += `<li class="blogs-page-item" data-page="${i}">
-                        <a href="javascript:void(0)" class="blogs-page-link active">${i}</a>
-                    </li>`;
+            // if (i === 1) {
+                html += `<li class="blogs-page-item" data-page="${i}">
+                <a href="javascript:void(0)" class="blogs-page-link">${i}
+                </a></li>`;
+           // } else html += `<li class="blogs-page-item" data-page="${i}">
+           // <a href="javascript:void(0)" class="blogs-page-link">${i}</a>
+           // </li>`
         }
         $(paginationSelector).html(html);
 
-        $(document).off("click", ".blogs-page-item"); // prevent duplicate handlers
+        $(document).off("click", ".blogs-page-item");
         $(document).on("click", ".blogs-page-item", function (e) {
             e.preventDefault();
+          //  console.log(this)
+         //   $(".blogs-page-item > a.blogs-page-link").removeClass("active");
+         //   $(this).addClass("active");
             renderPage(parseInt($(this).attr("data-page")));
         });
     }
@@ -178,6 +186,11 @@ async function initBlog({
         const container = $(categoriesContainerSelector);
         container.empty();
 
+        if(categories.length === 0) {
+            container.hide();
+            return;
+        }
+
         categories.forEach(cat => {
             container.append(`
                 <li class="blogs-category-item">
@@ -195,7 +208,7 @@ async function initBlog({
         await fetchAllIssues();
         await fetchFullNamesAndParse();
 
-        renderCategories(); // render the categories UL
+        renderCategories();
 
         currentFiltered = filterByCategory(allFilteredIssues, categoryFilter);
         renderPagination();
@@ -205,8 +218,7 @@ async function initBlog({
     }
 
     init().catch(err => console.error("InitBlog error:", err));
-
-    // Search input
+    
     $(searchSelector).on("input", () => {
         const q = $(searchSelector).val();
         currentFiltered = filterByCategory(allFilteredIssues, categoryFilter)

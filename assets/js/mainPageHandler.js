@@ -18,16 +18,13 @@ $(document).ready(function () {
             filteredIssues.forEach(issue => {
 
             const body = issue.body;
-            const result = { title: '', keywords: [] , categories: [], summary: '', content: '' };
+            const result = { keywords: [] , categories: [], summary: '', content: '' };
         
-            const titleMatch = body.match(/\[ENTER TITLE HERE\]\s*([\s\S]*?)\s*(?=\[ENTER KEYWORDS HERE\])/i);
-            const keywordsMatch = body.match(/\[ENTER KEYWORDS HERE\]\s*([\s\S]*?)\s*(?=\[ENTER CATEGORIES HERE\])/i);
-            const categoriesMatch = body.match(/\[ENTER CATEGORIES HERE\]\s*([\s\S]*?)\s*(?=\[ENTER SUMMARY HERE\])/i);                            
-            const summaryMatch = body.match(/\[ENTER SUMMARY HERE\]\s*([\s\S]*?)\s*(?=\[ENTER CONTENT HERE\])/i);
-            const contentMatch = body.match(/\[ENTER CONTENT HERE\]\s*([\s\S]*)/i);
-            
-
-            if(titleMatch) result.title = titleMatch[1].trim();
+            const keywordsMatch = body.match(/\[کلمات کلیدی را زیر این خط وارد کنید و با خط تیره جدا نمایید\]\s*([\s\S]*?)\s*(?=\[دسته بندی ها را زیر این خط وارد نمایید و با خط تیره جدا کنید\])/i);
+            const categoriesMatch = body.match(/\[دسته بندی ها را زیر این خط وارد نمایید و با خط تیره جدا کنید\]\s*([\s\S]*?)\s*(?=\[خلاصه مطلب را زیر این خط وارد کنید\])/i);                            
+            const summaryMatch = body.match(/\[خلاصه مطلب را زیر این خط وارد کنید\]\s*([\s\S]*?)\s*(?=\[محتوای پست را زیر این خط وارد نمایید\])/i);
+            const contentMatch = body.match(/\[محتوای پست را زیر این خط وارد نمایید\]\s*([\s\S]*)/i);
+                       
             if(keywordsMatch) result.keywords = keywordsMatch[1].split(",").map(k => k.trim());
             if(categoriesMatch) result.categories = categoriesMatch[1].split(",").map(k => k.trim());
             if(summaryMatch) result.summary = marked.parse(summaryMatch[1]).trim();

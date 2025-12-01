@@ -48,7 +48,7 @@ $(document).ready(function () {
             </div>
             <div class="course-content">
                 <div class="course-category">${categoriesInPersian[issue.labels[0].name]}</div>
-                <h3 class="course-title">${result.title}</h3>
+                <h3 class="course-title">${issue.title}</h3>
                 <p class="course-description">${result.summary}</p>
                 <div class="course-meta">
                     <div class="course-info">                                

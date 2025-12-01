@@ -58,8 +58,8 @@ async function initBlog({
         const contentMatch = body.match(/\[محتوای پست را زیر این خط وارد نمایید\]\s*([\s\S]*)/i);
 
         
-        if (keywordsMatch) result.keywords = keywordsMatch[1].split(",").map(k => k.trim());
-        if (categoriesMatch) result.categories = categoriesMatch[1].split(",").map(k => k.trim());
+        if (keywordsMatch) result.keywords = keywordsMatch[1].split("-").map(k => k.trim());
+        if (categoriesMatch) result.categories = categoriesMatch[1].split("-").map(k => k.trim());
         if (summaryMatch) result.summary = marked.parse(summaryMatch[1]).trim();
         if (contentMatch) result.content = marked.parse(contentMatch[1]).trim();
 

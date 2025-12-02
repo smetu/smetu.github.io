@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>پرسش‌های متداول - فراآموز</title>
+    <meta name="description" content="پاسخ به سوالات متداول کاربران پلتفرم آموزشی فراآموز">
+
+    <!-- فونت‌های محلی -->
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- آیکون‌های محلی -->
+    <link rel="stylesheet" href="./assets/icons/css/all.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+
+<body class="dark-theme">
+    <!-- هدر -->
+    <header class="page-header" id="page-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <a href="#" style="color: white; text-decoration: underline;">
+                        <span>در هر جا و هر زمان با منابع رایگان به یادگیری ادامه دهید.</span>
+                    </a>
+                    <span class="top-bar-badge">جدید</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header-wrap">
+                <!-- لوگو -->
+                <a href="index.html" class="logo" id="main-logo">
+                    <i class="fas fa-graduation-cap logo-icon"></i>
+                    <span>فراآموز</span>
+                </a>
+
+                <!-- منوی اصلی دسکتاپ -->
+                <div class="nav-container">
+                    <nav>
+                        <ul class="main-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">خانه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="courses.html" class="nav-link">دوره‌ها</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="instructors.html" class="nav-link">مدرسین</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">درباره ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./contact.html" class="nav-link">تماس با ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./blog.html" class="nav-link">وبلاگ</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <!-- اقدامات هدر دسکتاپ -->
+                    <div class="header-actions">
+                        <!-- جستجو -->
+                        <div class="search-container">
+                            <div class="search-box">
+                                <input type="text" class="search-input" placeholder="جستجو...">
+                                <button class="search-btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- تغییر تم -->
+                        <button class="theme-toggle" id="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+
+                        <!-- دکمه‌های کاربر -->
+                        <a href="login.html" class="btn btn-secondary">ورود</a>
+                        <a href="register.html" class="btn btn-primary">عضویت</a>
+                    </div>
+                </div>
+
+                <!-- منوی موبایل -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <div class="hamburger-lines">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- منوی موبایل -->
+        <div class="mobile-nav-container" id="mobile-nav-container">
+            <nav>
+                <ul class="mobile-nav">
+                    <li class="mobile-nav-item">
+                        <a href="index.html" class="mobile-nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>خانه</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="courses.html" class="mobile-nav-link">
+                            <i class="fas fa-book"></i>
+                            <span>دوره‌ها</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="instructors.html" class="mobile-nav-link">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>مدرسین</span>
+                        </a>
+                    </li>
+              
+                    <li class="mobile-nav-item">
+                        <a href="faq.html" class="mobile-nav-link active">
+                            <i class="fas fa-question-circle"></i>
+                            <span>سوالات</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="contact.html" class="mobile-nav-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>تماس با ما</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- اقدامات هدر موبایل -->
+            <div class="mobile-header-actions">
+                <!-- جستجو -->
+                <div class="mobile-search-box">
+                    <input type="text" class="mobile-search-input" placeholder="جستجو...">
+                    <button class="mobile-search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- تغییر تم - مخفی شده در موبایل -->
+                <button class="theme-toggle mobile-theme-toggle" id="mobile-theme-toggle" style="display: none;">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <!-- دکمه‌های کاربر -->
+                <div class="mobile-auth-buttons">
+                    <a href="login.html" class="btn btn-secondary" style="width: 100%; margin-bottom: 0.5rem;">ورود</a>
+                    <a href="register.html" class="btn btn-primary" style="width: 100%;">عضویت</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- overlay برای منوی موبایل -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    </header>
+
+    <!-- بخش هیرو FAQ -->
+    <section class="faqs-hero">
+        <div class="faqs-hero-background">
+            <div class="faqs-hero-pattern"></div>
+        </div>
+        
+        <div class="container">
+            <div class="faqs-hero-content">
+                <div class="faqs-hero-badge">
+                    <i class="fas fa-question-circle"></i>
+                    <span>سوالات متداول</span>
+                </div>
+                
+                <h1 class="faqs-hero-title">چگونه می‌توانیم به شما کمک کنیم؟</h1>
+                
+                <p class="faqs-hero-description">
+                    در این بخش به رایج‌ترین سوالات کاربران پاسخ داده‌ایم. اگر پاسخ سوال خود را پیدا نکردید، 
+                    از طریق فرم تماس با ما در ارتباط باشید.
+                </p>
+                
+                <div class="faqs-hero-search">
+                    <input type="search" class="faqs-hero-search-input" placeholder="سوال خود را جستجو کنید...">
+                    <button class="faqs-hero-search-btn">
+                        <i class="fas fa-search"></i>
+                        <span>جستجو</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش اصلی FAQ -->
+    <section class="faqs-main">
+        <div class="container">
+            <div class="faqs-container">
+                <!-- سایدبار دسته‌بندی‌ها -->
+                <aside class="faqs-sidebar">
+                    <div class="faqs-categories">
+                        <h3 class="faqs-categories-title">
+                            <i class="fas fa-list"></i>
+                            <span>دسته‌بندی‌ها</span>
+                        </h3>
+                        
+                        <ul class="faqs-category-list">
+                            <li class="faqs-category-item">
+                                <a href="#general" class="faqs-category-link active" data-category="general">
+                                    <i class="fas fa-cog"></i>
+                                    <span>عمومی</span>
+                                    <span class="faqs-category-count">۸</span>
+                                </a>
+                            </li>
+                            <li class="faqs-category-item">
+                                <a href="#account" class="faqs-category-link" data-category="account">
+                                    <i class="fas fa-user"></i>
+                                    <span>حساب کاربری</span>
+                                    <span class="faqs-category-count">۶</span>
+                                </a>
+                            </li>
+                            <li class="faqs-category-item">
+                                <a href="#courses" class="faqs-category-link" data-category="courses">
+                                    <i class="fas fa-book"></i>
+                                    <span>دوره‌ها</span>
+                                    <span class="faqs-category-count">۷</span>
+                                </a>
+                            </li>
+                            <li class="faqs-category-item">
+                                <a href="#payment" class="faqs-category-link" data-category="payment">
+                                    <i class="fas fa-credit-card"></i>
+                                    <span>پرداخت و خرید</span>
+                                    <span class="faqs-category-count">۵</span>
+                                </a>
+                            </li>
+                            <li class="faqs-category-item">
+                                <a href="#technical" class="faqs-category-link" data-category="technical">
+                                    <i class="fas fa-tools"></i>
+                                    <span>مسائل فنی</span>
+                                    <span class="faqs-category-count">۴</span>
+                                </a>
+                            </li>
+                            <li class="faqs-category-item">
+                                <a href="#certificate" class="faqs-category-link" data-category="certificate">
+                                    <i class="fas fa-award"></i>
+                                    <span>گواهینامه‌ها</span>
+                                    <span class="faqs-category-count">۳</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                
+                <!-- محتوای اصلی -->
+                <main class="faqs-content">
+                    <!-- دسته‌بندی عمومی -->
+                    <section id="general" class="faqs-category-section active">
+                        <div class="faqs-category-header">
+                            <div class="faqs-category-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <h2 class="faqs-category-title">سوالات عمومی</h2>
+                            <p class="faqs-category-description">
+                                پاسخ به سوالات عمومی درباره پلتفرم فراآموز و نحوه استفاده از آن
+                            </p>
+                        </div>
+                        
+                        <div class="faqs-accordion">
+                            <!-- سوال ۱ -->
+                            <div class="faqs-item">
+                                <div class="faqs-question" tabindex="0">
+                                    <span class="faqs-question-text">فراآموز چیست و چه خدماتی ارائه می‌دهد؟</span>
+                                    <div class="faqs-toggle">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faqs-answer">
+                                    <div class="faqs-answer-content">
+                                        <p>فراآموز یک پلتفرم آموزشی آنلاین است که با همکاری مدرسین و موسسات معتبر، دوره‌های آموزشی متنوعی در زمینه‌های مختلف ارائه می‌دهد. خدمات ما شامل:</p>
+                                        <ul>
+                                            <li>دوره‌های آموزشی ویدیویی با کیفیت بالا</li>
+                                            <li>پشتیبانی تخصصی از مدرسین</li>
+                                            <li>ارائه گواهینامه معتبر پس از اتمام دوره</li>
+                                            <li>امکان دانلود ویدئوها برای مشاهده آفلاین</li>
+                                            <li>تمرین‌ها و پروژه‌های عملی</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- سوال ۲ -->
+                            <div class="faqs-item">
+                                <div class="faqs-question" tabindex="0">
+                                    <span class="faqs-question-text">چگونه می‌توانم از فراآموز استفاده کنم؟</span>
+                                    <div class="faqs-toggle">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faqs-answer">
+                                    <div class="faqs-answer-content">
+                                        <p>برای استفاده از فراآموز مراحل زیر را دنبال کنید:</p>
+                                        <ol>
+                                            <li>در سایت ثبت‌نام کنید (رایگان است)</li>
+                                            <li>دوره مورد نظر خود را از بین صدها دوره انتخاب کنید</li>
+                                            <li>هزینه دوره را پرداخت نمایید</li>
+                                            <li>بلافاصله به محتوای دوره دسترسی خواهید داشت</li>
+                                            <li>در پایان دوره، گواهینامه دریافت کنید</li>
+                                        </ol>
+                                        <p>همچنین می‌توانید از دوره‌های رایگان ما استفاده کنید تا با محیط پلتفرم آشنا شوید.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- سوال ۳ -->
+                            <div class="faqs-item">
+                                <div class="faqs-question" tabindex="0">
+                                    <span class="faqs-question-text">آیا استفاده از پلتفرم فراآموز رایگان است؟</span>
+                                    <div class="faqs-toggle">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faqs-answer">
+                                    <div class="faqs-answer-content">
+                                        <p>ثبت‌نام در فراآموز کاملاً رایگان است و شما می‌توانید به صورت رایگان:</p>
+                                        <ul>
+                                            <li>در سایت ثبت‌نام کنید</li>
+                                            <li>از دوره‌های رایگان استفاده کنید</li>
+                                            <li>پیش‌نمایش دوره‌ها را مشاهده کنید</li>
+                                            <li>از مقالات آموزشی بهره‌مند شوید</li>
+                                        </ul>
+                                        <p>برای دسترسی به دوره‌های پولی نیاز به پرداخت هزینه دارید. همچنین برخی دوره‌ها به صورت رایگان در دسترس هستند.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- سوال ۴ -->
+                            <div class="faqs-item">
+                                <div class="faqs-question" tabindex="0">
+                                    <span class="faqs-question-text">آیا محتوای دوره‌ها به زبان فارسی است؟</span>
+                                    <div class="faqs-toggle">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faqs-answer">
+                                    <div class="faqs-answer-content">
+                                        <p>بله، تمامی دوره‌های فراآموز به زبان فارسی و توسط مدرسین ایرانی تولید شده‌اند. این امر باعث می‌شود درک مطالب برای فارسی‌زبانان بسیار آسان‌تر باشد.</p>
+                                        <p>همچنین زیرنویس فارسی برای ویدئوهای آموزشی که به زبان‌های دیگر هستند نیز در دسترس است.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- سوال ۵ -->
+                            <div class="faqs-item">
+                                <div class="faqs-question" tabindex="0">
+                                    <span class="faqs-question-text">چگونه می‌توانم مدرس فراآموز شوم؟</span>
+                                    <div class="faqs-toggle">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faqs-answer">
+                                    <div class="faqs-answer-content">
+                                        <p>برای تبدیل شدن به مدرس در فراآموز، مراحل زیر را دنبال کنید:</p>
+                                        <ol>
+                                            <li>به بخش "مدرس شوید" در سایت مراجعه کنید</li>
+                                            <li>فرم درخواست همکاری را تکمیل نمایید</li>
+                                            <li>رزومه و نمونه کارهای خود را ارسال کنید</li>
+                                            <li>یک نمونه تدریس ۵-۱۰ دقیقه‌ای تهیه و ارسال کنید</li>
+                                            <li>پس از تایید تیم محتوای فراآموز، می‌توانید دوره خود را ایجاد کنید</li>
+                                        </ol>
+                                        <p>مدرسین فراآموز از درآمد حاصل از فروش دوره‌های خود بهره‌مند می‌شوند.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- دسته‌بندی حساب کاربری -->
+                    <section id="account" class="faqs-category-section">
+                        <div class="faqs-category-header">
+                            <div class="faqs-category-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h2 class="faqs-category-title">حساب کاربری</h2>
+                            <p class="faqs-category-description">
+                                سوالات مربوط به ایجاد و مدیریت حساب کاربری در پلتفرم فراآموز
+                            </p>
+                        </div>
+                        
+                        <div class="faqs-accordion">
+                            <!-- سوال ۱ -->
+                            <div class="faqs-item">
+                                <div class="faqs-question" tabindex="0">
+                                    <span class="faqs-question-text">چگونه در فراآموز ثبت‌نام کنم؟</span>
+                                    <div class="faqs-toggle">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faqs-answer">
+                                    <div class="faqs-answer-content">
+                                        <p>برای ثبت‌نام در فراآموز:</p>
+                                        <ol>
+                                            <li>روی دکمه "عضویت" در بالای صفحه کلیک کنید</li>
+                                            <li>ایمیل خود را وارد کنید</li>
+                                            <li>یک رمز عبور قوی انتخاب کنید</li>
+                                            <li>نام و نام خانوادگی خود را وارد نمایید</li>
+                                            <li>روی دکمه "ایجاد حساب" کلیک کنید</li>
+                                            <li>ایمیل فعال‌سازی برای شما ارسال می‌شود</li>
+                                            <li>با کلیک روی لینک فعال‌سازی، حساب شما فعال می‌شود</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- سوال ۲ -->
+                            <div class="faqs-item">
+                                <div class="faqs-question" tabindex="0">
+                                    <span class="faqs-question-text">رمز عبور خود را فراموش کرده‌ام، چه کار کنم؟</span>
+                                    <div class="faqs-toggle">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faqs-answer">
+                                    <div class="faqs-answer-content">
+                                        <p>اگر رمز عبور خود را فراموش کرده‌اید:</p>
+                                        <ol>
+                                            <li>به صفحه ورود بروید</li>
+                                            <li>روی لینک "رمز عبور خود را فراموش کرده‌اید؟" کلیک کنید</li>
+                                            <li>ایمیل خود را وارد کنید</li>
+                                            <li>ایمیلی حاوی لینک بازنشانی رمز عبور دریافت خواهید کرد</li>
+                                            <li>روی لینک کلیک کرده و رمز عبور جدید خود را تنظیم کنید</li>
+                                        </ol>
+                                        <p>اگر ایمیلی دریافت نکرده‌اید، پوشه اسپم خود را بررسی کنید یا با پشتیبانی تماس بگیرید.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- سوال ۳ -->
+                            <div class="faqs-item">
+                                <div class="faqs-question" tabindex="0">
+                                    <span class="faqs-question-text">چگونه اطلاعات حساب کاربری خود را ویرایش کنم؟</span>
+                                    <div class="faqs-toggle">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faqs-answer">
+                                    <div class="faqs-answer-content">
+                                        <p>برای ویرایش اطلاعات حساب کاربری:</p>
+                                        <ol>
+                                            <li>وارد حساب کاربری خود شوید</li>
+                                            <li>روی آیکون پروفایل خود در بالای صفحه کلیک کنید</li>
+                                            <li>گزینه "ویرایش پروفایل" را انتخاب کنید</li>
+                                            <li>اطلاعات مورد نظر خود را تغییر دهید</li>
+                                            <li>در پایان روی دکمه "ذخیره تغییرات" کلیک کنید</li>
+                                        </ol>
+                                        <p>می‌توانید اطلاعاتی مانند نام، نام خانوادگی، عکس پروفایل، بیوگرافی و اطلاعات تماس را ویرایش کنید.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- دسته‌بندی دوره‌ها -->
+                    <section id="courses" class="faqs-category-section">
+                        <div class="faqs-category-header">
+                            <div class="faqs-category-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h2 class="faqs-category-title">دوره‌ها</h2>
+                            <p class="faqs-category-description">
+                                سوالات مربوط به دوره‌های آموزشی، محتوا و نحوه دسترسی به آن‌ها
+                            </p>
+                        </div>
+                        
+                        <div class="faqs-accordion">
+                            <!-- سوال ۱ -->
+                            <div class="faqs-item">
+                                <div class="faqs-question" tabindex="0">
+                                    <span class="faqs-question-text">چگونه می‌توانم دوره مناسب خود را پیدا کنم؟</span>
+                                    <div class="faqs-toggle">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faqs-answer">
+                                    <div class="faqs-answer-content">
+                                        <p>برای پیدا کردن دوره مناسب می‌توانید از روش‌های زیر استفاده کنید:</p>
+                                        <ul>
+                                            <li>از نوار جستجو در بالای صفحه استفاده کنید</li>
+                                            <li>دوره‌ها را بر اساس دسته‌بندی‌ها فیلتر کنید</li>
+                                            <li>از فیلترهای سطح (مقدماتی، متوسط، پیشرفته) استفاده کنید</li>
+                                            <li>دوره‌ها را بر اساس امتیاز و نظرات کاربران مرتب کنید</li>
+                                            <li>از بخش "دوره‌های پیشنهادی" دیدن کنید</li>
+                                        </ul>
+                                        <p>همچنین می‌توانید از مشاوره رایگان ما استفاده کنید تا دوره مناسب سطح و اهداف شما را پیشنهاد دهیم.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- سوال ۲ -->
+                            <div class="faqs-item">
+                                <div class="faqs-question" tabindex="0">
+                                    <span class="faqs-question-text">آیا می‌توانم محتوای دوره را دانلود کنم؟</span>
+                                    <div class="faqs-toggle">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faqs-answer">
+                                    <div class="faqs-answer-content">
+                                        <p>بله، در اکثر دوره‌ها امکان دانلود ویدئوها و منابع آموزشی وجود دارد. این ویژگی به شما امکان می‌دهد:</p>
+                                        <ul>
+                                            <li>دوره را به صورت آفلاین مشاهده کنید</li>
+                                            <li>در صورت قطعی اینترنت به آموزش خود ادامه دهید</li>
+                                            <li>منابع را در دستگاه‌های مختلف ذخیره کنید</li>
+                                        </ul>
+                                        <p>توجه: دانلود محتوا فقط برای استفاده شخصی مجاز است و هرگونه انتشار غیرمجاز محتوا پیگرد قانونی دارد.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- سوال ۳ -->
+                            <div class="faqs-item">
+                                <div class="faqs-question" tabindex="0">
+                                    <span class="faqs-question-text">چقدر زمان برای تکمیل یک دوره نیاز است؟</span>
+                                    <div class="faqs-toggle">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faqs-answer">
+                                    <div class="faqs-answer-content">
+                                        <p>مدت زمان تکمیل دوره بستگی به عوامل مختلفی دارد:</p>
+                                        <ul>
+                                            <li>طول دوره (تعداد ساعت ویدیو)</li>
+                                            <li>سطح دشواری محتوا</li>
+                                            <li>زمانی که برای تمرین و انجام پروژه صرف می‌کنید</li>
+                                            <li>سرعت یادگیری شما</li>
+                                        </ul>
+                                        <p>به طور معمول، یک دوره ۱۰ ساعته بین ۲ تا ۴ هفته زمان نیاز دارد تا به طور کامل تکمیل شود. البته این زمان می‌تواند بسته به برنامه‌ریزی شما کمتر یا بیشتر باشد.</p>
+                                        <p>در صفحه هر دوره، تخمینی از زمان مورد نیاز برای تکمیل دوره ارائه شده است.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- بخش تماس -->
+                    <div class="faqs-contact">
+                        <div class="faqs-contact-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h2 class="faqs-contact-title">پاسخ خود را پیدا نکردید؟</h2>
+                        <p class="faqs-contact-description">
+                            تیم پشتیبانی ما آماده پاسخگویی به سوالات شماست. از طریق روش‌های زیر با ما در ارتباط باشید.
+                        </p>
+                        <div class="faqs-contact-buttons">
+                            <a href="contact.html" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                <span>تماس با پشتیبانی</span>
+                            </a>
+                            <a href="tel:+982112345678" class="btn btn-secondary">
+                                <i class="fas fa-phone"></i>
+                                <span>تماس تلفنی</span>
+                            </a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer class="modern-footer">
+        <div class="footer-background">
+            <div class="footer-pattern"></div>
+        </div>
+        
+        <div class="footer-container">
+            <div class="footer-main">
+                <!-- ستون اول: درباره ما -->
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-graduation-cap footer-logo-icon"></i>
+                        <span>فراآموز</span>
+                    </a>
+                    <p class="footer-description">
+                        فراآموز یک پلتفرم آموزشی آنلاین است که با ارائه دوره‌های تخصصی و کاربردی، 
+                        به شما کمک می‌کند مهارت‌های جدید را بیاموزید و آینده شغلی خود را متحول کنید.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="اینستاگرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="تلگرام">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="لینکدین">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="یوتیوب">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="توییتر">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- ستون دوم: لینک‌های سریع -->
+                <div class="footer-col">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> درباره ما</a></li>
+                        <li><a href="courses.html"><i class="fas fa-book"></i> دوره‌های آموزشی</a></li>
+                        <li><a href="instructors.html"><i class="fas fa-chalkboard-teacher"></i> مدرسین</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> وبلاگ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون سوم: دسته‌بندی‌ها -->
+                <div class="footer-col">
+                    <h3>دسته‌بندی‌ها</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-code"></i> برنامه‌نویسی</a></li>
+                        <li><a href="#"><i class="fas fa-paint-brush"></i> طراحی و خلاقیت</a></li>
+                        <li><a href="#"><i class="fas fa-chart-line"></i> بازاریابی و فروش</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i> کسب و کار</a></li>
+                        <li><a href="#"><i class="fas fa-camera"></i> عکاسی و فیلمبرداری</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون چهارم: اطلاعات تماس -->
+                <div class="footer-col">
+                    <h3>اطلاعات تماس</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>تهران، خیابان ولیعصر</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@ejmal.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>شنبه تا پنجشنبه: ۸:۰۰ تا ۱۷:۰۰</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- ستون پنجم: خبرنامه -->
+                <div class="footer-col">
+                    <h3>خبرنامه</h3>
+                    <p class="newsletter-text">
+                        با عضویت در خبرنامه، از جدیدترین دوره‌ها و تخفیف‌های ویژه مطلع شوید.
+                    </p>
+                    <div class="footer-newsletter">
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="آدرس ایمیل شما" required>
+                            <button type="submit" class="btn-newsletter">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>عضویت در خبرنامه</span>
+                            </button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- بخش پایین فوتر -->
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        © ۲۰۲۳ فراآموز. تمامی حقوق محفوظ است.
+                    </div>
+                    <div class="footer-bottom-links">
+                        
+                        <a href="terms.html">قوانین و مقررات</a>
+                        <a href="faq.html">سوالات متداول</a>
+                        <a href="contact.html">نقشه سایت</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/js.js"></script>
+
+</body>
+</html>

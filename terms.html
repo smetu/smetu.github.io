@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>قوانین و مقررات - فراآموز</title>
+    <meta name="description" content="قوانین و مقررات استفاده از پلتفرم آموزشی فراآموز">
+
+    <!-- فونت‌های محلی -->
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- آیکون‌های محلی -->
+    <link rel="stylesheet" href="./assets/icons/css/all.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    
+</head>
+
+<body class="dark-theme">
+    <!-- هدر -->
+    <header class="term-1-page-header" id="page-header">
+        <div class="term-1-top-bar">
+            <div class="term-1-container">
+                <div class="term-1-top-bar-content">
+                    <a href="#" style="color: white; text-decoration: underline;">
+                        <span>در هر جا و هر زمان با منابع رایگان به یادگیری ادامه دهید.</span>
+                    </a>
+                    <span class="term-1-top-bar-badge">جدید</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="term-1-container">
+            <div class="term-1-header-wrap">
+                <!-- لوگو -->
+                <a href="index.html" class="term-1-logo" id="main-logo">
+                    <i class="fas fa-graduation-cap term-1-logo-icon"></i>
+                    <span>فراآموز</span>
+                </a>
+
+                <!-- منوی اصلی دسکتاپ -->
+                <div class="term-1-nav-container">
+                    <nav>
+                        <ul class="term-1-main-nav">
+                            <li class="term-1-nav-item">
+                                <a href="index.html" class="term-1-nav-link">خانه</a>
+                            </li>
+                            <li class="term-1-nav-item">
+                                <a href="courses.html" class="term-1-nav-link">دوره‌ها</a>
+                            </li>
+                            <li class="term-1-nav-item">
+                                <a href="instructors.html" class="term-1-nav-link">مدرسین</a>
+                            </li>
+                            <li class="term-1-nav-item">
+                                <a href="about.html" class="term-1-nav-link">درباره ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./contact.html" class="term-1-nav-link">تماس با ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./blog.html" class="term-1-nav-link">وبلاگ</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <!-- اقدامات هدر دسکتاپ -->
+                    <div class="term-1-header-actions">
+                        <!-- جستجو -->
+                        <div class="term-1-search-container">
+                            <div class="term-1-search-box">
+                                <input type="text" class="term-1-search-input" placeholder="جستجو...">
+                                <button class="term-1-search-btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- تغییر تم -->
+                        <button class="term-1-theme-toggle" id="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+
+                        <!-- دکمه‌های کاربر -->
+                        <a href="login.html" class="term-1-btn term-1-btn-secondary">ورود</a>
+                        <a href="register.html" class="term-1-btn term-1-btn-primary">عضویت</a>
+                    </div>
+                </div>
+
+                <!-- منوی موبایل -->
+                <button class="term-1-mobile-menu-toggle" id="mobile-menu-toggle">
+                    <div class="term-1-hamburger-lines">
+                        <span class="term-1-hamburger-line"></span>
+                        <span class="term-1-hamburger-line"></span>
+                        <span class="term-1-hamburger-line"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- منوی موبایل -->
+        <div class="term-1-mobile-nav-container" id="mobile-nav-container">
+            <nav>
+                <ul class="term-1-mobile-nav">
+                    <li class="term-1-mobile-nav-item">
+                        <a href="index.html" class="term-1-mobile-nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>خانه</span>
+                        </a>
+                    </li>
+                    <li class="term-1-mobile-nav-item">
+                        <a href="courses.html" class="term-1-mobile-nav-link">
+                            <i class="fas fa-book"></i>
+                            <span>دوره‌ها</span>
+                        </a>
+                    </li>
+                    <li class="term-1-mobile-nav-item">
+                        <a href="instructors.html" class="term-1-mobile-nav-link">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>مدرسین</span>
+                        </a>
+                    </li>
+                    <li class="term-1-mobile-nav-item">
+                        <a href="about.html" class="term-1-mobile-nav-link">
+                            <i class="fas fa-info-circle"></i>
+                            <span>درباره ما</span>
+                        </a>
+                    </li>
+                    <li class="term-1-mobile-nav-item">
+                        <a href="terms.html" class="term-1-mobile-nav-link active">
+                            <i class="fas fa-gavel"></i>
+                            <span>قوانین و مقررات</span>
+                        </a>
+                    </li>
+                    <li class="term-1-mobile-nav-item">
+                        <a href="contact.html" class="term-1-mobile-nav-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>تماس با ما</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- اقدامات هدر موبایل -->
+            <div class="term-1-mobile-header-actions">
+                <!-- جستجو -->
+                <div class="term-1-mobile-search-box">
+                    <input type="text" class="term-1-mobile-search-input" placeholder="جستجو...">
+                    <button class="term-1-mobile-search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- تغییر تم - مخفی شده در موبایل -->
+                <button class="term-1-theme-toggle term-1-mobile-theme-toggle" id="mobile-theme-toggle" style="display: none;">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <!-- دکمه‌های کاربر -->
+                <div class="term-1-mobile-auth-buttons">
+                    <a href="login.html" class="term-1-btn term-1-btn-secondary" style="width: 100%; margin-bottom: 0.5rem;">ورود</a>
+                    <a href="register.html" class="term-1-btn term-1-btn-primary" style="width: 100%;">عضویت</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- overlay برای منوی موبایل -->
+        <div class="term-1-mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    </header>
+
+    <!-- بخش هیرو قوانین -->
+    <section class="term-1-terms-hero">
+        <div class="term-1-terms-hero-background">
+            <div class="term-1-terms-hero-pattern"></div>
+        </div>
+        
+        <div class="term-1-container">
+            <div class="term-1-terms-hero-content">
+                <div class="term-1-terms-hero-badge">
+                    <i class="fas fa-gavel"></i>
+                    <span>قوانین و مقررات</span>
+                </div>
+                
+                <h1 class="term-1-terms-hero-title">قوانین و مقررات استفاده از فراآموز</h1>
+                
+                <p class="term-1-terms-hero-description">
+                    لطفاً قبل از استفاده از پلتفرم فراآموز، قوانین و مقررات زیر را به دقت مطالعه کنید. 
+                    استفاده از این پلتفرم به منزله پذیرش کامل این قوانین است.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش اصلی قوانین -->
+    <section class="term-1-terms-main">
+        <div class="term-1-container">
+            <div class="term-1-terms-container">
+                <!-- سایدبار فهرست قوانین -->
+                <aside class="term-1-terms-sidebar">
+                    <div class="term-1-terms-nav">
+                        <h3 class="term-1-terms-nav-title">
+                            <i class="fas fa-list"></i>
+                            <span>فهرست قوانین</span>
+                        </h3>
+                        
+                        <ul class="term-1-terms-nav-list">
+                            <li class="term-1-terms-nav-item">
+                                <a href="#acceptance" class="term-1-terms-nav-link active">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>پذیرش شرایط</span>
+                                </a>
+                            </li>
+                            <li class="term-1-terms-nav-item">
+                                <a href="#account" class="term-1-terms-nav-link">
+                                    <i class="fas fa-user"></i>
+                                    <span>حساب کاربری</span>
+                                </a>
+                            </li>
+                            <li class="term-1-terms-nav-item">
+                                <a href="#usage" class="term-1-terms-nav-link">
+                                    <i class="fas fa-laptop"></i>
+                                    <span>استفاده از خدمات</span>
+                                </a>
+                            </li>
+                            <li class="term-1-terms-nav-item">
+                                <a href="#content" class="term-1-terms-nav-link">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span>محتوا و مالکیت</span>
+                                </a>
+                            </li>
+                            <li class="term-1-terms-nav-item">
+                                <a href="#payment" class="term-1-terms-nav-link">
+                                    <i class="fas fa-credit-card"></i>
+                                    <span>پرداخت و خرید</span>
+                                </a>
+                            </li>
+                            <li class="term-1-terms-nav-item">
+                                <a href="#privacy" class="term-1-terms-nav-link">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>حریم خصوصی</span>
+                                </a>
+                            </li>
+                            <li class="term-1-terms-nav-item">
+                                <a href="#liability" class="term-1-terms-nav-link">
+                                    <i class="fas fa-balance-scale"></i>
+                                    <span>مسئولیت‌ها</span>
+                                </a>
+                            </li>
+                            <li class="term-1-terms-nav-item">
+                                <a href="#changes" class="term-1-terms-nav-link">
+                                    <i class="fas fa-sync"></i>
+                                    <span>تغییرات قوانین</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                
+                <!-- محتوای اصلی قوانین -->
+                <main class="term-1-terms-content">
+                    <!-- بخش پذیرش شرایط -->
+                    <section id="acceptance" class="term-1-terms-section">
+                        <div class="term-1-terms-section-header">
+                            <div class="term-1-terms-section-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h2 class="term-1-terms-section-title">پذیرش شرایط</h2>
+                        </div>
+                        
+                        <div class="term-1-terms-text">
+                            <p>با استفاده از پلتفرم آموزشی فراآموز، شما تأیید می‌کنید که این قوانین و مقررات را خوانده، درک کرده و با آن‌ها موافق هستید. اگر با هر بخشی از این قوانین مخالف هستید، لطفاً از استفاده از خدمات ما خودداری کنید.</p>
+                            
+                            <p>این قوانین و مقررات، توافق کامل بین شما و فراآموز را تشکیل می‌دهد و استفاده از خدمات ما را تنظیم می‌کند. این توافقنامه در تاریخ آخرین به‌روزرسانی معتبر است.</p>
+                        </div>
+                        
+                        <div class="term-1-terms-note">
+                            <div class="term-1-terms-note-title">توجه:</div>
+                            <p>این قوانین ممکن است در طول زمان به‌روزرسانی شوند. در صورت ایجاد تغییرات، از طریق ایمیل یا اعلان در پلتفرم به شما اطلاع‌رسانی خواهد شد.</p>
+                        </div>
+                    </section>
+                    
+                    <!-- بخش حساب کاربری -->
+                    <section id="account" class="term-1-terms-section">
+                        <div class="term-1-terms-section-header">
+                            <div class="term-1-terms-section-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h2 class="term-1-terms-section-title">حساب کاربری</h2>
+                        </div>
+                        
+                        <div class="term-1-terms-text">
+                            <p>برای دسترسی به برخی از ویژگی‌های پلتفرم فراآموز، ممکن است نیاز به ایجاد یک حساب کاربری داشته باشید. شما موظف هستید:</p>
+                            
+                            <ul class="term-1-terms-list">
+                                <li>اطلاعات دقیق، کامل و به‌روز را در هنگام ثبت‌نام ارائه دهید</li>
+                                <li>از حساب کاربری خود در برابر دسترسی غیرمجاز محافظت کنید</li>
+                                <li>مسئولیت تمام فعالیت‌هایی که تحت حساب کاربری شما انجام می‌شود را بپذیرید</li>
+                                <li>بلافاصله هرگونه استفاده غیرمجاز از حساب خود را به ما گزارش دهید</li>
+                            </ul>
+                            
+                            <p>فراآموز حق دارد حساب‌های کاربری که اطلاعات نادرست ارائه می‌دهند یا در نقض این شرایط استفاده می‌شوند را معلق یا حذف کند.</p>
+                        </div>
+                        
+                        <div class="term-1-terms-note">
+                            <div class="term-1-terms-note-title">هشدار امنیتی:</div>
+                            <p>هرگز رمز عبور خود را با دیگران به اشتراک نگذارید و از استفاده از رمزهای عبور ساده خودداری کنید. فراآموز هرگز از طریق ایمیل یا تلفن از شما درخواست رمز عبور نمی‌کند.</p>
+                        </div>
+                    </section>
+                    
+                    <!-- بخش استفاده از خدمات -->
+                    <section id="usage" class="term-1-terms-section">
+                        <div class="term-1-terms-section-header">
+                            <div class="term-1-terms-section-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <h2 class="term-1-terms-section-title">استفاده از خدمات</h2>
+                        </div>
+                        
+                        <div class="term-1-terms-text">
+                            <p>شما موافقت می‌کنید که از خدمات فراآموز فقط برای اهداف قانونی و مطابق با این شرایط استفاده کنید. شما موظف هستید از انجام موارد زیر خودداری کنید:</p>
+                            
+                            <ul class="term-1-terms-list">
+                                <li>استفاده از خدمات به روشی که ممکن است باعث اختلال، آسیب یا اختلال در عملکرد پلتفرم شود</li>
+                                <li>تلاش برای دسترسی غیرمجاز به هر بخشی از خدمات، سیستم‌ها یا شبکه‌های مرتبط</li>
+                                <li>ارسال یا انتقال هرگونه محتوای غیرقانونی، توهین‌آمیز، تهدیدآمیز، افتراآمیز، هرزه‌نگاری یا غیراخلاقی</li>
+                                <li>استفاده از خدمات برای ارسال هرزنامه یا ارتباطات تجاری ناخواسته</li>
+                                <li>جعل هویت یا تحریف وابستگی شما به یک شخص یا نهاد</li>
+                            </ul>
+                            
+                            <p>هرگونه استفاده غیرمجاز از خدمات ممکن است منجر به تعلیق یا خاتمه دسترسی شما به پلتفرم شود.</p>
+                        </div>
+                        
+                        <div class="term-1-terms-table-container">
+                            <table class="term-1-terms-table">
+                                <thead>
+                                    <tr>
+                                        <th>نوع استفاده</th>
+                                        <th>مجاز</th>
+                                        <th>غیرمجاز</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>اشتراک‌گذاری محتوا</td>
+                                        <td>اشتراک‌گذاری لینک دوره‌ها</td>
+                                        <td>اشتراک‌گذاری ویدئوها و منابع دانلودی</td>
+                                    </tr>
+                                    <tr>
+                                        <td>استفاده تجاری</td>
+                                        <td>استفاده شخصی برای توسعه مهارت</td>
+                                        <td>بازفروش یا توزیع مجدد محتوا</td>
+                                    </tr>
+                                    <tr>
+                                        <td>حساب‌های کاربری</td>
+                                        <td>یک حساب برای هر فرد</td>
+                                        <td>چندین حساب برای یک فرد</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    
+                    <!-- بخش محتوا و مالکیت -->
+                    <section id="content" class="term-1-terms-section">
+                        <div class="term-1-terms-section-header">
+                            <div class="term-1-terms-section-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h2 class="term-1-terms-section-title">محتوا و مالکیت</h2>
+                        </div>
+                        
+                        <div class="term-1-terms-text">
+                            <p>تمام محتوای ارائه شده در پلتفرم فراآموز، از جمله متن، گرافیک، لوگو، آیکون‌ها، تصاویر، ویدئوها، نرم‌افزار و سایر مطالب، متعلق به فراآموز یا ارائه‌دهندگان محتوا است و توسط قوانین کپی‌رایت و مالکیت فکری محافظت می‌شود.</p>
+                            
+                            <p>شما مجاز هستید:</p>
+                            <ul class="term-1-terms-list">
+                                <li>از محتوای دوره‌ها برای اهداف آموزشی شخصی استفاده کنید</li>
+                                <li>یادداشت‌های شخصی از محتوای آموزشی تهیه کنید</li>
+                            </ul>
+                            
+                            <p>شما مجاز نیستید:</p>
+                            <ul class="term-1-terms-list">
+                                <li>محتوای دوره‌ها را کپی، توزیع، تغییر یا بازتولید کنید</li>
+                                <li>محتوای دوره‌ها را برای استفاده عمومی یا تجاری به اشتراک بگذارید</li>
+                                <li>هرگونه محتوای آموزشی را بدون اجازه کتبی فراآموز فروش یا بازفروش کنید</li>
+                                <li>از محتوای آموزشی برای ایجاد محصولات یا خدمات رقابتی استفاده کنید</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="term-1-terms-note">
+                            <div class="term-1-terms-note-title">مالکیت فکری:</div>
+                            <p>هرگونه نقض حقوق مالکیت فکری ممکن است منجر به تعلیق حساب کاربری و اقدامات قانونی شود. اگر معتقدید محتوای شما به طور غیرقانونی در پلتفرم استفاده شده است، لطفاً با ما تماس بگیرید.</p>
+                        </div>
+                    </section>
+                    
+                    <!-- بخش پرداخت و خرید -->
+                    <section id="payment" class="term-1-terms-section">
+                        <div class="term-1-terms-section-header">
+                            <div class="term-1-terms-section-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <h2 class="term-1-terms-section-title">پرداخت و خرید</h2>
+                        </div>
+                        
+                        <div class="term-1-terms-text">
+                            <p>برای دسترسی به دوره‌های پولی، باید هزینه مربوطه را پرداخت کنید. با تکمیل خرید، شما موافقت می‌کنید:</p>
+                            
+                            <ul class="term-1-terms-list">
+                                <li>اطلاعات پرداخت دقیق و معتبر ارائه دهید</li>
+                                <li>هزینه کامل دوره را مطابق قیمت اعلام شده پرداخت کنید</li>
+                                <li>مسئولیت تمام تراکنش‌های انجام شده تحت حساب خود را بپذیرید</li>
+                            </ul>
+                            
+                            <p>فراآموز از روش‌های پرداخت امن استفاده می‌کند، اما مسئولیت هرگونه خطا یا تقلب در پرداخت بر عهده ارائه‌دهنده خدمات پرداخت است.</p>
+                        </div>
+                        
+                        <div class="term-1-terms-note">
+                            <div class="term-1-terms-note-title">سیاست بازپرداخت:</div>
+                            <p>به طور کلی، پس از خرید دوره، امکان بازپرداخت وجود ندارد مگر در موارد خاص که در سیاست بازپرداخت ما مشخص شده است. لطفاً قبل از خرید، از مناسب بودن دوره برای نیازهای خود اطمینان حاصل کنید.</p>
+                        </div>
+                    </section>
+                    
+                    <!-- بخش حریم خصوصی -->
+                    <section id="privacy" class="term-1-terms-section">
+                        <div class="term-1-terms-section-header">
+                            <div class="term-1-terms-section-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h2 class="term-1-terms-section-title">حریم خصوصی</h2>
+                        </div>
+                        
+                        <div class="term-1-terms-text">
+                            <p>حفاظت از حریم خصوصی شما برای ما بسیار مهم است. اطلاعات شخصی شما مطابق با <a href="privacy.html">سیاست حریم خصوصی</a> ما جمع‌آوری، استفاده و محافظت می‌شود.</p>
+                            
+                            <p>با استفاده از خدمات فراآموز، شما موافقت می‌کنید که اطلاعات شما مطابق با سیاست حریم خصوصی ما پردازش شود. ما از اطلاعات شما برای:</p>
+                            
+                            <ul class="term-1-terms-list">
+                                <li>ارائه و بهبود خدمات خود استفاده کنیم</li>
+                                <li>با شما در مورد به‌روزرسانی‌ها، ویژگی‌های جدید و پیشنهادات ویژه ارتباط برقرار کنیم</li>
+                                <li>از امنیت و یکپارچگی پلتفرم محافظت کنیم</li>
+                                <li>از قوانین و مقررات applicable پیروی کنیم</li>
+                            </ul>
+                            
+                            <p>ما اطلاعات شما را بدون رضایت شما به اشخاص ثالث نمی‌فروشیم، مگر آنچه در سیاست حریم خصوصی ما مشخص شده است.</p>
+                        </div>
+                    </section>
+                    
+                    <!-- بخش مسئولیت‌ها -->
+                    <section id="liability" class="term-1-terms-section">
+                        <div class="term-1-terms-section-header">
+                            <div class="term-1-terms-section-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h2 class="term-1-terms-section-title">مسئولیت‌ها</h2>
+                        </div>
+                        
+                        <div class="term-1-terms-text">
+                            <p>خدمات فراآموز بر اساس "آنچه موجود است" و "همانطور که در دسترس است" ارائه می‌شود. ما هیچ گونه تضمینی، اعم از صریح یا ضمنی، در مورد کامل بودن، دقت، قابلیت اطمینان، مناسب بودن یا در دسترس بودن خدمات ارائه نمی‌دهیم.</p>
+                            
+                            <p>تا حد مجاز توسط قانون applicable، فراآموز مسئولیتی در قبال:</p>
+                            
+                            <ul class="term-1-terms-list">
+                                <li>هرگونه خسارت مستقیم، غیرمستقیم، اتفاقی، ویژه یا پیامد ناشی از استفاده یا عدم توانایی در استفاده از خدمات</li>
+                                <li>هرگونه خطا، اشتباه یا عدم دقت در محتوا</li>
+                                <li>قطع شدن یا توقف انتقال به یا از خدمات ما</li>
+                                <li>ویروس‌ها یا سایر کدهای مضر که ممکن است از طریق خدمات به تجهیزات کامپیوتری شما منتقل شود</li>
+                            </ul>
+                            
+                            <p>شما موافقت می‌کنید که از فراآموز، شرکت‌های وابسته، مدیران، کارکنان و نمایندگان آن در برابر هرگونه ادعا، مسئولیت، خسارت، ضرر و هزینه، از جمله هزینه‌های معقول وکالت، که ناشی از یا مربوط به نقض شما از این شرایط یا استفاده شما از خدمات باشد، محافظت و جبران خسارت کنید.</p>
+                        </div>
+                    </section>
+                    
+                    <!-- بخش تغییرات قوانین -->
+                    <section id="changes" class="term-1-terms-section">
+                        <div class="term-1-terms-section-header">
+                            <div class="term-1-terms-section-icon">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                            <h2 class="term-1-terms-section-title">تغییرات قوانین</h2>
+                        </div>
+                        
+                        <div class="term-1-terms-text">
+                            <p>فراآموز حق دارد این شرایط را در هر زمان و به صلاحدید خود تغییر دهد. ما در صورت ایجاد تغییرات قابل توجه، از طریق ایمیل یا اعلان در پلتفرم به شما اطلاع خواهیم داد.</p>
+                            
+                            <p>تغییرات در این شرایط ۳۰ روز پس از انتشار در پلتفرم مؤثر خواهند بود. ادامه استفاده شما از خدمات پس از این تاریخ به منزله پذیرش تغییرات است.</p>
+                            
+                            <p>اگر با هر بخشی از شرایط به‌روزرسانی شده مخالف هستید، باید استفاده از خدمات را متوقف کنید. آخرین تاریخ به‌روزرسانی این شرایط در پایین صفحه درج شده است.</p>
+                        </div>
+                        
+                        <div class="term-1-terms-note">
+                            <div class="term-1-terms-note-title">تاریخ به‌روزرسانی:</div>
+                            <p>این قوانین و مقررات آخرین بار در ۱ فروردین ۱۴۰۲ به‌روزرسانی شده است.</p>
+                        </div>
+                    </section>
+                    
+                    <!-- بخش پایانی -->
+                    <div class="term-1-terms-footer">
+                        <div class="term-1-terms-footer-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h2 class="term-1-terms-footer-title">سوالی دارید؟</h2>
+                        <p class="term-1-terms-footer-description">
+                            اگر در مورد قوانین و مقررات سوالی دارید یا نیاز به توضیح بیشتری دارید، 
+                            تیم پشتیبانی ما آماده پاسخگویی به شماست.
+                        </p>
+                        <div class="faq-contact-buttons">
+                            <a href="contact.html" class="term-1-btn term-1-btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                <span>تماس با پشتیبانی</span>
+                            </a>
+                            <a href="faq.html" class="term-1-btn term-1-btn-secondary">
+                                <i class="fas fa-question-circle"></i>
+                                <span>سوالات متداول</span>
+                            </a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer class="term-1-modern-footer">
+        <div class="term-1-footer-background">
+            <div class="term-1-footer-pattern"></div>
+        </div>
+        
+        <div class="term-1-footer-container">
+            <div class="term-1-footer-main">
+                <!-- ستون اول: درباره ما -->
+                <div class="term-1-footer-col">
+                    <a href="index.html" class="term-1-footer-logo">
+                        <i class="fas fa-graduation-cap term-1-footer-logo-icon"></i>
+                        <span>فراآموز</span>
+                    </a>
+                    <p class="term-1-footer-description">
+                        فراآموز یک پلتفرم آموزشی آنلاین است که با ارائه دوره‌های تخصصی و کاربردی، 
+                        به شما کمک می‌کند مهارت‌های جدید را بیاموزید و آینده شغلی خود را متحول کنید.
+                    </p>
+                    <div class="term-1-footer-social">
+                        <a href="#" class="term-1-social-link" aria-label="اینستاگرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="term-1-social-link" aria-label="تلگرام">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="term-1-social-link" aria-label="لینکدین">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="term-1-social-link" aria-label="یوتیوب">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="term-1-social-link" aria-label="توییتر">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- ستون دوم: لینک‌های سریع -->
+                <div class="term-1-footer-col">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="term-1-footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> درباره ما</a></li>
+                        <li><a href="courses.html"><i class="fas fa-book"></i> دوره‌های آموزشی</a></li>
+                        <li><a href="instructors.html"><i class="fas fa-chalkboard-teacher"></i> مدرسین</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> وبلاگ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون سوم: دسته‌بندی‌ها -->
+                <div class="term-1-footer-col">
+                    <h3>دسته‌بندی‌ها</h3>
+                    <ul class="term-1-footer-links">
+                        <li><a href="#"><i class="fas fa-code"></i> برنامه‌نویسی</a></li>
+                        <li><a href="#"><i class="fas fa-paint-brush"></i> طراحی و خلاقیت</a></li>
+                        <li><a href="#"><i class="fas fa-chart-line"></i> بازاریابی و فروش</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i> کسب و کار</a></li>
+                        <li><a href="#"><i class="fas fa-camera"></i> عکاسی و فیلمبرداری</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون چهارم: اطلاعات تماس -->
+                <div class="term-1-footer-col">
+                    <h3>اطلاعات تماس</h3>
+                    <ul class="term-1-footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>تهران، خیابان ولیعصر</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@ejmal.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>شنبه تا پنجشنبه: ۸:۰۰ تا ۱۷:۰۰</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- ستون پنجم: خبرنامه -->
+                <div class="term-1-footer-col">
+                    <h3>خبرنامه</h3>
+                    <p class="term-1-newsletter-text">
+                        با عضویت در خبرنامه، از جدیدترین دوره‌ها و تخفیف‌های ویژه مطلع شوید.
+                    </p>
+                    <div class="term-1-footer-newsletter">
+                        <form class="term-1-newsletter-form">
+                            <input type="email" class="term-1-newsletter-input" placeholder="آدرس ایمیل شما" required>
+                            <button type="submit" class="term-1-btn-newsletter">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>عضویت در خبرنامه</span>
+                            </button>
+                        </form>
+                        <div class="term-1-success-message" id="newsletter-success">
+                            <i class="fas fa-check-circle"></i> ایمیل شما با موفقیت ثبت شد!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- بخش پایین فوتر -->
+        <div class="term-1-footer-bottom">
+            <div class="term-1-footer-container">
+                <div class="term-1-footer-bottom-content">
+                    <div class="term-1-footer-copyright">
+                        © ۲۰۲۳ فراآموز. تمامی حقوق محفوظ است.
+                    </div>
+                    <div class="term-1-footer-bottom-links">
+                        
+                        <a href="terms.html">قوانین و مقررات</a>
+                        <a href="faq.html">سوالات متداول</a>
+                        <a href="contact.html">نقشه سایت</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+ 
+    <script src="./assets/js/dashboard.js"></script>
+
+</body>
+</html>

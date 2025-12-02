@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>مدرسین - فراآموز | سیستم آموزشی حرفه‌ای</title>
+    <meta name="description" content="آشنایی با مدرسین متخصص و با تجربه پلتفرم فراآموز">
+    
+    <!-- فونت‌های محلی -->
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- آیکون‌های محلی -->
+    <link rel="stylesheet" href="./assets/icons/css/all.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    
+</head>
+
+<body class="instru-dark-theme">
+    <!-- هدر -->
+    <header class="instru-page-header" id="page-header">
+        <div class="instru-top-bar">
+            <div class="instru-container">
+                <div class="instru-top-bar-content">
+                    <a href="#" style="color: white; text-decoration: underline;">
+                    <span>در هر جا و هر زمان با منابع رایگان به یادگیری ادامه دهید.</span>
+                </a>
+                    <span class="instru-top-bar-badge">جدید</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="instru-container">
+            <div class="instru-header-wrap">
+                <!-- لوگو -->
+                <a href="index.html" class="instru-logo">
+                    <i class="fas fa-graduation-cap instru-logo-icon"></i>
+                    <span>فراآموز</span>
+                </a>
+
+                <!-- منوی اصلی -->
+                <div class="instru-nav-container" id="nav-container">
+                    <nav>
+                        <ul class="instru-main-nav">
+                            <li class="instru-nav-item">
+                                <a href="index.html" class="instru-nav-link">خانه</a>
+                            </li>
+                            <li class="instru-nav-item">
+                                <a href="courses.html" class="instru-nav-link">دوره‌ها</a>
+                            </li>
+                            <li class="instru-nav-item">
+                                <a href="instructors.html" class="instru-nav-link active">مدرسین</a>
+                            </li>
+                            <li class="instru-nav-item">
+                                <a href="about.html" class="instru-nav-link">درباره ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./contact.html" class="instru-nav-link">تماس با ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./blog.html" class="instru-nav-link">وبلاگ</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <!-- اقدامات هدر - فقط در دسکتاپ نمایش داده می‌شود -->
+                    <div class="instru-header-actions">
+                        <!-- جستجو -->
+                        <div class="instru-search-container">
+                            <div class="instru-search-box">
+                                <input type="text" class="instru-search-input" placeholder="جستجو..." aria-label="جستجو">
+                                <button class="instru-search-btn" aria-label="جستجو">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- تغییر تم -->
+                        <button class="instru-theme-toggle" id="theme-toggle" aria-label="تغییر تم">
+                            <i class="fas fa-moon"></i>
+                        </button>
+
+                        <!-- دکمه‌های کاربر -->
+                        <a href="login.html" class="instru-btn instru-btn-secondary">ورود</a>
+                        <a href="register.html" class="instru-btn instru-btn-primary">عضویت</a>
+                    </div>
+                </div>
+
+                <!-- منوی موبایل - فقط در موبایل نمایش داده می‌شود -->
+                <button class="instru-mobile-menu-toggle" id="mobile-menu-toggle" aria-label="منو" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- overlay برای منوی موبایل -->
+        <div class="instru-mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    </header>
+
+
+
+    <!-- بخش جدید: چرا مدرسین فراآموز؟ -->
+    <section class="instru-why-instructors">
+        <div class="instru-why-instructors-background">
+            <div class="instru-why-instructors-pattern"></div>
+        </div>
+        
+        <div class="instru-container">
+            <div class="instru-why-instructors-content">
+                <div class="instru-container">
+                    <div class="instru-section-header">
+                        <h1 class="instru-section-title">فرآیند تایید مدرسین در فراآموز</h1>
+                        <p class="instru-section-description">
+                            ما برای حفظ کیفیت آموزشی، فرآیند دقیق و چند مرحله‌ای برای انتخاب و تایید مدرسین داریم
+                        </p>
+                    </div>                </div>
+        
+                <div class="instru-why-instructors-grid">
+                    <div class="instru-why-instructor-card">
+                        <div class="instru-why-instructor-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4 class="instru-why-instructor-title">تخصص و تجربه عملی</h4>
+                        <p class="instru-why-instructor-description">
+                            تمامی مدرسین ما حداقل ۵ سال سابقه کاری در حوزه تخصصی خود دارند و در شرکت‌های معتبر داخلی و بین‌المللی فعالیت کرده‌اند.
+                        </p>
+                    </div>
+                    
+                    <div class="instru-why-instructor-card">
+                        <div class="instru-why-instructor-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4 class="instru-why-instructor-title">مهارت‌های تدریس حرفه‌ای</h4>
+                        <p class="instru-why-instructor-description">
+                            مدرسین ما دوره‌های آموزشی تدریس را گذرانده‌اند و مهارت انتقال مفاهیم پیچیده به زبان ساده را به خوبی فراگرفته‌اند.
+                        </p>
+                    </div>
+                    
+                    <div class="instru-why-instructor-card">
+                        <div class="instru-why-instructor-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h4 class="instru-why-instructor-title">پشتیبانی و همراهی مستمر</h4>
+                        <p class="instru-why-instructor-description">
+                            مدرسین ما به صورت فعال در فروم‌های آموزشی حاضر می‌شوند و به سوالات دانشجویان پاسخ می‌دهند.
+                        </p>
+                    </div>
+                    
+                    <div class="instru-why-instructor-card">
+                        <div class="instru-why-instructor-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4 class="instru-why-instructor-title">آپدیت مداوم محتوا</h4>
+                        <p class="instru-why-instructor-description">
+                            محتوای آموزشی به صورت منظم به روزرسانی می‌شود تا با آخرین تغییرات تکنولوژی و بازار کار هماهنگ باشد.
+                        </p>
+                    </div>
+                    
+                    <div class="instru-why-instructor-card">
+                        <div class="instru-why-instructor-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h4 class="instru-why-instructor-title">پروژه‌های واقعی و کاربردی</h4>
+                        <p class="instru-why-instructor-description">
+                            تمامی دوره‌ها شامل پروژه‌های عملی هستند که از سناریوهای واقعی صنعت الهام گرفته شده‌اند.
+                        </p>
+                    </div>
+                    
+                    <div class="instru-why-instructor-card">
+                        <div class="instru-why-instructor-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4 class="instru-why-instructor-title">مشاوره شغلی و راهنمایی</h4>
+                        <p class="instru-why-instructor-description">
+                            مدرسین ما علاوه بر آموزش، راهنمایی‌های لازم برای ورود به بازار کار و پیشرفت شغلی را ارائه می‌دهند.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش جدید: فرآیند تایید مدرسین -->
+    <section class="instru-instructor-process">
+        <div class="instru-instructor-process-background">
+            <div class="instru-instructor-process-pattern"></div>
+        </div>
+        
+        <div class="instru-container">
+            <div class="instru-instructor-process-content">
+                <div class="instru-section-header">
+                    <h2 class="instru-section-subtitle">فرآیند گزینش</h2>
+                    <h3 class="instru-section-title">فرآیند تایید مدرسین در فراآموز</h3>
+                    <p class="instru-section-description">
+                        ما برای حفظ کیفیت آموزشی، فرآیند دقیق و چند مرحله‌ای برای انتخاب و تایید مدرسین داریم
+                    </p>
+                </div>
+                
+                <div class="instru-process-steps">
+                    <div class="instru-process-step">
+                        <div class="instru-step-icon">
+                            <div class="instru-step-number">۱</div>
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h4 class="instru-step-title">ارسال درخواست</h4>
+                        <p class="instru-step-description">
+                            متقاضیان فرم درخواست تدریس را تکمیل و مدارک خود را ارسال می‌کنند.
+                        </p>
+                    </div>
+                    
+                    <div class="instru-process-step">
+                        <div class="instru-step-icon">
+                            <div class="instru-step-number">۲</div>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4 class="instru-step-title">بررسی مدارک</h4>
+                        <p class="instru-step-description">
+                            تیم متخصصان ما مدارک و سوابق متقاضیان را به دقت بررسی می‌کنند.
+                        </p>
+                    </div>
+                    
+                    <div class="instru-process-step">
+                        <div class="instru-step-icon">
+                            <div class="instru-step-number">۳</div>
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h4 class="instru-step-title">مصاحبه تخصصی</h4>
+                        <p class="instru-step-description">
+                            متقاضیان منتخب در مصاحبه‌ای تخصصی با کارشناسان حوزه مربوطه شرکت می‌کنند.
+                        </p>
+                    </div>
+                    
+                    <div class="instru-process-step">
+                        <div class="instru-step-icon">
+                            <div class="instru-step-number">۴</div>
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4 class="instru-step-title">تدریس آزمایشی</h4>
+                        <p class="instru-step-description">
+                            هر متقاضی یک جلسه تدریس آزمایشی ضبط می‌کند تا مهارت‌های تدریس او ارزیابی شود.
+                        </p>
+                    </div>
+                    
+                    <div class="instru-process-step">
+                        <div class="instru-step-icon">
+                            <div class="instru-step-number">۵</div>
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4 class="instru-step-title">تایید نهایی</h4>
+                        <p class="instru-step-description">
+                            پس از تایید نهایی، مدرس به تیم فراآموز ملحق شده و دوره‌های خود را تولید می‌کند.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش مدرسین -->
+    <section class="instru-instructors-section">
+        <div class="instru-container">
+            
+            <div class="instru-instructors-grid">
+                <!-- مدرس ۱ -->
+                <div class="instru-instructor-card">
+                    <div class="instru-instructor-header">
+                        <div class="instru-instructor-avatar">
+                            <img src="./assets/images/me2.png" alt="علی رضایی">
+                        </div>
+                        <h3 class="instru-instructor-name">علی رضایی</h3>
+                        <div class="instru-instructor-title">متخصص توسعه Front-end</div>
+                        <div class="instru-instructor-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>۴.۷</span>
+                        </div>
+                        <div class="instru-instructor-badges">
+                            <span class="instru-instructor-badge">React.js</span>
+                            <span class="instru-instructor-badge">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="instru-instructor-content">
+                        <div class="instru-instructor-stats">
+                            <div class="instru-instructor-stat">
+                                <div class="instru-stat-value">۱۲</div>
+                                <div class="instru-stat-label">دوره</div>
+                            </div>
+                            <div class="instru-instructor-stat">
+                                <div class="instru-stat-value">۳,۴۵۶</div>
+                                <div class="instru-stat-label">دانشجو</div>
+                            </div>
+                            <div class="instru-instructor-stat">
+                                <div class="instru-stat-value">۴.۲K</div>
+                                <div class="instru-stat-label">نظرات</div>
+                            </div>
+                        </div>
+                        
+                        <div class="instru-instructor-skills">
+                            <h4 class="instru-skills-title">مهارت‌ها</h4>
+                            <div class="instru-skills-list">
+                                <span class="instru-skill-tag">React.js</span>
+                                <span class="instru-skill-tag">Vue.js</span>
+                                <span class="instru-skill-tag">JavaScript</span>
+                                <span class="instru-skill-tag">TypeScript</span>
+                            </div>
+                        </div>
+                        
+                        <p class="instru-instructor-description">
+                            علی با بیش از ۸ سال تجربه در توسعه Front-end، تخصص عمیقی در فریمورک‌های مدرن جاوااسکریپت دارد. 
+                            او علاقه زیادی به آموزش و به اشتراک گذاری دانش خود با دیگران دارد.
+                        </p>
+                        
+                        <div class="instru-instructor-actions">
+                            <a href="#" class="instru-btn-instructor instru-btn-profile" data-instructor="1">
+                                <i class="fas fa-user"></i>
+                                <span>مشاهده پروفایل</span>
+                            </a>
+                            <a href="#" class="instru-btn-instructor instru-btn-courses">
+                                <i class="fas fa-play-circle"></i>
+                                <span>دوره‌ها</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- مدرس ۲ -->
+                <div class="instru-instructor-card">
+                    <div class="instru-instructor-header">
+                        <div class="instru-instructor-avatar">
+                            <img src="./assets/images/me.png" alt="مریم کریمی">
+                        </div>
+                        <h3 class="instru-instructor-name">مریم کریمی</h3>
+                        <div class="instru-instructor-title">متخصص هوش مصنوعی و داده‌کاوی</div>
+                        <div class="instru-instructor-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>۵.۰</span>
+                        </div>
+                        <div class="instru-instructor-badges">
+                            <span class="instru-instructor-badge">Python</span>
+                            <span class="instru-instructor-badge">Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="instru-instructor-content">
+                        <div class="instru-instructor-stats">
+                            <div class="instru-instructor-stat">
+                                <div class="instru-stat-value">۸</div>
+                                <div class="instru-stat-label">دوره</div>
+                            </div>
+                            <div class="instru-instructor-stat">
+                                <div class="instru-stat-value">۲,۸۹۱</div>
+                                <div class="instru-stat-label">دانشجو</div>
+                            </div>
+                            <div class="instru-instructor-stat">
+                                <div class="instru-stat-value">۳.۱K</div>
+                                <div class="instru-stat-label">نظرات</div>
+                            </div>
+                        </div>
+                        
+                        <div class="instru-instructor-skills">
+                            <h4 class="instru-skills-title">مهارت‌ها</h4>
+                            <div class="instru-skills-list">
+                                <span class="instru-skill-tag">Python</span>
+                                <span class="instru-skill-tag">TensorFlow</span>
+                                <span class="instru-skill-tag">PyTorch</span>
+                            </div>
+                        </div>
+                        
+                        <p class="instru-instructor-description">
+                            مریم دکترای هوش مصنوعی از دانشگاه شریف دارد و بیش از ۶ سال در صنعت فناوری فعالیت می‌کند. 
+                            او علاقه زیادی به آموزش مفاهیم پیچیده هوش مصنوعی به زبان ساده دارد.
+                        </p>
+                        
+                        <div class="instru-instructor-actions">
+                            <a href="#" class="instru-btn-instructor instru-btn-profile" data-instructor="2">
+                                <i class="fas fa-user"></i>
+                                <span>مشاهده پروفایل</span>
+                            </a>
+                            <a href="#" class="instru-btn-instructor instru-btn-courses">
+                                <i class="fas fa-play-circle"></i>
+                                <span>دوره‌ها</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- مدرس ۳ -->
+                <div class="instru-instructor-card">
+                    <div class="instru-instructor-header">
+                        <div class="instru-instructor-avatar">
+                            <img src="./assets/images/me3.jpg" alt="رضا نوروزی">
+                        </div>
+                        <h3 class="instru-instructor-name">رضا نوروزی</h3>
+                        <div class="instru-instructor-title">طراح تجربه و رابط کاربری</div>
+                        <div class="instru-instructor-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>۴.۹</span>
+                        </div>
+                        <div class="instru-instructor-badges">
+                            <span class="instru-instructor-badge">UI/UX</span>
+                            <span class="instru-instructor-badge">Figma</span>
+                        </div>
+                    </div>
+                    <div class="instru-instructor-content">
+                        <div class="instru-instructor-stats">
+                            <div class="instru-instructor-stat">
+                                <div class="instru-stat-value">۱۰</div>
+                                <div class="instru-stat-label">دوره</div>
+                            </div>
+                            <div class="instru-instructor-stat">
+                                <div class="instru-stat-value">۴,۱۲۳</div>
+                                <div class="instru-stat-label">دانشجو</div>
+                            </div>
+                            <div class="instru-instructor-stat">
+                                <div class="instru-stat-value">۳.۸K</div>
+                                <div class="instru-stat-label">نظرات</div>
+                            </div>
+                        </div>
+                        
+                        <div class="instru-instructor-skills">
+                            <h4 class="instru-skills-title">مهارت‌ها</h4>
+                            <div class="instru-skills-list">
+                                <span class="instru-skill-tag">UI Design</span>
+                                <span class="instru-skill-tag">UX Research</span>
+                                <span class="instru-skill-tag">Figma</span>
+                            </div>
+                        </div>
+                        
+                        <p class="instru-instructor-description">
+                            رضا با بیش از ۷ سال تجربه در طراحی محصولات دیجیتال، تخصص ویژه‌ای در طراحی رابط کاربری و تجربه کاربری دارد. 
+                            او برنده چندین جایزه بین‌المللی در زمینه طراحی شده است.
+                        </p>
+                        
+                        <div class="instru-instructor-actions">
+                            <a href="#" class="instru-btn-instructor instru-btn-profile" data-instructor="3">
+                                <i class="fas fa-user"></i>
+                                <span>مشاهده پروفایل</span>
+                            </a>
+                            <a href="#" class="instru-btn-instructor instru-btn-courses">
+                                <i class="fas fa-play-circle"></i>
+                                <span>دوره‌ها</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش CTA -->
+    <section class="instru-instructors-cta">
+        <div class="instru-instructors-cta-background">
+            <div class="instru-instructors-cta-pattern"></div>
+        </div>
+        
+        <div class="instru-container">
+            <div class="instru-instructors-cta-content">
+                <h2 class="instru-instructors-cta-title">آماده یادگیری از بهترین‌ها هستید؟</h2>
+                <p class="instru-instructors-cta-description">
+                    همین حالا به جمع هزاران دانشجوی فراآموز بپیوندید و با بهترین مدرسین ایران، مهارت‌های جدید بیاموزید و آینده شغلی خود را متحول کنید.
+                </p>
+                <a href="courses.html" class="instru-btn instru-btn-light">
+                    <i class="fas fa-play-circle"></i>
+                    مشاهده همه دوره‌ها
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer class="instru-modern-footer">
+        <div class="instru-footer-background">
+            <div class="instru-footer-pattern"></div>
+        </div>
+        
+        <div class="instru-footer-container">
+            <div class="instru-footer-main">
+                <!-- ستون اول: درباره ما -->
+                <div class="instru-footer-col">
+                    <a href="index.html" class="instru-footer-logo">
+                        <i class="fas fa-graduation-cap instru-footer-logo-icon"></i>
+                        <span>فراآموز</span>
+                    </a>
+                    <p class="instru-footer-description">
+                        فراآموز یک پلتفرم آموزشی آنلاین است که با ارائه دوره‌های تخصصی و کاربردی، 
+                        به شما کمک می‌کند مهارت‌های جدید را بیاموزید و آینده شغلی خود را متحول کنید.
+                    </p>
+                    <div class="instru-footer-social">
+                        <a href="#" class="instru-social-link" aria-label="اینستاگرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="instru-social-link" aria-label="تلگرام">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="instru-social-link" aria-label="لینکدین">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="instru-social-link" aria-label="یوتیوب">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="instru-social-link" aria-label="توییتر">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- ستون دوم: لینک‌های سریع -->
+                <div class="instru-footer-col">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="instru-footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> درباره ما</a></li>
+                        <li><a href="courses.html"><i class="fas fa-book"></i> دوره‌های آموزشی</a></li>
+                        <li><a href="instructors.html"><i class="fas fa-chalkboard-teacher"></i> مدرسین</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> وبلاگ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون سوم: دسته‌بندی‌ها -->
+                <div class="instru-footer-col">
+                    <h3>دسته‌بندی‌ها</h3>
+                    <ul class="instru-footer-links">
+                        <li><a href="#"><i class="fas fa-code"></i> برنامه‌نویسی</a></li>
+                        <li><a href="#"><i class="fas fa-paint-brush"></i> طراحی و خلاقیت</a></li>
+                        <li><a href="#"><i class="fas fa-chart-line"></i> بازاریابی و فروش</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i> کسب و کار</a></li>
+                        <li><a href="#"><i class="fas fa-camera"></i> عکاسی و فیلمبرداری</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون چهارم: اطلاعات تماس -->
+                <div class="instru-footer-col">
+                    <h3>اطلاعات تماس</h3>
+                    <ul class="instru-footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>تهران، خیابان ولیعصر</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@ejmal.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>شنبه تا پنجشنبه: ۸:۰۰ تا ۱۷:۰۰</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- ستون پنجم: خبرنامه -->
+                <div class="instru-footer-col">
+                    <h3>خبرنامه</h3>
+                    <p class="instru-newsletter-text">
+                        با عضویت در خبرنامه، از جدیدترین دوره‌ها و تخفیف‌های ویژه مطلع شوید.
+                    </p>
+                    <div class="instru-footer-newsletter">
+                        <form class="instru-newsletter-form">
+                            <input type="email" class="instru-newsletter-input" placeholder="آدرس ایمیل شما" required aria-label="آدرس ایمیل برای عضویت در خبرنامه">
+                            <button type="submit" class="instru-btn-newsletter">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>عضویت در خبرنامه</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- بخش پایین فوتر -->
+        <div class="instru-footer-bottom">
+            <div class="instru-footer-container">
+                <div class="instru-footer-bottom-content">
+                    <div class="instru-footer-copyright">
+                        © ۲۰۲۳ فراآموز. تمامی حقوق محفوظ است.
+                    </div>
+                    <div class="instru-footer-bottom-links">
+                        
+                        <a href="terms.html">قوانین و مقررات</a>
+                        <a href="faq.html">سوالات متداول</a>
+                        <a href="contact.html">نقشه سایت</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- پاپ آپ مدرس -->
+    <div class="instru-instructor-popup" id="instructor-popup">
+        <div class="instru-popup-content">
+            <div class="instru-popup-close" id="popup-close" aria-label="بستن">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="instru-popup-header">
+                <div class="instru-popup-avatar">
+                    <img src="./assets/images/me2.png" alt="علی رضایی" id="popup-avatar">
+                </div>
+                <div class="instru-popup-info">
+                    <h2 class="instru-popup-name" id="popup-name">علی رضایی</h2>
+                    <div class="instru-popup-title" id="popup-title">متخصص توسعه Front-end</div>
+                    <div class="instru-popup-rating" id="popup-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>۴.۷</span>
+                    </div>
+                    <div class="instru-popup-stats">
+                        <div class="instru-popup-stat">
+                            <div class="instru-popup-stat-value" id="popup-courses">۱۲</div>
+                            <div class="instru-popup-stat-label">دوره</div>
+                        </div>
+                        <div class="instru-popup-stat">
+                            <div class="instru-popup-stat-value" id="popup-students">۳,۴۵۶</div>
+                            <div class="instru-popup-stat-label">دانشجو</div>
+                        </div>
+                        <div class="instru-popup-stat">
+                            <div class="instru-popup-stat-value" id="popup-reviews">۴.۲K</div>
+                            <div class="instru-popup-stat-label">نظرات</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="instru-popup-body">
+                <div class="instru-popup-section">
+                    <h3 class="instru-popup-section-title">درباره مدرس</h3>
+                    <p class="instru-popup-bio" id="popup-bio">
+                        علی با بیش از ۸ سال تجربه در توسعه Front-end، تخصص عمیقی در فریمورک‌های مدرن جاوااسکریپت دارد. 
+                        او علاقه زیادی به آموزش و به اشتراک گذاری دانش خود با دیگران دارد. علی در شرکت‌های معتبری مانند دیجی‌کالا و اسنپ 
+                        تجربه کاری داشته و اکنون به عنوان مدرس و مشاور فنی فعالیت می‌کند.
+                    </p>
+                </div>
+                
+                <div class="instru-popup-section">
+                    <h3 class="instru-popup-section-title">مهارت‌ها</h3>
+                    <div class="instru-skills-list" id="popup-skills">
+                        <span class="instru-skill-tag">React.js</span>
+                        <span class="instru-skill-tag">Vue.js</span>
+                        <span class="instru-skill-tag">JavaScript</span>
+                        <span class="instru-skill-tag">TypeScript</span>
+                        <span class="instru-skill-tag">HTML/CSS</span>
+                        <span class="instru-skill-tag">SASS</span>
+                    </div>
+                </div>
+                
+                <div class="instru-popup-section">
+                    <h3 class="instru-popup-section-title">دوره‌های منتخب</h3>
+                    <div class="instru-popup-courses" id="popup-courses-list">
+                        <div class="instru-popup-course">
+                            <div class="instru-popup-course-title">توسعه وب با React.js - کامل و پروژه‌محور</div>
+                            <div class="instru-popup-course-meta">
+                                <span>۲۴ ساعت</span>
+                                <span>۱۲۸ درس</span>
+                            </div>
+                        </div>
+                        <div class="instru-popup-course">
+                            <div class="instru-popup-course-title">JavaScript مدرن - از صفر تا حرفه‌ای</div>
+                            <div class="instru-popup-course-meta">
+                                <span>۱۸ ساعت</span>
+                                <span>۹۶ درس</span>
+                            </div>
+                        </div>
+                        <div class="instru-popup-course">
+                            <div class="instru-popup-course-title">TypeScript برای توسعه‌دهندگان React</div>
+                            <div class="instru-popup-course-meta">
+                                <span>۱۲ ساعت</span>
+                                <span>۶۴ درس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>دوره‌های آموزشی - فراآموز</title>
+    <meta name="description" content="دسترسی به 5500+ دوره آموزشی از 480 مدرس و موسسه">
+    
+    <!-- فونت‌های محلی -->
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- آیکون‌های محلی -->
+    <link rel="stylesheet" href="./assets/icons/css/all.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+
+<body class="dark-theme">
+    <!-- هدر بهبود یافته -->
+    <header class="page-header" id="page-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <a href="#" style="color: white; text-decoration: underline;">
+                        <span>در هر جا و هر زمان با منابع رایگان به یادگیری ادامه دهید.</span>
+                    </a>
+                    <span class="top-bar-badge">جدید</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header-wrap">
+                <!-- لوگو -->
+                <a href="index.html" class="logo" id="main-logo">
+                    <i class="fas fa-graduation-cap logo-icon"></i>
+                    <span>فراآموز</span>
+                </a>
+
+                <!-- منوی اصلی دسکتاپ -->
+                <div class="nav-container">
+                    <nav>
+                        <ul class="main-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">خانه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="courses.html" class="nav-link ">دوره‌</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="instructors.html" class="nav-link">مدرسین</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">تماس با ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./about.html" class="nav-link">درباره ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./blog.html" class="nav-link">وبلاگ</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <!-- اقدامات هدر دسکتاپ -->
+                    <div class="header-actions">
+                        <!-- جستجو -->
+                        <div class="search-container">
+                            <div class="search-box">
+                                <input type="text" class="search-input" placeholder="جستجو...">
+                                <button class="search-btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- تغییر تم -->
+                        <button class="theme-toggle" id="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+
+                        <!-- دکمه‌های کاربر -->
+                        <a href="login.html" class="btn btn-secondary">ورود</a>
+                        <a href="register.html" class="btn btn-primary">عضویت</a>
+                    </div>
+                </div>
+
+                <!-- منوی موبایل -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <div class="hamburger-lines">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- منوی موبایل -->
+        <div class="mobile-nav-container" id="mobile-nav-container">
+            <nav>
+                <ul class="mobile-nav">
+                    <li class="mobile-nav-item">
+                        <a href="index.html" class="mobile-nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>خانه</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="courses.html" class="mobile-nav-link active">
+                            <i class="fas fa-book"></i>
+                            <span>دوره‌ها</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="instructors.html" class="mobile-nav-link">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>مدرسین</span>
+                        </a>
+                    </li>
+    
+                    <li class="mobile-nav-item">
+                        <a href="contact.html" class="mobile-nav-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>تماس با ما</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- اقدامات هدر موبایل -->
+            <div class="mobile-header-actions">
+                <!-- جستجو -->
+                <div class="mobile-search-box">
+                    <input type="text" class="mobile-search-input" placeholder="جستجو...">
+                    <button class="mobile-search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- تغییر تم -->
+                <button class="theme-toggle mobile-theme-toggle" id="mobile-theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <span>تغییر تم</span>
+                </button>
+
+                <!-- دکمه‌های کاربر -->
+                <div class="mobile-auth-buttons">
+                    <a href="login.html" class="btn btn-secondary" style="width: 100%; margin-bottom: 0.5rem;">ورود</a>
+                    <a href="register.html" class="btn btn-primary" style="width: 100%;">عضویت</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- overlay برای منوی موبایل -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    </header>
+
+    <!-- بخش هیرو صفحه دوره‌ها -->
+    <section class="cours-courses-hero">
+        <div class="cours-courses-hero-background">
+            <div class="cours-courses-hero-pattern"></div>
+        </div>
+        
+        <div class="container">
+            <div class="cours-courses-hero-content">
+                <div class="cours-courses-hero-text">
+
+                    
+                    <h1 class="cours-courses-hero-title">دوره‌های آموزشی <mark>حرفه‌ای</mark> برای ارتقای مهارت‌های شما</h1>
+                    
+                    <p class="cours-courses-hero-description">
+                        با بیش از ۵۵۰۰ دوره آموزشی از ۴۸۰ مدرس و موسسه معتبر، مهارت‌های خود را در زمینه‌های مختلف توسعه دهید و آینده شغلی خود را متحول کنید.
+                    </p>
+                    
+                    <div class="cours-courses-hero-stats">
+                        <div class="cours-courses-stat-item">
+                            <div class="cours-courses-stat-value">۵۵۰۰+</div>
+                            <div class="cours-courses-stat-label">دوره آموزشی</div>
+                        </div>
+                        <div class="cours-courses-stat-item">
+                            <div class="cours-courses-stat-value">۴۸۰+</div>
+                            <div class="cours-courses-stat-label">مدرس و موسسه</div>
+                        </div>
+                        <div class="cours-courses-stat-item">
+                            <div class="cours-courses-stat-value">۱۵۰۰۰+</div>
+                            <div class="cours-courses-stat-label">دانشجو</div>
+                        </div>
+                        <div class="cours-courses-stat-item">
+                            <div class="cours-courses-stat-value">۹۸٪</div>
+                            <div class="cours-courses-stat-label">رضایت‌مندی</div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- بخش دوره‌ها -->
+    <section class="cours-courses-listing-section">
+        <div class="container">
+            <div class="cours-courses-listing-header">
+                <div>
+                    <h2 class="cours-courses-listing-title">همه دوره‌های آموزشی</h2>
+                    <p class="cours-courses-listing-description">
+                        دوره‌های تخصصی و کاربردی برای ارتقای مهارت‌های شما در زمینه‌های مختلف
+                    </p>
+                </div>
+                <div class="cours-courses-count">نمایش ۱-۱۲ از ۵۵۰۰ دوره</div>
+            </div>
+            
+            <div class="cours-courses-grid">
+                <!-- دوره ۱ -->
+                <div class="cours-course-card">
+                    <div class="cours-course-image">
+                        <img src="./assets/images/02.jpg" alt="توسعه وب با React.js">
+                        <span class="cours-course-badge popular">پرطرفدار</span>
+                    </div>
+                    <div class="cours-course-content">
+                        <div class="cours-course-category">برنامه‌نویسی</div>
+                        <h3 class="cours-course-title">توسعه وب با React.js - کامل و پروژه‌محور</h3>
+                        <p class="cours-course-description">
+                            یادگیری React.js از صفر تا صد با انجام ۵ پروژه واقعی. این دوره شامل مفاهیم پیشرفته مانند Hooks، Context API و Redux می‌باشد.
+                        </p>
+                        <div class="cours-course-meta">
+                            <div class="cours-course-info">
+                                <div class="cours-course-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>۲۴ ساعت</span>
+                                </div>
+                                <div class="cours-course-info-item">
+                                    <i class="far fa-play-circle"></i>
+                                    <span>۱۲۸ درس</span>
+                                </div>
+                            </div>
+                            <div class="cours-course-level">متوسط</div>
+                        </div>
+                        <div class="cours-course-instructor">
+                            <div class="cours-instructor-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <span>علی رضایی</span>
+                        </div>
+                        <div class="cours-course-footer">
+                            <div class="cours-course-price">۲۹۰,۰۰۰ تومان</div>
+                            <div class="cours-course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>۴.۹ (۱۲۴)</span>
+                            </div>
+                        </div>
+                        <button class="cours-btn-enroll">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>افزودن به سبد خرید</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- دوره ۲ -->
+                <div class="cours-course-card">
+                    <div class="cours-course-image">
+                        <img src="./assets/images/01.jpg" alt="یادگیری ماشین با Python">
+                        <span class="cours-course-badge new">جدید</span>
+                    </div>
+                    <div class="cours-course-content">
+                        <div class="cours-course-category">هوش مصنوعی</div>
+                        <h3 class="cours-course-title">یادگیری ماشین با Python و TensorFlow</h3>
+                        <p class="cours-course-description">
+                            دوره جامع یادگیری ماشین با پیاده‌سازی الگوریتم‌های مختلف. شامل پروژه‌های عملی در زمینه بینایی کامپیوتر و پردازش زبان طبیعی.
+                        </p>
+                        <div class="cours-course-meta">
+                            <div class="cours-course-info">
+                                <div class="cours-course-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>۳۶ ساعت</span>
+                                </div>
+                                <div class="cours-course-info-item">
+                                    <i class="far fa-play-circle"></i>
+                                    <span>۱۵۶ درس</span>
+                                </div>
+                            </div>
+                            <div class="cours-course-level">پیشرفته</div>
+                        </div>
+                        <div class="cours-course-instructor">
+                            <div class="cours-instructor-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <span>مریم کریمی</span>
+                        </div>
+                        <div class="cours-course-footer">
+                            <div class="cours-course-price">۴۲۰,۰۰۰ تومان</div>
+                            <div class="cours-course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>۴.۸ (۹۶)</span>
+                            </div>
+                        </div>
+                        <button class="cours-btn-enroll">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>افزودن به سبد خرید</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- دوره ۳ -->
+                <div class="cours-course-card">
+                    <div class="cours-course-image">
+                        <img src="./assets/images/03.jpg" alt="طراحی تجربه کاربری حرفه‌ای">
+                        <span class="cours-course-badge discount">تخفیف ویژه</span>
+                    </div>
+                    <div class="cours-course-content">
+                        <div class="cours-course-category">طراحی UI/UX</div>
+                        <h3 class="cours-course-title">طراحی تجربه کاربری حرفه‌ای با Figma</h3>
+                        <p class="cours-course-description">
+                            طراحی رابط کاربری مدرن و تجربه کاربری عالی با ابزار Figma. شامل اصول طراحی، وایرفریمینگ، پروتوتایپ و طراحی سیستم.
+                        </p>
+                        <div class="cours-course-meta">
+                            <div class="cours-course-info">
+                                <div class="cours-course-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>۲۰ ساعت</span>
+                                </div>
+                                <div class="cours-course-info-item">
+                                    <i class="far fa-play-circle"></i>
+                                    <span>۹۸ درس</span>
+                                </div>
+                            </div>
+                            <div class="cours-course-level">مقدماتی</div>
+                        </div>
+                        <div class="cours-course-instructor">
+                            <div class="cours-instructor-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <span>رضا نوروزی</span>
+                        </div>
+                        <div class="cours-course-footer">
+                            <div class="cours-course-price">
+                                ۲۴۵,۰۰۰ تومان
+                                <span class="cours-course-old-price">۳۵۰,۰۰۰</span>
+                            </div>
+                            <div class="cours-course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>۴.۷ (۸۷)</span>
+                            </div>
+                        </div>
+                        <button class="cours-btn-enroll">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>افزودن به سبد خرید</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- دوره ۴ -->
+                <div class="cours-course-card">
+                    <div class="cours-course-image">
+                        <img src="./assets/images/04.jpg" alt="دیجیتال مارکتینگ پیشرفته">
+                        <span class="cours-course-badge free">رایگان</span>
+                    </div>
+                    <div class="cours-course-content">
+                        <div class="cours-course-category">بازاریابی</div>
+                        <h3 class="cours-course-title">دیجیتال مارکتینگ پیشرفته و سئو</h3>
+                        <p class="cours-course-description">
+                            آموزش کامل تکنیک‌های دیجیتال مارکتینگ، سئو، تبلیغات در شبکه‌های اجتماعی و تحلیل داده‌های بازاریابی.
+                        </p>
+                        <div class="cours-course-meta">
+                            <div class="cours-course-info">
+                                <div class="cours-course-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>۱۸ ساعت</span>
+                                </div>
+                                <div class="cours-course-info-item">
+                                    <i class="far fa-play-circle"></i>
+                                    <span>۸۵ درس</span>
+                                </div>
+                            </div>
+                            <div class="cours-course-level">متوسط</div>
+                        </div>
+                        <div class="cours-course-instructor">
+                            <div class="cours-instructor-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <span>سارا محمدی</span>
+                        </div>
+                        <div class="cours-course-footer">
+                            <div class="cours-course-price">رایگان</div>
+                            <div class="cours-course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>۴.۶ (۱۵۳)</span>
+                            </div>
+                        </div>
+                        <button class="cours-btn-enroll">
+                            <i class="fas fa-play-circle"></i>
+                            <span>شروع یادگیری</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- دوره ۵ -->
+                <div class="cours-course-card">
+                    <div class="cours-course-image">
+                        <img src="./assets/images/card-2.avif" alt="برنامه‌نویسی پایتون">
+                        <span class="cours-course-badge popular">پرطرفدار</span>
+                    </div>
+                    <div class="cours-course-content">
+                        <div class="cours-course-category">برنامه‌نویسی</div>
+                        <h3 class="cours-course-title">برنامه‌نویسی پایتون از صفر تا صد</h3>
+                        <p class="cours-course-description">
+                            آموزش جامع پایتون برای مبتدیان. شامل مفاهیم پایه، ساختار داده‌ها، شی‌گرایی و پروژه‌های عملی.
+                        </p>
+                        <div class="cours-course-meta">
+                            <div class="cours-course-info">
+                                <div class="cours-course-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>۳۰ ساعت</span>
+                                </div>
+                                <div class="cours-course-info-item">
+                                    <i class="far fa-play-circle"></i>
+                                    <span>۱۴۰ درس</span>
+                                </div>
+                            </div>
+                            <div class="cours-course-level">مقدماتی</div>
+                        </div>
+                        <div class="cours-course-instructor">
+                            <div class="cours-instructor-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <span>محمد حسینی</span>
+                        </div>
+                        <div class="cours-course-footer">
+                            <div class="cours-course-price">۱۸۰,۰۰۰ تومان</div>
+                            <div class="cours-course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>۴.۹ (۲۱۰)</span>
+                            </div>
+                        </div>
+                        <button class="cours-btn-enroll">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>افزودن به سبد خرید</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- دوره ۶ -->
+                <div class="cours-course-card">
+                    <div class="cours-course-image">
+                        <img src="./assets/images/card-3.avif" alt="عکاسی حرفه‌ای">
+                        <span class="cours-course-badge new">جدید</span>
+                    </div>
+                    <div class="cours-course-content">
+                        <div class="cours-course-category">عکاسی</div>
+                        <h3 class="cours-course-title">عکاسی حرفه‌ای با دوربین DSLR</h3>
+                        <p class="cours-course-description">
+                            آموزش تکنیک‌های عکاسی حرفه‌ای، تنظیمات دوربین، ترکیب‌بندی و ویرایش عکس با نرم‌افزارهای تخصصی.
+                        </p>
+                        <div class="cours-course-meta">
+                            <div class="cours-course-info">
+                                <div class="cours-course-info-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>۲۲ ساعت</span>
+                                </div>
+                                <div class="cours-course-info-item">
+                                    <i class="far fa-play-circle"></i>
+                                    <span>۱۱۰ درس</span>
+                                </div>
+                            </div>
+                            <div class="cours-course-level">متوسط</div>
+                        </div>
+                        <div class="cours-course-instructor">
+                            <div class="cours-instructor-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <span>نازنین احمدی</span>
+                        </div>
+                        <div class="cours-course-footer">
+                            <div class="cours-course-price">۳۲۰,۰۰۰ تومان</div>
+                            <div class="cours-course-rating">
+                                <i class="fas fa-star"></i>
+                                <span>۴.۷ (۷۸)</span>
+                            </div>
+                        </div>
+                        <button class="cours-btn-enroll">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>افزودن به سبد خرید</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- صفحه‌بندی -->
+            <div class="cours-pagination-section">
+                <div class="cours-pagination">
+                    <button class="cours-pagination-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="cours-pagination-btn active">۱</button>
+                    <button class="cours-pagination-btn">۲</button>
+                    <button class="cours-pagination-btn">۳</button>
+                    <span class="cours-pagination-ellipsis">...</span>
+                    <button class="cours-pagination-btn">۱۰</button>
+                    <button class="cours-pagination-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- فوتر -->
+    <footer class="modern-footer">
+        <div class="footer-background">
+            <div class="footer-pattern"></div>
+        </div>
+        
+        <div class="footer-container">
+            <div class="footer-main">
+                <!-- ستون اول: درباره ما -->
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-graduation-cap footer-logo-icon"></i>
+                        <span>فراآموز</span>
+                    </a>
+                    <p class="footer-description">
+                        فراآموز یک پلتفرم آموزشی آنلاین است که با ارائه دوره‌های تخصصی و کاربردی، 
+                        به شما کمک می‌کند مهارت‌های جدید را بیاموزید و آینده شغلی خود را متحول کنید.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="اینستاگرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="تلگرام">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="لینکدین">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="یوتیوب">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="توییتر">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- ستون دوم: لینک‌های سریع -->
+                <div class="footer-col">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> درباره ما</a></li>
+                        <li><a href="courses.html"><i class="fas fa-book"></i> دوره‌های آموزشی</a></li>
+                        <li><a href="instructors.html"><i class="fas fa-chalkboard-teacher"></i> مدرسین</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> وبلاگ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون سوم: دسته‌بندی‌ها -->
+                <div class="footer-col">
+                    <h3>دسته‌بندی‌ها</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-code"></i> برنامه‌نویسی</a></li>
+                        <li><a href="#"><i class="fas fa-paint-brush"></i> طراحی و خلاقیت</a></li>
+                        <li><a href="#"><i class="fas fa-chart-line"></i> بازاریابی و فروش</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i> کسب و کار</a></li>
+                        <li><a href="#"><i class="fas fa-camera"></i> عکاسی و فیلمبرداری</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون چهارم: اطلاعات تماس -->
+                <div class="footer-col">
+                    <h3>اطلاعات تماس</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>تهران، خیابان ولیعصر</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@faramooz.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>شنبه تا پنجشنبه: ۸:۰۰ تا ۱۷:۰۰</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- ستون پنجم: خبرنامه -->
+                <div class="footer-col">
+                    <h3>خبرنامه</h3>
+                    <p class="newsletter-text">
+                        با عضویت در خبرنامه، از جدیدترین دوره‌ها و تخفیف‌های ویژه مطلع شوید.
+                    </p>
+                    <div class="footer-newsletter">
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="آدرس ایمیل شما" required>
+                            <button type="submit" class="btn-newsletter">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>عضویت در خبرنامه</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- بخش پایین فوتر -->
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        © ۲۰۲۳ فراآموز. تمامی حقوق محفوظ است.
+                    </div>
+                    <div class="footer-bottom-links">
+                        
+                        <a href="terms.html">قوانین و مقررات</a>
+                        <a href="faq.html">سوالات متداول</a>
+                        <a href="contact.html">نقشه سایت</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/js.js"></script>
+
+</body>
+</html>

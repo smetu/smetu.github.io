@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>تماس با ما - فراآموز</title>
+    <meta name="description" content="با ما در ارتباط باشید - سیستم آموزشی حرفه‌ای فراآموز">
+    
+    <!-- فونت‌های محلی -->
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- آیکون‌های محلی -->
+    <link rel="stylesheet" href="./assets/icons/css/all.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+
+<body class="content-dark-theme">
+    <!-- هدر بهبود یافته -->
+    <header class="content-page-header" id="content-page-header">
+        <div class="content-top-bar">
+            <div class="content-container">
+                <div class="content-top-bar-content">
+                    <a href="#" style="color: white; text-decoration: underline;">
+                        <span>در هر جا و هر زمان با منابع رایگان به یادگیری ادامه دهید.</span>
+                    </a>
+                    <span class="content-top-bar-badge">جدید</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <div class="content-header-wrap">
+                <!-- لوگو -->
+                <a href="index.html" class="content-logo" id="content-main-logo">
+                    <i class="fas fa-graduation-cap content-logo-icon"></i>
+                    <span>فراآموز</span>
+                </a>
+
+                <!-- منوی اصلی دسکتاپ -->
+                <div class="content-nav-container">
+                    <nav>
+                        <ul class="content-main-nav">
+                            <li class="content-nav-item">
+                                <a href="index.html" class="content-nav-link">خانه</a>
+                            </li>
+                            <li class="content-nav-item">
+                                <a href="courses.html" class="content-nav-link">دوره‌ها</a>
+                            </li>
+                            <li class="content-nav-item">
+                                <a href="instructors.html" class="content-nav-link">مدرسین</a>
+                            </li>
+                            <li class="content-nav-item">
+                                <a href="about.html" class="content-nav-link">درباره ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./contact.html" class="content-nav-link">تماس با ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./blog.html" class="content-nav-link">وبلاگ</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <!-- اقدامات هدر دسکتاپ -->
+                    <div class="content-header-actions">
+                        <!-- جستجو -->
+                        <div class="content-search-container">
+                            <div class="content-search-box">
+                                <input type="text" class="content-search-input" placeholder="جستجو...">
+                                <button class="content-search-btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- تغییر تم -->
+                        <button class="content-theme-toggle" id="content-theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+
+                        <!-- دکمه‌های کاربر -->
+                        <a href="login.html" class="content-btn content-btn-secondary">ورود</a>
+                        <a href="register.html" class="content-btn content-btn-primary">عضویت</a>
+                    </div>
+                </div>
+
+                <!-- منوی موبایل -->
+                <button class="content-mobile-menu-toggle" id="content-mobile-menu-toggle">
+                    <div class="content-hamburger-lines">
+                        <span class="content-hamburger-line"></span>
+                        <span class="content-hamburger-line"></span>
+                        <span class="content-hamburger-line"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- منوی موبایل -->
+        <div class="content-mobile-nav-container" id="content-mobile-nav-container">
+            <nav>
+                <ul class="content-mobile-nav">
+                    <li class="content-mobile-nav-item">
+                        <a href="index.html" class="content-mobile-nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>خانه</span>
+                        </a>
+                    </li>
+                    <li class="content-mobile-nav-item">
+                        <a href="courses.html" class="content-mobile-nav-link">
+                            <i class="fas fa-book"></i>
+                            <span>دوره‌ها</span>
+                        </a>
+                    </li>
+                    <li class="content-mobile-nav-item">
+                        <a href="instructors.html" class="content-mobile-nav-link">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>مدرسین</span>
+                        </a>
+                    </li>
+                    <li class="content-mobile-nav-item">
+                        <a href="about.html" class="content-mobile-nav-link">
+                            <i class="fas fa-info-circle"></i>
+                            <span>درباره ما</span>
+                        </a>
+                    </li>
+                    <li class="content-mobile-nav-item">
+                        <a href="contact.html" class="content-mobile-nav-link active">
+                            <i class="fas fa-envelope"></i>
+                            <span>تماس با ما</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- اقدامات هدر موبایل -->
+            <div class="content-mobile-header-actions">
+                <!-- جستجو -->
+                <div class="content-mobile-search-box">
+                    <input type="text" class="content-mobile-search-input" placeholder="جستجو...">
+                    <button class="content-mobile-search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- تغییر تم -->
+                <button class="content-theme-toggle content-mobile-theme-toggle" id="content-mobile-theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <span>تغییر تم</span>
+                </button>
+
+                <!-- دکمه‌های کاربر -->
+                <div class="content-mobile-auth-buttons">
+                    <a href="login.html" class="content-btn content-btn-secondary" style="width: 100%; margin-bottom: 0.5rem;">ورود</a>
+                    <a href="register.html" class="content-btn content-btn-primary" style="width: 100%;">عضویت</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- overlay برای منوی موبایل -->
+        <div class="content-mobile-menu-overlay" id="content-mobile-menu-overlay"></div>
+    </header>
+
+
+    <!-- محتوای صفحه -->
+    <section class="content-contact-section">
+        <div class="content-container">
+            <div class="content-section-header">
+                <span class="content-section-subtitle">ارتباط با ما</span>
+                <h2 class="content-section-title">راه‌های ارتباطی</h2>
+                <p class="content-section-description">
+                    ما مشتاقانه منتظر شنیدن نظرات، پیشنهادات و سوالات شما هستیم. 
+                </p>
+            </div>
+            
+            <div class="content-contact-container">
+                <div class="content-contact-info">
+                    
+                    <!-- کارت تماس تلفنی -->
+                    <div class="content-contact-card">
+                        <div class="content-contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 class="content-contact-title">تماس تلفنی</h3>
+                        <p class="content-contact-description">
+                            برای پاسخ سریع به سوالات خود، با شماره‌های زیر تماس بگیرید.
+                        </p>
+                        <div class="content-contact-details">
+                            <div class="content-contact-detail">
+                                <i class="fas fa-phone"></i>
+                                <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+                            </div>
+                            <div class="content-contact-detail">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>۰۹۱۲-۱۲۳۴۵۶۷</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- کارت ایمیل -->
+                    <div class="content-contact-card">
+                        <div class="content-contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="content-contact-title">ایمیل</h3>
+                        <p class="content-contact-description">
+                            برای مسائل غیرفوری یا ارسال مدارک، از طریق ایمیل با ما در ارتباط باشید.
+                        </p>
+                        <div class="content-contact-details">
+                            <div class="content-contact-detail">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@faramooz.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- فرم تماس -->
+                <div class="content-contact-form-container">
+                    <div class="content-form-header">
+                        <h3 class="content-form-title">پیام خود را ارسال کنید</h3>
+                    </div>
+                    
+                    <form class="content-contact-form" id="content-contact-form">
+                        <div class="content-form-row">
+                            <div class="content-form-group">
+                                <label for="content-name" class="content-form-label">نام و نام خانوادگی</label>
+                                <input type="text" id="content-name" class="content-form-input" placeholder="نام خود را وارد کنید" required>
+                                <div class="content-form-error">لطفاً نام خود را وارد کنید</div>
+                            </div>
+                            <div class="content-form-group">
+                                <label for="content-email" class="content-form-label">ایمیل</label>
+                                <input type="email" id="content-email" class="content-form-input" placeholder="ایمیل خود را وارد کنید" required>
+                                <div class="content-form-error">لطفاً یک ایمیل معتبر وارد کنید</div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-form-group">
+                            <label for="content-subject" class="content-form-label">موضوع</label>
+                            <input type="text" id="content-subject" class="content-form-input" placeholder="موضوع پیام خود را وارد کنید" required>
+                            <div class="content-form-error">لطفاً موضوع پیام را وارد کنید</div>
+                        </div>
+                        
+                        <div class="content-form-group">
+                            <label for="content-message" class="content-form-label">پیام</label>
+                            <textarea id="content-message" class="content-form-textarea" placeholder="پیام خود را بنویسید..." required></textarea>
+                            <div class="content-form-error">لطفاً پیام خود را وارد کنید</div>
+                        </div>
+                        
+                        <button type="submit" class="content-btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>ارسال پیام</span>
+                        </button>
+                        
+                        <div class="content-success-message" id="content-success-message">
+                            پیام شما با موفقیت ارسال شد. در اسرع وقت با شما تماس خواهیم گرفت.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش نقشه -->
+    <section class="content-map-section">
+        <div class="content-container">
+            
+            <div class="content-map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.920915506304!2d51.38974931525861!3d35.68919738019163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0108b9c5d2a5%3A0x7a1e1b5b5b5b5b5b!2sValiasr%20St%2C%20Tehran%2C%20Iran!5e0!3m2!1sen!2s!4v1633023081234!5m2!1sen!2s" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="content-map-overlay"></div>
+                <div class="content-map-actions">
+                    <button class="content-map-btn" id="content-get-directions">
+                        <i class="fas fa-directions"></i>
+                        <span>مسیریابی</span>
+                    </button>
+                    <button class="content-map-btn" id="content-fullscreen-map">
+                        <i class="fas fa-expand"></i>
+                        <span>تمام صفحه</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش سوالات متداول -->
+    <section class="content-faq-section">
+        <div class="content-container">
+            <div class="content-section-header">
+                <span class="content-section-subtitle">سوالات متداول</span>
+                <h2 class="content-section-title">پاسخ به پرسش‌های پرتکرار</h2>
+                <p class="content-section-description">
+                    در این بخش به برخی از سوالات متداول کاربران پاسخ داده‌ایم. 
+                    در صورت عدم یافتن پاسخ سوال خود، از طریق فرم تماس با ما در ارتباط باشید.
+                </p>
+            </div>
+            
+            <div class="content-faq-container">
+                <!-- سوال ۱ -->
+                <div class="content-faq-item">
+                    <div class="content-faq-question">
+                        <span>چگونه می‌توانم در دوره‌های فراآموز ثبت نام کنم؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="content-faq-answer">
+                        <p>
+                            برای ثبت نام در دوره‌های فراآموز، ابتدا در سایت ثبت نام کنید، سپس به صفحه دوره مورد نظر مراجعه کرده و روی دکمه "ثبت نام در دوره" کلیک کنید. پس از پرداخت هزینه دوره، به محتوای آموزشی دسترسی خواهید داشت.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- سوال ۲ -->
+                <div class="content-faq-item">
+                    <div class="content-faq-question">
+                        <span>آیا پس از اتمام دوره، گواهینامه دریافت می‌کنم؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="content-faq-answer">
+                        <p>
+                            بله، پس از اتمام موفقیت‌آمیز هر دوره و گذراندن آزمون پایانی، گواهینامه معتبر فراآموز را دریافت خواهید کرد که می‌تواند در رزومه کاری و تحصیلی شما مورد استفاده قرار گیرد.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- سوال ۳ -->
+                <div class="content-faq-item">
+                    <div class="content-faq-question">
+                        <span>چگونه می‌توانم هزینه دوره را پرداخت کنیم؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="content-faq-answer">
+                        <p>
+                            شما می‌توانید از طریق درگاه پرداخت اینترنتی، کارت به کارت و یا کیف پول الکترونیکی هزینه دوره را پرداخت کنید. تمامی تراکنش‌ها به صورت امن و مطمئن انجام می‌شود.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- سوال ۴ -->
+                <div class="content-faq-item">
+                    <div class="content-faq-question">
+                        <span>آیا امکان بازگشت هزینه وجود دارد؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="content-faq-answer">
+                        <p>
+                            بله، در صورت عدم رضایت از محتوای دوره تا ۷ روز پس از خرید، می‌توانید درخواست بازگشت هزینه دهید. مبلغ پرداختی پس از بررسی درخواست، به حساب شما بازگردانده می‌شود.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- سوال ۵ -->
+                <div class="content-faq-item">
+                    <div class="content-faq-question">
+                        <span>چگونه می‌توانم با مدرس دوره در ارتباط باشم؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="content-faq-answer">
+                        <p>
+                            پس از ثبت نام در هر دوره، به بخش "پرسش و پاسخ" دوره دسترسی خواهید داشت که می‌توانید سوالات خود را از مدرس بپرسید. همچنین برخی دوره‌ها دارای جلسات آنلاین رفع اشکال هستند.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer class="content-modern-footer">
+        <div class="content-footer-background">
+            <div class="content-footer-pattern"></div>
+        </div>
+        
+        <div class="content-footer-container">
+            <div class="content-footer-main">
+                <!-- ستون اول: درباره ما -->
+                <div class="content-footer-col">
+                    <a href="index.html" class="content-footer-logo">
+                        <i class="fas fa-graduation-cap content-footer-logo-icon"></i>
+                        <span>فراآموز</span>
+                    </a>
+                    <p class="content-footer-description">
+                        فراآموز یک پلتفرم آموزشی آنلاین است که با ارائه دوره‌های تخصصی و کاربردی، 
+                        به شما کمک می‌کند مهارت‌های جدید را بیاموزید و آینده شغلی خود را متحول کنید.
+                    </p>
+                    <div class="content-footer-social">
+                        <a href="#" class="content-social-link" aria-label="اینستاگرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="content-social-link" aria-label="تلگرام">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="content-social-link" aria-label="لینکدین">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="content-social-link" aria-label="یوتیوب">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="content-social-link" aria-label="توییتر">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- ستون دوم: لینک‌های سریع -->
+                <div class="content-footer-col">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="content-footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> درباره ما</a></li>
+                        <li><a href="courses.html"><i class="fas fa-book"></i> دوره‌های آموزشی</a></li>
+                        <li><a href="instructors.html"><i class="fas fa-chalkboard-teacher"></i> مدرسین</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> وبلاگ</a></li>
+
+                    </ul>
+                </div>
+                
+                <!-- ستون سوم: دسته‌بندی‌ها -->
+                <div class="content-footer-col">
+                    <h3>دسته‌بندی‌ها</h3>
+                    <ul class="content-footer-links">
+                        <li><a href="#"><i class="fas fa-code"></i> برنامه‌نویسی</a></li>
+                        <li><a href="#"><i class="fas fa-paint-brush"></i> طراحی و خلاقیت</a></li>
+                        <li><a href="#"><i class="fas fa-chart-line"></i> بازاریابی و فروش</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i> کسب و کار</a></li>
+                        <li><a href="#"><i class="fas fa-camera"></i> عکاسی و فیلمبرداری</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون چهارم: اطلاعات تماس -->
+                <div class="content-footer-col">
+                    <h3>اطلاعات تماس</h3>
+                    <ul class="content-footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>تهران، خیابان ولیعصر، پلاک ۱۲۳۴</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@faramooz.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>شنبه تا پنجشنبه: ۸:۰۰ </span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- ستون پنجم: خبرنامه -->
+                <div class="content-footer-col">
+                    <h3>خبرنامه</h3>
+                    <p class="content-newsletter-text">
+                        با عضویت در خبرنامه، از جدیدترین دوره‌ها و تخفیف‌های ویژه مطلع شوید.
+                    </p>
+                    <div class="content-footer-newsletter">
+                        <form class="content-newsletter-form">
+                            <input type="email" class="content-newsletter-input" placeholder="آدرس ایمیل شما" required>
+                            <button type="submit" class="content-btn-newsletter">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>عضویت در خبرنامه</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+  
+        <!-- بخش پایین فوتر -->
+        <div class="content-footer-bottom">
+            <div class="content-footer-container">
+                <div class="content-footer-bottom-content">
+                    <div class="content-footer-copyright">
+                        © ۲۰۲۳ فراآموز. تمامی حقوق محفوظ است.
+                    </div>
+                    <div class="content-footer-bottom-links">
+                        
+                        <a href="terms.html">قوانین و مقررات</a>
+                        <a href="faq.html">سوالات متداول</a>
+                        <a href="contact.html">نقشه سایت</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- دکمه بازگشت به بالا -->
+    <div class="content-back-to-top" id="content-back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="./assets/js/dashboard.js"></script>
+
+</body>
+</html>

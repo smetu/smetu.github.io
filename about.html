@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>درباره ما - فراآموز</title>
+    <meta name="description" content="درباره سیستم آموزشی حرفه‌ای فراآموز و تیم ما">
+    
+        <!-- فونت‌های محلی -->
+        <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Medium.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    
+        <!-- آیکون‌های محلی -->
+        <link rel="stylesheet" href="./assets/icons/css/all.min.css">
+        
+    
+    <!--css-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body class="abouts-dark-theme">
+    <!-- هدر -->
+    <header class="abouts-page-header" id="abouts-page-header">
+        <div class="abouts-top-bar">
+            <div class="abouts-container">
+                <div class="abouts-top-bar-content">
+                    <a href="#" style="color: white; text-decoration: underline;">
+                        <span>در هر جا و هر زمان با منابع رایگان به یادگیری ادامه دهید.</span>
+                    </a>
+                    <span class="abouts-top-bar-badge">جدید</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="abouts-container">
+            <div class="abouts-header-wrap">
+                <!-- لوگو -->
+                <a href="index.html" class="abouts-logo" id="abouts-main-logo">
+                    <i class="fas fa-graduation-cap abouts-logo-icon"></i>
+                    <span>فراآموز</span>
+                </a>
+
+                <!-- منوی اصلی دسکتاپ -->
+                <div class="abouts-nav-container">
+                    <nav>
+                        <ul class="abouts-main-nav">
+                            <li class="abouts-nav-item">
+                                <a href="index.html" class="abouts-nav-link">خانه</a>
+                            </li>
+                            <li class="abouts-nav-item">
+                                <a href="courses.html" class="abouts-nav-link">دوره‌ها</a>
+                            </li>
+                            <li class="abouts-nav-item">
+                                <a href="instructors.html" class="abouts-nav-link">مدرسین</a>
+                            </li>
+                            <li class="abouts-nav-item">
+                                <a href="about.html" class="abouts-nav-link ">درباره ما</a>
+                            </li>
+                            <li class="abouts-nav-item">
+                                <a href="./contact.html" class="abouts-nav-link ">تماس با ما</a>
+                            </li>
+                            <li class="abouts-nav-item">
+                                <a href="./blog.html" class="abouts-nav-link ">وبلاگ</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- اقدامات هدر دسکتاپ -->
+                    <div class="abouts-header-actions">
+                        <!-- جستجو -->
+                        <div class="abouts-search-container">
+                            <div class="abouts-search-box">
+                                <input type="text" class="abouts-search-input" placeholder="جستجو...">
+                                <button class="abouts-search-btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- تغییر تم -->
+                        <button class="abouts-theme-toggle" id="abouts-theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+
+                        <!-- دکمه‌های کاربر -->
+                        <a href="login.html" class="abouts-btn abouts-btn-secondary">ورود</a>
+                        <a href="register.html" class="abouts-btn abouts-btn-primary">عضویت</a>
+                    </div>
+                </div>
+
+                <!-- منوی موبایل -->
+                <button class="abouts-mobile-menu-toggle" id="abouts-mobile-menu-toggle">
+                    <div class="abouts-hamburger-lines">
+                        <span class="abouts-hamburger-line"></span>
+                        <span class="abouts-hamburger-line"></span>
+                        <span class="abouts-hamburger-line"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- منوی موبایل -->
+        <div class="abouts-mobile-nav-container" id="abouts-mobile-nav-container">
+            <nav>
+                <ul class="abouts-mobile-nav">
+                    <li class="abouts-mobile-nav-item">
+                        <a href="index.html" class="abouts-mobile-nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>خانه</span>
+                        </a>
+                    </li>
+                    <li class="abouts-mobile-nav-item">
+                        <a href="courses.html" class="abouts-mobile-nav-link">
+                            <i class="fas fa-book"></i>
+                            <span>دوره‌ها</span>
+                        </a>
+                    </li>
+                    <li class="abouts-mobile-nav-item">
+                        <a href="instructors.html" class="abouts-mobile-nav-link">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>مدرسین</span>
+                        </a>
+                    </li>
+                    <li class="abouts-mobile-nav-item">
+                        <a href="about.html" class="abouts-mobile-nav-link">
+                            <i class="fas fa-info-circle"></i>
+                            <span>درباره ما</span>
+                        </a>
+                    </li>
+                    <li class="abouts-mobile-nav-item">
+                        <a href="faq.html" class="abouts-mobile-nav-link active">
+                            <i class="fas fa-question-circle"></i>
+                            <span>سوالات متداول</span>
+                        </a>
+                    </li>
+                    <li class="abouts-mobile-nav-item">
+                        <a href="contact.html" class="abouts-mobile-nav-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>تماس با ما</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- اقدامات هدر موبایل -->
+            <div class="abouts-mobile-header-actions">
+                <!-- جستجو -->
+                <div class="abouts-mobile-search-box">
+                    <input type="text" class="abouts-mobile-search-input" placeholder="جستجو...">
+                    <button class="abouts-mobile-search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- تغییر تم - مخفی شده در موبایل -->
+                <button class="abouts-theme-toggle abouts-mobile-theme-toggle" id="abouts-mobile-theme-toggle" style="display: none;">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <!-- دکمه‌های کاربر -->
+                <div class="abouts-mobile-auth-buttons">
+                    <a href="login.html" class="abouts-btn abouts-btn-secondary" style="width: 100%; margin-bottom: 0.5rem;">ورود</a>
+                    <a href="register.html" class="abouts-btn abouts-btn-primary" style="width: 100%;">عضویت</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- overlay برای منوی موبایل -->
+        <div class="abouts-mobile-menu-overlay" id="abouts-mobile-menu-overlay"></div>
+    </header>
+
+    <!-- بخش ماموریت و چشم‌انداز -->
+    <section class="abouts-mission-vision">
+        <div class="abouts-container">
+            <div class="abouts-section-header">
+                <span class="abouts-section-subtitle">ماموریت و چشم‌انداز</span>
+                <h2 class="abouts-section-title">آنچه به آن باور داریم</h2>
+                <p class="abouts-section-description">
+                    ماموریت ما ایجاد تحول در سیستم آموزشی ایران و چشم‌انداز ما ساختن آینده‌ای است 
+                    که در آن هر ایرانی بتواند به راحتی به آموزش با کیفیت دسترسی داشته باشد.
+                </p>
+            </div>
+            
+            <div class="abouts-mission-vision-grid">
+                <div class="abouts-mission-card">
+                    <div class="abouts-card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="abouts-card-title">ماموریت ما</h3>
+                    <p class="abouts-card-description">
+                        ماموریت ما ایجاد دسترسی برابر به آموزش با کیفیت برای همه ایرانیان است. 
+                        ما با ارائه دوره‌های آموزشی متنوع، به روز و کاربردی، به افراد کمک می‌کنیم 
+                        تا مهارت‌های مورد نیاز برای موفقیت در دنیای امروز را کسب کنند.
+                    </p>
+                </div>
+                
+                <div class="abouts-vision-card">
+                    <div class="abouts-card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="abouts-card-title">چشم‌انداز ما</h3>
+                    <p class="abouts-card-description">
+                        چشم‌انداز ما تبدیل شدن به بزرگترین پلتفرم آموزشی آنلاین در ایران است 
+                        که بتواند سالانه به میلیون‌ها نفر کمک کند تا مهارت‌های جدید بیاموزند، 
+                        شغل بهتری پیدا کنند و زندگی بهتری داشته باشند.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش ارزش‌ها -->
+    <section class="abouts-values-section">
+        <div class="abouts-container">
+            <div class="abouts-section-header">
+                <span class="abouts-section-subtitle">ارزش‌های ما</span>
+                <h2 class="abouts-section-title">اصولی که به آن پایبندیم</h2>
+                <p class="abouts-section-description">
+                    ارزش‌های اساسی ما راهنمای تمام تصمیم‌گیری‌ها و اقدامات ما در فراآموز هستند 
+                    و فرهنگ سازمانی ما را شکل می‌دهند.
+                </p>
+            </div>
+            
+            <div class="abouts-values-grid">
+                <div class="abouts-value-card">
+                    <div class="abouts-value-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="abouts-value-title">کیفیت آموزشی</h3>
+                    <p class="abouts-value-description">
+                        ما به ارائه آموزش با بالاترین کیفیت متعهد هستیم و تمام دوره‌های ما 
+                        توسط متخصصان باتجربه طراحی و تدریس می‌شوند.
+                    </p>
+                </div>
+                
+                <div class="abouts-value-card">
+                    <div class="abouts-value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="abouts-value-title">تعهد به دانشجو</h3>
+                    <p class="abouts-value-description">
+                        موفقیت دانشجویان اولویت اصلی ماست. ما پشتیبانی کامل و راهنمایی 
+                        شخصی شده برای هر دانشجو ارائه می‌دهیم.
+                    </p>
+                </div>
+                
+                <div class="abouts-value-card">
+                    <div class="abouts-value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="abouts-value-title">نوآوری</h3>
+                    <p class="abouts-value-description">
+                        ما دائماً در حال بهبود و نوآوری در روش‌های آموزشی و فناوری‌های 
+                        مورد استفاده خود هستیم تا بهترین تجربه یادگیری را ارائه دهیم.
+                    </p>
+                </div>
+                
+                <div class="abouts-value-card">
+                    <div class="abouts-value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="abouts-value-title">جامعه‌گرایی</h3>
+                    <p class="abouts-value-description">
+                        ما به ایجاد جامعه‌ای از یادگیرندگان متعهدیم که از یکدیگر حمایت کرده 
+                        و با هم رشد می‌کنند.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش تیم -->
+    <section class="abouts-team-section">
+        <div class="abouts-container">
+            <div class="abouts-section-header">
+                <span class="abouts-section-subtitle">تیم ما</span>
+                <h2 class="abouts-section-title">با تیم فراآموز آشنا شوید</h2>
+                <p class="abouts-section-description">
+                    تیم ما متشکل از متخصصان باتجربه در حوزه‌های مختلف آموزشی، فناوری و محتوایی است 
+                    که با اشتیاق و تعهد برای تحول آموزش در ایران تلاش می‌کنند.
+                </p>
+            </div>
+            
+            <div class="abouts-team-grid">
+                <div class="abouts-team-card">
+                    <div class="abouts-team-image">
+                        <img src="./assets/images/me2.png" alt="مدیرعامل">
+                    </div>
+                    <div class="abouts-team-content">
+                        <h3 class="abouts-team-name">دکتر علی رضایی</h3>
+                        <div class="abouts-team-role">مدیرعامل و بنیان‌گذار</div>
+                        <p class="abouts-team-description">
+                            دکتر رضایی با بیش از ۱۵ سال تجربه در حوزه آموزش و فناوری، 
+                            بنیان‌گذار و رهبر تیم فراآموز است.
+                        </p>
+                        <div class="abouts-team-social">
+                            <a href="#" class="abouts-social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="abouts-social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="abouts-social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="abouts-team-card">
+                    <div class="abouts-team-image">
+                        <img src=".//assets/images/me.png" alt="مدیر فنی">
+                    </div>
+                    <div class="abouts-team-content">
+                        <h3 class="abouts-team-name">مریم کریمی</h3>
+                        <div class="abouts-team-role">مدیر فنی</div>
+                        <p class="abouts-team-description">
+                            مریم با ۱۰ سال تجربه در توسعه پلتفرم‌های آموزشی، 
+                            مسئولیت فنی پلتفرم فراآموز را بر عهده دارد.
+                        </p>
+                        <div class="abouts-team-social">
+                            <a href="#" class="abouts-social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="abouts-social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="abouts-social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="abouts-team-card">
+                    <div class="abouts-team-image">
+                        <img src="./assets/images/me3.jpg" alt="مدیر محتوا">
+                    </div>
+                    <div class="abouts-team-content">
+                        <h3 class="abouts-team-name">رضا نوروزی</h3>
+                        <div class="abouts-team-role">مدیر محتوای آموزشی</div>
+                        <p class="abouts-team-description">
+                            رضا با سابقه تدریس در دانشگاه و طراحی دوره‌های آموزشی، 
+                            کیفیت محتوای آموزشی فراآموز را تضمین می‌کند.
+                        </p>
+                        <div class="abouts-team-social">
+                            <a href="#" class="abouts-social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="abouts-social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="abouts-social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش تاریخچه -->
+    <section class="abouts-history-section">
+        <div class="abouts-container">
+            <div class="abouts-section-header">
+                <span class="abouts-section-subtitle">تاریخچه ما</span>
+                <h2 class="abouts-section-title">سفر ما از ابتدا تاکنون</h2>
+                <p class="abouts-section-description">
+                    از آغاز فعالیت خود در سال ۱۳۹۸، فراآموز مسیری پر از چالش و موفقیت را پیموده است. 
+                    در ادامه مهم‌ترین نقاط عطف این سفر را مشاهده می‌کنید.
+                </p>
+            </div>
+            
+            <div class="abouts-timeline">
+                <div class="abouts-timeline-item">
+                    <div class="abouts-timeline-content">
+                        <div class="abouts-timeline-year">۱۳۹۸</div>
+                        <h3 class="abouts-timeline-title">تأسیس فراآموز</h3>
+                        <p class="abouts-timeline-description">
+                            ایده اولیه فراآموز توسط دکتر علی رضایی مطرح و تیم کوچکی برای 
+                            توسعه پلتفرم اولیه تشکیل شد.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="abouts-timeline-item">
+                    <div class="abouts-timeline-content">
+                        <div class="abouts-timeline-year">۱۳۹۹</div>
+                        <h3 class="abouts-timeline-title">راه‌اندازی نسخه اول</h3>
+                        <p class="abouts-timeline-description">
+                            اولین نسخه پلتفرم فراآموز با ۵۰ دوره آموزشی و ۲۰ مدرس راه‌اندازی شد 
+                            و در اولین ماه بیش از ۱۰۰۰ دانشجو جذب کرد.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="abouts-timeline-item">
+                    <div class="abouts-timeline-content">
+                        <div class="abouts-timeline-year">۱۴۰۰</div>
+                        <h3 class="abouts-timeline-title">توسعه پلتفرم موبایل</h3>
+                        <p class="abouts-timeline-description">
+                            اپلیکیشن موبایل فراآموز برای سیستم‌عامل‌های اندروید و iOS 
+                            توسعه یافت و دسترسی به آموزش را آسان‌تر کرد.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="abouts-timeline-item">
+                    <div class="abouts-timeline-content">
+                        <div class="abouts-timeline-year">۱۴۰۱</div>
+                        <h3 class="abouts-timeline-title">همکاری با دانشگاه‌ها</h3>
+                        <p class="abouts-timeline-description">
+                            فراآموز با ۵ دانشگاه معتبر کشور همکاری کرد تا دوره‌های آموزشی 
+                            معتبر و گواهینامه‌های دانشگاهی ارائه دهد.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="abouts-timeline-item">
+                    <div class="abouts-timeline-content">
+                        <div class="abouts-timeline-year">۱۴۰۲</div>
+                        <h3 class="abouts-timeline-title">دستیابی به ۱۵۰,۰۰۰ دانشجو</h3>
+                        <p class="abouts-timeline-description">
+                            فراآموز به مرز ۱۵۰,۰۰۰ دانشجوی فعال رسید و به یکی از 
+                            بزرگترین پلتفرم‌های آموزشی ایران تبدیل شد.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer class="abouts-modern-footer">
+        <div class="abouts-footer-background">
+            <div class="abouts-footer-pattern"></div>
+        </div>
+        
+        <div class="abouts-footer-container">
+            <div class="abouts-footer-main">
+                <!-- ستون اول: درباره ما -->
+                <div class="abouts-footer-col">
+                    <a href="index.html" class="abouts-footer-logo">
+                        <i class="fas fa-graduation-cap abouts-footer-logo-icon"></i>
+                        <span>فراآموز</span>
+                    </a>
+                    <p class="abouts-footer-description">
+                        فراآموز یک پلتفرم آموزشی آنلاین است که با ارائه دوره‌های تخصصی و کاربردی، 
+                        به شما کمک می‌کند مهارت‌های جدید را بیاموزید و آینده شغلی خود را متحول کنید.
+                    </p>
+                    <div class="abouts-footer-social">
+                        <a href="#" class="abouts-social-link" aria-label="اینستاگرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="abouts-social-link" aria-label="تلگرام">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="abouts-social-link" aria-label="لینکدین">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="abouts-social-link" aria-label="یوتیوب">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="abouts-social-link" aria-label="توییتر">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- ستون دوم: لینک‌های سریع -->
+                <div class="abouts-footer-col">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="abouts-footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> درباره ما</a></li>
+                        <li><a href="courses.html"><i class="fas fa-book"></i> دوره‌های آموزشی</a></li>
+                        <li><a href="instructors.html"><i class="fas fa-chalkboard-teacher"></i> مدرسین</a></li>
+                        <li><a href="blog.html"><i class="fas fa-blog"></i> وبلاگ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون سوم: دسته‌بندی‌ها -->
+                <div class="abouts-footer-col">
+                    <h3>دسته‌بندی‌ها</h3>
+                    <ul class="abouts-footer-links">
+                        <li><a href="#"><i class="fas fa-code"></i> برنامه‌نویسی</a></li>
+                        <li><a href="#"><i class="fas fa-paint-brush"></i> طراحی و خلاقیت</a></li>
+                        <li><a href="#"><i class="fas fa-chart-line"></i> بازاریابی و فروش</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i> کسب و کار</a></li>
+                        <li><a href="#"><i class="fas fa-camera"></i> عکاسی و فیلمبرداری</a></li>
+                    </ul>
+                </div>
+                
+                <!-- ستون چهارم: اطلاعات تماس -->
+                <div class="abouts-footer-col">
+                    <h3>اطلاعات تماس</h3>
+                    <ul class="abouts-footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>تهران، خیابان ولیعصر</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@ejmal.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>شنبه تا پنجشنبه: ۸:۰۰ تا ۱۷:۰۰</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- ستون پنجم: خبرنامه -->
+                <div class="abouts-footer-col">
+                    <h3>خبرنامه</h3>
+                    <p class="abouts-newsletter-text">
+                        با عضویت در خبرنامه، از جدیدترین دوره‌ها و تخفیف‌های ویژه مطلع شوید.
+                    </p>
+                    <div class="abouts-footer-newsletter">
+                        <form class="abouts-newsletter-form">
+                            <input type="email" class="abouts-newsletter-input" placeholder="آدرس ایمیل شما" required>
+                            <button type="submit" class="abouts-btn-newsletter">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>عضویت در خبرنامه</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- بخش پایین فوتر -->
+        <div class="abouts-footer-bottom">
+            <div class="abouts-footer-container">
+                <div class="abouts-footer-bottom-content">
+                    <div class="abouts-footer-copyright">
+                        © ۲۰۲۳ فراآموز. تمامی حقوق محفوظ است.
+                    </div>
+                    <div class="abouts-footer-bottom-links">
+                        <a href="terms.html">قوانین و مقررات</a>
+                        <a href="faq.html">سوالات متداول</a>
+                        <a href="contact.html">نقشه سایت</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+
+    <script src="./assets/js/dashboard.js"></script>
+
+</body>
+</html>

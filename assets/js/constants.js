@@ -9,4 +9,4 @@ const categoriesInPersian = {
     "JOURNAL": "نشریه"
 };
 
-const allowedList = ["Emadhp05", "kaveh-dev", "smetbz", "mrAG10"];
+const allowedList = ["Emadhp05", "kaveh-dev", "smetu", "mrAG10"];

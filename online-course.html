@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>دوره مجازی</title>
+    <meta name="description" content="آموزش های آنلاین و مجازی انجمن علمی ساخت و تولید امکان یادگیری ابزار های مورد نیاز دانشجویان را فراهم می‌کند.">
+
+    <meta property="og:title" content="دوره های مجازی انجمن علمی ساخت و تولید" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://smetu.ir/blog.html" />
+    <!-- <meta property="og:image" content="https://yourforum.example.ir/assets/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" /> -->
+    <meta property="og:description" content="آموزش های آنلاین و مجازی انجمن علمی ساخت و تولید امکان یادگیری ابزار های مورد نیاز دانشجویان را فراهم می‌کند." />
+    <meta property="og:site_name" content="انجمن علمی ساخت و تولید" />
+    <meta property="og:locale" content="fa_IR" />
+    
+    <!-- فونت‌های محلی -->
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/vazirmatn/Vazirmatn-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- آیکون‌های محلی -->
+    <link rel="stylesheet" href="./assets/icons/css/all.min.css">
+    
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        #button-register:disabled {
+            cursor: not-allowed;
+            background-color: white;
+            background: grey;
+            opacity: 50%;
+            box-shadow: none;
+        }
+    </style>
+
+</head>
+
+<body class="dark-theme">
+
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-box">
+            <div class="loading-title">درحال بارگذاری</div>
+            <div class="loading-sub">لطفا صبر نمایید</div>
+        </div>
+    </div>
+
+    <!-- هدر بهبود یافته -->
+    <header class="page-header" id="page-header">
+        <div id="upper-notif" class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <span id="upper-notif-badge" class="top-bar-badge">مهم!</span>
+                    <a href="#" style="color: rgb(255, 255, 255); text-decoration: underline;">
+                        <span id="upper-notif-text">تا 15 درصد تخفیف ویژه اعضای انجمن علمی!</span>
+                    </a>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header-wrap">
+                <!-- لوگو -->
+                <a href="index.html" class="logo" id="main-logo">
+                    <img style="width: 3rem;" src="/assets/images/logos/icon_sme_small.png">
+                    <span>انجمن علمی ساخت و تولید</span>
+                </a>
+
+                <!-- منوی اصلی دسکتاپ -->
+                <div class="nav-container">
+                    <nav>
+                        <ul class="main-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">خانه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/blog.html" class="nav-link">وبلاگ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/journal.html" class="nav-link">نشریه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/news.html" class="nav-link">اخبار</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/online-course.html" class="nav-link active">دوره مجازی</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/instructors.html" class="nav-link">اساتید</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/about.html" class="nav-link">درباره ما</a>
+                            </li>                                                    
+                        </ul>
+                    </nav>
+
+                    <!-- اقدامات هدر دسکتاپ -->
+                    <div class="header-actions">                        
+                        <button class="theme-toggle" id="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+
+                       
+                    </div>
+                </div>
+
+                <!-- منوی موبایل -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <div class="hamburger-lines">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- منوی موبایل -->
+        <div class="mobile-nav-container" id="mobile-nav-container">
+            <nav>
+                <ul class="mobile-nav">
+                    <li class="mobile-nav-item">
+                        <a href="index.html" class="mobile-nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>خانه</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="/blog.html" class="mobile-nav-link">
+                            <i class="fas fa-blog"></i>
+                            <span>وبلاگ</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="/journal.html" class="mobile-nav-link">
+                            <i class="fas fa-book"></i>
+                            <span>نشریه</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="/news.html" class="mobile-nav-link">
+                            <i class="fas fa-newspaper"></i>
+                            <span>اخبار</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="/online-course.html" class="mobile-nav-link active">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>دوره مجازی</span>
+                        </a>
+                    </li>                    
+                    <li class="mobile-nav-item">
+                        <a href="instructors.html" class="mobile-nav-link">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>اساتید</span>
+                        </a>
+                    </li>                                     
+                    <li class="mobile-nav-item">
+                        <a href="about.html" class="mobile-nav-link">
+                            <i class="fas fa-info-circle"></i>
+                            <span>درباره ما</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="contact.html" class="mobile-nav-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>تماس با ما</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- اقدامات هدر موبایل -->
+            <div class="mobile-header-actions">
+                            
+                <!-- دکمه‌های کاربر -->
+                 <div class="mobile-auth-buttons">
+                    <!-- <a href="login.html" class="btn btn-secondary" style="width: 100%; margin-bottom: 0.5rem;">ورود</a> -->
+                    <a id="theme-toggler-mobile-kv" href="javascript:void(0)" class="btn btn-primary" style="width: 100%;">تغییر تم</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- overlay برای منوی موبایل -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    </header>
+
+    <!-- محتوای صفحه دوره -->
+    <section class="cours_data-course-hero">
+        <div class="cours_data-course-hero-background">
+            <div class="cours_data-course-hero-pattern"></div>
+        </div>
+        
+        <div class="container">
+            <div class="cours_data-course-hero-content">
+                <div class="cours_data-course-hero-text">
+                    <div class="cours_data-course-breadcrumb">
+                        <a href="index.html">خانه</a>
+                        <i class="fas fa-chevron-left"></i>
+                        <a href="courses.html">دوره مجازی</a>
+                        <i class="fas fa-chevron-left"></i>
+                        <span id="course-name-breadcumb"></span>
+                    </div>
+                    
+                    <h1 id="course-title-name" class="cours_data-course-hero-title"></h1>
+                    
+                    <p id="course-small-description" class="cours_data-course-hero-description"></p>
+                    
+                    <div class="cours_data-course-hero-meta">                       
+                        <!-- <div class="cours_data-course-meta-item">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>۱,۲۵۰ دانشجو</span>
+                        </div> -->
+                        <div class="cours_data-course-meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span id="course-title-time"></span>
+                        </div>
+                        <!-- <div class="cours_data-course-meta-item">
+                            <i class="fas fa-signal"></i>
+                            <span>سطح: متوسط</span>
+                        </div> -->
+                    </div>
+                    
+                    <!-- <div class="cours_data-course-hero-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>ثبت‌نام در دوره</span>
+                        </button>
+                        <a href="#curriculum" class="btn btn-secondary">
+                            <i class="fas fa-list"></i>
+                            <span>مشاهده سرفصل‌ها</span>
+                        </a>                       
+                    </div> -->
+                </div>
+                
+                <div id="course-image-container" style="display: none;" class="cours_data-course-hero-image">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش اطلاعات دوره -->
+    <section class="cours_data-course-info-section">
+        <div class="container">
+            <div class="cours_data-course-info-container">
+                <div class="cours_data-course-main-content">                   
+                    <div class="cours_data-course-curriculum" id="curriculum">
+                        <!-- <div class="cours_data-curriculum-header">
+                            <h2 class="cours_data-curriculum-title">سرفصل‌های دوره</h2>
+                        </div> -->
+                        <div class="cours_data-curriculum-content">
+                            
+                            <div class="cours_data-curriculum-section">
+                                <div class="cours_data-section-header">
+                                    <h3 class="cours_data-section-title">
+                                        <i class="fas fa-chevron-left cours_data-section-icon"></i>
+                                        <span>سرفصل‌های دوره</span>
+                                    </h3>
+                                    <div class="cours_data-section-meta">
+                                        <span id="course-sarfasl-count"></span>
+                                        <span id="course-estimated-clock"></span>
+                                    </div>
+                                </div>
+                                <div class="cours_data-section-content">
+                                    <ul id="sarfasl-container" class="cours_data-lesson-list">                                       
+                                    </ul>
+                                </div>
+                            </div>
+                                                       
+                        </div>
+                    </div>
+                    
+                    <!-- نظرات -->
+                    <div class="cours_data-course-reviews">
+                        <div class="cours_data-reviews-header">
+                            <h2 class="cours_data-reviews-title">توضیحات دوره</h2>
+                            <div class="cours_data-reviews-summary">
+                                <!-- <div class="cours_data-rating-overview">
+                                    <div class="cours_data-rating-score">۴.۹</div>
+                                    <div class="cours_data-rating-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="cours_data-reviews-list">
+                            <!-- نظر ۱ -->
+                            <div class="cours_data-review-item">
+                                <div class="cours_data-review-header">                                   
+                                </div>
+                                <div id="course-full-content" class="cours_data-review-content">                                   
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cours_data-course-sidebar">
+                    <!-- کارت خرید دوره -->
+                    <div class="cours_data-course-card">
+                        <div class="cours_data-course-card-header">
+                            <h2 class="cours_data-course-card-title">ثبت‌ نام</h2>
+                            <div class="cours_data-course-price">
+                                <span id="course-main-price" class="cours_data-current-price"></span>
+                             
+                                <span style="display: none;" id="course-actual-price" class="cours_data-original-price"></span>
+                                <span style="display: none;" id="course-discount-badge" class="cours_data-discount-badge"></span>
+                            </div>
+                        </div>
+                        <ul style="display: none;" id="course-others" class="cours_data-course-features">
+                            
+                            
+                            <!-- <li class="cours_data-course-feature">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>دسترسی در موبایل و تبلت</span>
+                            </li>
+                            <li class="cours_data-course-feature">
+                                <i class="fas fa-tasks"></i>
+                                <span>تمرین‌ها و پروژه‌های عملی</span>
+                            </li>
+                            <li class="cours_data-course-feature">
+                                <i class="fas fa-certificate"></i>
+                                <span>گواهینامه پایان دوره</span>
+                            </li>
+                            <li class="cours_data-course-feature">
+                                <i class="fas fa-life-ring"></i>
+                                <span>پشتیبانی مستقیم مدرس</span>
+                            </li> -->
+                        </ul>
+                        <button id="button-register" class="cours_data-btn-enroll">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="button-register-text">ثبت نام</span>
+                        </button>
+                        <!-- <div style="text-align: center; margin-top: 1rem;">
+                            <span style="color: var(--text-secondary); font-size: 0.9rem;">ضمانت بازگشت وجه در ۷ روز</span>
+                        </div> -->
+                    </div>
+                    
+                    <!-- کارت مدرس -->
+                    <div class="cours_data-course-card cours_data-instructor-card">
+                        <div id="course-teacher-image" class="cours_data-instructor-avatar">
+                            
+                        </div>
+                        <h3 id="course-teacher-name" class="cours_data-instructor-name"></h3>
+                        <div id="course-teacher-description" class="cours_data-instructor-title"></div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer class="modern-footer">
+        <div class="footer-background">
+            <div class="footer-pattern"></div>
+        </div>
+        
+        <div class="footer-container">
+            <div class="footer-main">
+                <!-- ستون اول: درباره ما -->
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img style="width: 3rem;" src="/assets/images/logos/icon_sme_small.png">
+                        <span style="font-size: 1.2rem;">انجمن علمی ساخت و تولید</span>
+                    </a>
+                    <p class="footer-description">
+                        انجمن علمی مهندسی ساخت و تولید دانشگاه تبریز برای اولین بار
+                        در سال 1384 به همت استادان و دانشجویان وقت شروع به فعالیت کرده و هرساله
+                        شاهد برگزاری انتخابات شورای مرکزی شامل 7 عضو می‌باشد.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/sakhtotolid_tabrizuni" class="social-link" aria-label="اینستاگرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://t.me/SME_TU_official" class="social-link" aria-label="تلگرام">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a style="display: none;" href="#" class="social-link" aria-label="لینکدین">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="یوتیوب">
+                            <i class="fab fa-youtube"></i>
+                        </a>                      
+                    </div>
+                </div>
+                
+                <!-- ستون دوم: لینک‌های سریع -->
+                <div class="footer-col">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links">
+                        <li><a href="/index.html"><i class="fas fa-home"></i> صفحه اصلی</a></li>
+                        <li><a href="/blog.html"><i class="fas fa-blog"></i>وبلاگ</a></li>
+                        <li><a href="/journal.html"><i class="fas fa-newspaper"></i>نشریه</a></li>
+                        <li><a href="/news.html"><i class="fas fa-newspaper"></i>اخبار</a></li>
+                        <li><a href="/courses.html"><i class="fas fa-graduation-cap"></i>دوره های مجازی</a></li>
+                    </ul>
+                </div>
+                           
+                            
+                
+                <div class="footer-col">
+                    <h3>لینک های مفید</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://tabrizu.ac.ir/fa"><i class="fas fa-link"></i> سایت دانشگاه تبریز</a></li>
+                        <li><a href="https://mechanic.tabrizu.ac.ir/fa"><i class="fas fa-link"></i> سایت دانشکده مکانیک</a></li>
+                        <li><a href="https://amozesh.tabrizu.ac.ir/samaweb/login.aspx"><i class="fas fa-link"></i> سایت سما دانشگاه تبریز</a></li>
+                        <li><a href="https://samad.app/login"><i class="fas fa-link"></i> سایت امور دانشجویی سماد تبریز</a></li>                       
+                    </ul>
+                </div>
+
+                <!-- ستون چهارم: اطلاعات تماس -->
+                <div class="footer-col">
+                    <h3>اطلاعات تماس</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>تبریز، بلوار 29 بهمن،درب برق،دانشکده فنی مهندسی ساخت و تولید</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>۰4۱-۱۲۳۴۵۶۷۸</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:info@smtu.ir">info@smtu.ir<a></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>شنبه تا پنجشنبه: ۸:۰۰ تا ۱۷:۰۰</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ستون پنجم: خبرنامه -->
+                <!-- <div class="footer-col">
+                    <h3>خبرنامه</h3>
+                    <p class="newsletter-text">
+                        با عضویت در خبرنامه، از جدیدترین دوره‌ها و تخفیف‌های ویژه مطلع شوید.
+                    </p>
+                    <div class="footer-newsletter">
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="آدرس ایمیل شما" required>
+                            <button type="submit" class="btn-newsletter">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>عضویت در خبرنامه</span>
+                            </button>
+                        </form>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        
+        <div class="footer-payment">
+        </div>
+        
+        <!-- بخش پایین فوتر -->
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        © 2025 انجمن علمی ساخت و تولید دانشگاه تبریز، تمامی حقوق محفوظ است.
+                    </div>
+                    <div class="footer-bottom-links">
+                        
+                        <a href="terms.html">قوانین و مقررات</a>
+                        <a href="faq.html">سوالات متداول</a>
+                        <a href="contact.html">نقشه سایت</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/dashboard.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>  
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/constants.js"></script>
+    <script src="./assets/js/course.js"></script>
+    <script>
+        showCourseDetails()
+    </script>
+</body>
+</html>

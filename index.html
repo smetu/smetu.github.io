@@ -8,10 +8,7 @@
 
     <meta property="og:title" content="انجمن علمی ساخت و تولید" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://smtu.ir/" />
-    <!-- <meta property="og:image" content="https://yourforum.example.ir/assets/og-image.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" /> -->
+    <meta property="og:url" content="https://smetu.ir/" />   
     <meta property="og:description" content="انجمن علمی مهندسی ساخت و تولید - دانشگاه تبریز" />
     <meta property="og:site_name" content="انجمن علمی ساخت و تولید" />
     <meta property="og:locale" content="fa_IR" />
@@ -52,6 +49,15 @@
             --text-color: var(--dark-text) !important;
             --text-secondary: var(--dark-text-secondary) !important;
         }
+        
+        #button-register:disabled {
+            cursor: not-allowed;
+            background-color: white;
+            background: grey;
+            opacity: 50%;
+            box-shadow: none;
+        }
+   
 
  
     </style>
@@ -97,7 +103,7 @@
                                 <a href="/news.html" class="nav-link">اخبار</a>
                             </li>
                             <li class="nav-item">
-                                <a href="courses.html" class="nav-link">دوره های مجازی</a>
+                                <a href="/online-course.html" class="nav-link">دوره مجازی</a>
                             </li>
                             <li class="nav-item">
                                 <a href="instructors.html" class="nav-link">اساتید</a>
@@ -158,9 +164,9 @@
                         </a>
                     </li>
                     <li class="mobile-nav-item">
-                        <a href="courses.html" class="mobile-nav-link">
+                        <a href="/online-course.html" class="mobile-nav-link">
                             <i class="fas fa-graduation-cap"></i>
-                            <span>دوره های مجازی</span>
+                            <span>دوره مجازی</span>
                         </a>
                     </li>                    
                     <li class="mobile-nav-item">
@@ -430,42 +436,38 @@
         </div>
     </section> -->
    
-     <section class="special-offers-section">
+     <section style="display: none;" id="course-section" class="special-offers-section">
         <div class="container">
             <div class="courses-header">
                 <div>
-                    <span class="section-subtitle">دوره های آموزش مجازی</span>
-                    <h2 class="section-title">دوره مجازی منتخب</h2>
+                    <span class="section-subtitle">دوره آموزش آنلاین</span>
+                    <h2 id="course-status" class="section-title"></h2>
                 </div>
-                <a href="courses.html" class="btn btn-primary">مشاهده همه دوره‌ها</a>
+                <a href="/online-course.html" class="btn btn-primary">مشاهده دوره</a>
             </div>
             
             <div class="offer-card">
                 <div class="offer-content">
-                    <h3 class="course-titles">دوره سالیدورکس مقدماتی</h3>
+                    <h3 id="course-title" class="course-titles"></h3>
 
                     <div class="price-box">
                         <div class="price">
-                            <span class="current-price">دانشجویان دانشگاه تبریز: 450 هزار تومان</span>
-                            <span class="current-price">دانشجویان دانشگاه های دیگر: 670 هزار تومان</span>
-                            
-                            <!-- <span class="old-price">۶,۳۰۰,۰۰۰</span> -->
+                            <span id="course-small-description" class="current-price"></span>                           
                         </div>
-                        <div class="sales-info">
+                        <!-- <div class="sales-info">
                             <span>تعداد جلسات</span>
                             <span class="sales-number">69</span>
-                        </div>
+                        </div> -->
                     </div>
 
-                    <div class="offer-buttons">
-                        <!-- <a href="#" class="btn btn-red">افزودن به سبد خرید</a> -->
-                        <a href="#" class="btn btn-blue">اطلاعات بیشتر</a>
+                    <div class="offer-buttons">                        
+                        <a href="/online-course.html" class="btn btn-blue">اطلاعات بیشتر</a>
                     </div>
                 </div>
 
-                <div class="offer-image">
-                    <!-- <div class="discount-badge">۲۹٪</div> -->
-                    <img src="./assets/images/demos/20251125_083747.jpg" alt="دوره آموزشی تکنیک خرید">
+                <div style="display: none;" id="course-image-container" class="offer-image">
+                     <!-- <div class="discount-badge">۲۹٪</div>  -->
+                    
                 </div>
             </div>
         </div>
@@ -699,7 +701,7 @@
                         <li><a href="/blog.html"><i class="fas fa-blog"></i>وبلاگ</a></li>
                         <li><a href="/journal.html"><i class="fas fa-newspaper"></i>نشریه</a></li>
                         <li><a href="/news.html"><i class="fas fa-newspaper"></i>اخبار</a></li>
-                        <li><a href="/courses.html"><i class="fas fa-graduation-cap"></i>دوره های مجازی</a></li>
+                        <li><a href="/online-course.html"><i class="fas fa-graduation-cap"></i>دوره مجازی</a></li>
                     </ul>
                 </div>
                            
@@ -769,9 +771,9 @@
                     </div>
                     <div class="footer-bottom-links">
                         
-                        <a href="terms.html">قوانین و مقررات</a>
-                        <a href="faq.html">سوالات متداول</a>
-                        <a href="contact.html">نقشه سایت</a>
+                        <a target="_blank" href="https://kavascript.ir/">طراحی توسط کاوه</a>
+                        <a href="/faq.html">سوالات متداول</a>
+                        <a href="/sitemap.xml">نقشه سایت</a>
                     </div>
                 </div>
             </div>

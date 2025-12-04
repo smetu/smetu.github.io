@@ -11,6 +11,14 @@ const contentThemeToggle = document.getElementById('content-theme-toggle');
 const contentMobileThemeToggle = document.getElementById('content-mobile-theme-toggle');
 const body = document.body;
 
+const sectionHeaders = document.querySelectorAll('.cours_data-section-header');
+
+sectionHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+});
+
 // بررسی وضعیت تم در localStorage و اعمال آن
 function initializeTheme() {
     const savedTheme = localStorage.getItem('theme');
@@ -362,20 +370,20 @@ actionButtons.forEach(button => {
                 }, 2000);
             } else if (classList.contains('btn-enroll')) {
                 // منطق برای دکمه‌های ثبت‌نام دوره
-                const courseTitle = this.closest('.course-card')?.querySelector('.course-title')?.textContent;
-                const coursePrice = this.closest('.course-card')?.querySelector('.course-price')?.textContent;
+                // const courseTitle = this.closest('.course-card')?.querySelector('.course-title')?.textContent;
+                // const coursePrice = this.closest('.course-card')?.querySelector('.course-price')?.textContent;
                 
-                // نمایش پیام موفقیت
-                this.innerHTML = '<i class="fas fa-check"></i><span>افزوده شد به سبد</span>';
-                this.style.background = 'var(--success-color)';
+                // // نمایش پیام موفقیت
+                // this.innerHTML = '<i class="fas fa-check"></i><span>افزوده شد به سبد</span>';
+                // this.style.background = 'var(--success-color)';
                 
-                // بازگشت به حالت اولیه بعد از 2 ثانیه
-                setTimeout(() => {
-                    this.innerHTML = '<i class="fas fa-shopping-cart"></i><span>افزودن به سبد خرید</span>';
-                    this.style.background = 'linear-gradient(135deg, var(--primary-color), var(--accent-color))';
-                }, 2000);
+                // // بازگشت به حالت اولیه بعد از 2 ثانیه
+                // setTimeout(() => {
+                //     this.innerHTML = '<i class="fas fa-shopping-cart"></i><span>افزودن به سبد خرید</span>';
+                //     this.style.background = 'linear-gradient(135deg, var(--primary-color), var(--accent-color))';
+                // }, 2000);
                 
-                console.log(`دوره "${courseTitle}" با قیمت ${coursePrice} به سبد خرید افزوده شد.`);
+                // console.log(`دوره "${courseTitle}" با قیمت ${coursePrice} به سبد خرید افزوده شد.`);
             } else {
                 // منطق عمومی برای دکمه‌های دیگر
                 const courseRow = this.closest('tr');

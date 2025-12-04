@@ -1,21 +1,15 @@
-$(document).ready(function () {
-    const repoOwner = "smetu";
-    const repoName = "smetu.github.io";
-    const filterLabel = "BLOG"
-   
 
-    let filteredIssues = [];
+async function showLatestBlogs(issuesData) {
 
-    $.getJSON(`${PROXY_URL}repos/${repoOwner}/${repoName}/issues`,
-        function (issuesData) {
-           
-            const filtered = issuesData.filter(issue => allowedList.includes(issue.user.login) && issue.labels.some(l => l.name === filterLabel) && !issue.body.includes("(پیشنویس)"));
-            filteredIssues = filteredIssues.concat(filtered);
-            filteredIssues = filteredIssues.slice(0, 3)
+ let filteredBlogs = [];
+ const blogLabel = "BLOG";
+ const filteredForBlog = issuesData.filter(issue => allowedList.includes(issue.user.login) && issue.labels.some(l => l.name === blogLabel) && !issue.body.includes("(پیشنویس)"));
+            filteredBlogs = filteredBlogs.concat(filteredForBlog);
+            filteredBlogs = filteredBlogs.slice(0, 3)
 
-            if(filteredIssues.length === 0) return;
+            if(filteredBlogs.length === 0) return;
 
-            filteredIssues.forEach(issue => {
+            filteredBlogs.forEach(issue => {
 
             const body = issue.body;
             const result = { keywords: [] , categories: [], summary: '', content: '' };
@@ -82,6 +76,94 @@ $(document).ready(function () {
             });
 
             $("#weblog-section").fadeIn();
+};
+
+async function showCurrentCourse(issuesData) {
+
+    const courseLabel = "COURSE";
+    const filteredCourse = issuesData.filter(issue => allowedList.includes(issue.user.login) && issue.labels.some(l => l.name === courseLabel) && !issue.body.includes("(پیشنویس)"))[0];
+    if(!filteredCourse) return;
+
+    const body = filteredCourse.body;
+        
+        const courseInfo = {
+            title: "",
+            settings: "",
+            image: "",           
+            smallDescription: "",
+            longDescription: "",
+            time: "",
+            price: {
+                main: "",
+                discount: "",
+                other: [],
+            },
+            sarfasl: [],
+            teacher: {
+                image: "",
+                name: "",
+                description: "",                
+            }
+        };
+                    
+        const settings = body.match(/\[تنظیمات را زیر این خط وارد نمایید\]\s*([\s\S]*?)\s*(?=\[عکس دوره را زیر این خط آپلود نمایید\])/i);
+        const image = body.match(/\[عکس دوره را زیر این خط آپلود نمایید\]\s*([\s\S]*?)\s*(?=\[عکس مدرس را زیر این خط آپلود نمایید\])/i);
+        const teacherImage = body.match(/\[عکس مدرس را زیر این خط آپلود نمایید\]\s*([\s\S]*?)\s*(?=\[نام مدرس را زیر این خط وارد نمایید\])/i);
+        const teacherName = body.match(/\[نام مدرس را زیر این خط وارد نمایید\]\s*([\s\S]*?)\s*(?=\[توضیحات مدرس را زیر این خط وارد نمایید\])/i);
+        const teacherDescription = body.match(/\[توضیحات مدرس را زیر این خط وارد نمایید\]\s*([\s\S]*?)\s*(?=\[توضیحات کوتاه آموزش را زیر این خط وارد نمایید\])/i);
+        const smallDescription = body.match(/\[توضیحات کوتاه آموزش را زیر این خط وارد نمایید\]\s*([\s\S]*?)\s*(?=\[توضیحات بلند آموزش را زیر این خط وارد نمایید\])/i);
+        const longDescription = body.match(/\[توضیحات بلند آموزش را زیر این خط وارد نمایید\]\s*([\s\S]*?)\s*(?=\[زمان آموزش را زیر این خط وارد نمایید\])/i);
+        const time = body.match(/\[زمان آموزش را زیر این خط وارد نمایید\]\s*([\s\S]*?)\s*(?=\[سرفصل ها را زیر این خط وارد نمایید\])/i);
+        const sarfaslHa = body.match(/\[سرفصل ها را زیر این خط وارد نمایید\]\s*([\s\S]*?)\s*(?=\[قیمت اصلی را زیر این خط وارد نمایید\])/i);
+        const mainPrice = body.match(/\[قیمت اصلی را زیر این خط وارد نمایید\]\s*([\s\S]*?)\s*(?=\[تخفیف را زیر این خط وارد نمایید یا خالی بگذارید\])/i);
+        const discount = body.match(/\[تخفیف را زیر این خط وارد نمایید یا خالی بگذارید\]\s*([\s\S]*?)\s*(?=\[قیمت های دیگر را زیر این خط وارد نمایید\])/i);
+        const otherPrices = body.match(/\[قیمت های دیگر را زیر این خط وارد نمایید\]\s*([\s\S]*)/i);
+        
+        courseInfo.title = filteredCourse.title
+        if(settings) courseInfo.settings = settings[1].trim();
+        if(image) courseInfo.image = image[1].trim();
+        if(teacherImage) courseInfo.teacher.image = teacherImage[1].trim();
+        if(teacherName) courseInfo.teacher.name = teacherName[1].trim();
+        if(teacherDescription)courseInfo.teacher.description = teacherDescription[1].trim();
+        if(smallDescription) courseInfo.smallDescription = smallDescription[1].trim();
+        if(longDescription) courseInfo.longDescription = marked.parse(longDescription[1].trim());
+        if(time) courseInfo.time = time[1].trim();
+        if(sarfaslHa) courseInfo.sarfasl = sarfaslHa[1].trim().split("\n").map(l => l.trim());
+        if(mainPrice) courseInfo.price.main = mainPrice[1].trim();
+        if(discount) courseInfo.price.discount = discount[1].trim();
+        if(otherPrices) courseInfo.price.other = otherPrices[1].trim().split("\n").map(l => l.trim());
+
+
+    if(courseInfo.settings.includes("(اتمام)")) {
+       $("#course-status").text("دوره مجازی اخیر");
+    } else {
+       $("#course-status").text("دوره مجازی در حال ثبت نام");
+    }
+
+    $("#course-title").text(courseInfo.title);
+    $("#course-small-description").text(courseInfo.smallDescription);
+    
+    if(courseInfo.image !== "") {
+        $("#course-image-container").show().html(`
+            <img src=\"${extractIssueImage(courseInfo.image)}\" alt=\"${courseInfo.smallDescription}\">
+        `);
+    }
+
+    $("#course-section").show();
+
+    console.log(filteredCourse)
+
+};
+
+$(document).ready(function () {    
+
+    $.getJSON(`${PROXY_URL}repos/${OWNER}/${REPO}/issues`,
+        function (issuesData) {
+           
+            showLatestBlogs(issuesData);
+
+            showCurrentCourse(issuesData);
+
 
             
         }
@@ -89,5 +171,7 @@ $(document).ready(function () {
         $("#weblog-section").hide();                          
        return;
     });
+
+    
    
 });

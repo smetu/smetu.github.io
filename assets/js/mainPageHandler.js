@@ -151,8 +151,7 @@ async function showCurrentCourse(issuesData) {
 
     $("#course-section").show();
 
-    console.log(filteredCourse)
-
+   
 };
 
 $(document).ready(function () {    

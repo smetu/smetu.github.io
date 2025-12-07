@@ -76,8 +76,6 @@ async function showCourseDetails() {
         $("#course-small-description").text(courseInfo.smallDescription);
         $("#course-title-time").text(courseInfo.time);
 
-        console.log(courseInfo)
-
         if(courseInfo.image !== "") {
             $("#course-image-container").html(`
                 <div class=\"cours_data-course-hero-visual\">

@@ -32,15 +32,11 @@ function extractIssueImage(body) {
     return null;
 };
 
-function getIssueId() {
+function getContentId() {
     const url = new URL(window.location.href);
-    return url.searchParams.get("id"); // returns "57"
-}
+    return url.searchParams.get("id");
+};
 
-function getUserFullname(username, proxy_url) {
-    $.getJSON(`${proxy_url}users/${username}`,
-        function (data, textStatus, jqXHR) {            
-            return data["name"];
-        }
-    );
-}
+function formatIranPrice(num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};

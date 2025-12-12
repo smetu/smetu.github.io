@@ -2,27 +2,24 @@ async function checkCourseStatus() {
 
     let courseName = "";
 
-    $.getJSON(`${PROXY_URL}repos/${OWNER}/${REPO}/issues`,
-        function (issues) {
-
-        const filteredIssues = issues.filter(issue => allowedList.includes(issue.user.login) && issue.labels.some(l => l.name === "COURSE") && !issue.body.includes("(پیشنویس)"));
-
-        if(filteredIssues.length === 0) {
+    $.getJSON(`https://api.smetu.ir/course`,
+        function (courseData) {
+        
+        if(courseData.error) {
             $(".loading-title").text("دوره آنلاینی در حال حاضر فعال نیست.");
             $(".loading-sub").text("منتظر دوره های بعدی باشید");
             return;
         }
 
-        const latestCourseIssue = filteredIssues[filteredIssues.length - 1];
-
-        if(latestCourseIssue.body.includes("(اتمام)")) {
+        if(courseData.ended === true) {
             $(".loading-title").text("زمان ثبت نام به اتمام رسیده است.");
             $(".loading-sub").text("منتظر دوره های بعدی باشید");
             return;
         }
-        
-        courseName = latestCourseIssue.title;
-        $("#register-course-name").val(latestCourseIssue.title);
+
+        courseName = courseData.title;
+                
+        $("#register-course-name").val(courseData.title);
 
         $(".content-contact-form-container").fadeIn();
         $("#loading-overlay").fadeOut();
@@ -32,7 +29,7 @@ async function checkCourseStatus() {
     $("#content-contact-form").on("submit", (e) => {
         e.preventDefault();
         $(".content-btn-submit").text("...").prop("disabled", true);
-        const WEBHOOK_URL = `https://webhook.smetu.ir/social`;
+        const WEBHOOK_URL = `https://api.smetu.ir/webhook/course-register`;
 
         const firstName = $("[typeofdata=\"fname\"]").val().trim();
         const lastName = $("[typeofdata=\"lname\"]").val().trim();

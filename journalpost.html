@@ -360,7 +360,7 @@
     <script src="/assets/js/postItselfHandler.js"></script>
     <script>
         $(document).ready(function () {
-            showPostDetails(getIssueId(), "/journal.html", "JOURNAL").then(() => {
+            showPostDetails(getContentId(), "/journal.html", "JOURNAL").then(() => {
                 $("#loading-overlay").fadeOut();
                 $("#whole-post").fadeIn();  
             });

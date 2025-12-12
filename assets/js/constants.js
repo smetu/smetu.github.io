@@ -11,6 +11,7 @@ const categoriesInPersian = {
 
 const allowedList = ["Emadhp05", "kaveh-dev", "sakhtotolid", "mrAG10"];
 
+
 const allowedListV2 = [
     {
         name: "kaveh-dev",

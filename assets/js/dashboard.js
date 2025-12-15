@@ -762,6 +762,53 @@ const instructorsData = {
         ],
         avatar: "https://faculty.tabrizu.ac.ir/images/pouyafar/fa/teachersInfo/teacher-personal-image/2024/66f08b7300091-800px-vahid.pouyafar.jpg"
     },
+    2: {
+        name: "دکتر محمد زادشکویان",
+        title: "دکترای تخصصی",       
+        bio: "عضو هیئت علمی تمام وقت",
+        skills: [
+            { name: 'رزومه', url: 'https://faculty.tabrizu.ac.ir/zadshakoyan/fa/teachersInfo/cv/546' }           
+        ],
+        savabegh_tahsili: [
+            { name: 'کارشناسی', year: '1366', uni: 'دانشگاه تبریز' },
+            { name: 'کارشناسی ارشد', year: '1373', uni: 'دانشگاه بوردو فرانسه' },
+            { name: 'دکترای تخصصی', year: '1377', uni: 'دانشگاه بوردو فرانسه' },
+        ],
+        avatar: "https://faculty.tabrizu.ac.ir/images/zadshakoyan/fa/teachersInfo/teacher-personal-image/2025/1752566434-68760aa2c6d76-.jpg"
+    },
+    3: {
+        name: "دکتر محمدرضا شبگرد",
+        title: "دکترای تخصصی",       
+        bio: "عضو هیئت علمی تمام وقت",
+        skills: [
+            { name: 'رزومه', url: 'https://faculty.tabrizu.ac.ir/mrshabgard/fa/teachersInfo/cv/13' },
+            { name: 'ORCID', url: 'https://orcid.org/my-orcid?orcid=0000-0002-5959-4371' },
+            { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=_AzCW6UAAAAJ&hl=en&oi=ao' },           
+        ],
+        savabegh_tahsili: [
+            { name: 'کارشناسی', year: '1366', uni: 'دانشگاه تبریز' },
+            { name: 'کارشناسی ارشد', year: '1372', uni: 'دانشگاه صنعتی امیرکبیر' },
+            { name: 'دکترای تخصصی', year: '1385', uni: 'دانشگاه تبریز، فرصت مطالعاتی دانشگاه کاردیف انگلستان' },
+        ],
+        avatar: "https://faculty.tabrizu.ac.ir/images/mrshabgard/fa/teachersInfo/teacher-personal-image/2024/66c32ee30c66b-revised-figure-shabghard.png"
+    },
+    4: {
+        name: "دکتر کریم شلش‌نژاد",
+        title: "دکترای تخصصی",       
+        bio: "عضو هیئت علمی تمام وقت",
+        skills: [
+            { name: 'رزومه', url: 'https://faculty.tabrizu.ac.ir/shelesh-nezhad/fa/teachersInfo/cv/29' },
+            { name: 'Scopus', url: 'https://www.scopus.com/authid/detail.uri?authorId=7801506859' },
+            { name: 'Web of Science', url: 'https://www.webofscience.com/wos/author/rid/AAC-3489-2022' },
+            { name: 'Google Scholar', url: 'https://scholar.google.com/citations?hl=en&user=EZh7aKYAAAAJ' },           
+        ],
+        savabegh_tahsili: [
+            { name: 'کارشناسی', year: '1366', uni: 'دانشگاه امیرکبیر' },
+            { name: 'کارشناسی ارشد', year: '1372', uni: 'Wollongong University, Australia' },
+            { name: 'دکترای تخصصی', year: '1385', uni: 'Queensland University of Technology (QUT), Australia' },
+        ],
+        avatar: "https://faculty.tabrizu.ac.ir/images/shelesh-nezhad/fa/teachersInfo/teacher-personal-image/2024/6627e6731aa9f-k.shelesh-nezhad-personnal-photo0003.jpg"
+    },
     5: {
         name: "دکتر مقصود شلوندی",
         title: "دکترای تخصصی",       
@@ -776,7 +823,39 @@ const instructorsData = {
             { name: 'دکترای تخصصی', year: '1395', uni: 'دانشگاه تربیت مدرس تهران' },
         ],
         avatar: "https://faculty.tabrizu.ac.ir/images/mshalvandi/fa/teachersInfo/teacher-personal-image/2024/66ba6c0478500-photo-2022-02-04-00-42-49.jpg"
-    }
+    },
+    6: {
+        name: "دکتر مهران محبوب خواه",
+        title: "دکترای تخصصی",       
+        bio: "عضو هیئت علمی تمام وقت",
+        skills: [
+            { name: 'رزومه', url: 'https://faculty.tabrizu.ac.ir/mahboobkhah/fa/teachersInfo/cv/683' },
+            { name: 'Scopus', url: 'https://www.scopus.com/authid/detail.uri?authorId=23767929800' },
+            { name: 'Web of Science', url: 'https://www.webofscience.com/wos/author/record/2428357' },
+            { name: 'ORCID', url: 'https://orcid.org/0000-0003-0275-4837' },
+            { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=sSst3icAAAAJ&hl=en' },           
+        ],
+        savabegh_tahsili: [
+            { name: 'کارشناسی', year: '1377', uni: 'دانشگاه امیرکبیر' },
+            { name: 'کارشناسی ارشد', year: '1379', uni: 'دانشگاه صنعتی شریف' },
+            { name: 'دکترای تخصصی', year: '1386', uni: 'دانشگاه تربیت مدرس تهران' },
+        ],
+        avatar: "https://faculty.tabrizu.ac.ir/images/mahboobkhah/fa/teachersInfo/teacher-personal-image/2024/660f08d6b8631-pic.jpg"
+    },    
+    7: {
+        name: "دکتر امیر مصطفی پور",
+        title: "دکترای تخصصی",       
+        bio: "عضو هیئت علمی تمام وقت",
+        skills: [
+            { name: 'رزومه', url: 'https://faculty.tabrizu.ac.ir/a-mostafapur/fa/teachersInfo/cv/717' }            
+        ],
+        savabegh_tahsili: [
+            { name: 'کارشناسی', year: '1374', uni: 'دانشگاه تبریز' },
+            { name: 'کارشناسی ارشد', year: '1376', uni: 'دانشگاه صنعتی امیرکبیر' },
+            { name: 'دکترای تخصصی', year: '1384', uni: 'دانشگاه صنعتی امیرکبیر' },
+        ],
+        avatar: "https://faculty.tabrizu.ac.ir/images/a-mostafapur/fa/teachersInfo/teacher-personal-image/2024/6643378faaa88-image0098.jpg"
+    },
     
 };
 

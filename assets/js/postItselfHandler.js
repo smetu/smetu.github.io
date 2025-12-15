@@ -22,7 +22,7 @@ async function showPostDetails(contentId, fallbackUrl, label) {
                                
             $("#author-image-container").append(`<img src=\"${contentData.user.avatar}\" alt=\"Photo of ${contentData.user.name} profile.\">`)                                                       
             $("#author-name").html(contentData.user.name);
-            $("#author-bio").html(contentData.user.bio || ".-.");
+            $("#author-bio").html(contentData.user.bio || "کاربر وبسایت");
                                                                        
             $("#blogpost-content").append(contentData.content.replace(/\(مدیر\)/gm, "")); 
                                         

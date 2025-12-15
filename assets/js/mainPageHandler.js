@@ -1,13 +1,14 @@
 
 async function showLatestContents(contents, listContainer, sectionContainer) {
 
+            if(contents.error) return;
             if(contents.items.length === 0) return;
             contents.items.forEach(ct => {           
             
                 $(listContainer).append(`
                      <div class=\"course-card\">
             <div class=\"course-image\">
-                <img src=\"${ct.imageLink}\" alt=\"${ct.title}\">                        
+                <img src=\"${ct.imageLink}\" alt=\"${ct.title}\" onerror=\"this.onerror=null;this.src=\'/assets/images/default.jpg\';\">                        
             </div>
             <div class="course-content">
                 <div class="course-category">${categoriesInPersian[ct.label]}</div>
@@ -73,38 +74,33 @@ $(document).ready(function () {
     $.getJSON(`https://api.smetu.ir/upper`,
         function (upper) {
             if(upper.message === "off") return;
+            if(upper.link !== "") $("#upper-notif-link").attr("href", upper.link);
+            if(upper.badge !== "") $("#upper-notif-badge").show().text(upper.badge);
             $("#upper-notif-text").text(upper.message);
-            $("#upper-notif").show();
+            $("#upper-notif").slideDown();
         }
-    ).fail(function() {                                 
-       return;
+    ).fail(function() {                                       
     });
 
     $.getJSON(`https://api.smetu.ir/contents/NEWS?per_page=3&page=1`,
         function (content) {           
             showLatestContents(content, "#latest-list-news", "#news-section");
         }
-    ).fail(function() {
-        //$("#weblog-section").hide();                          
-        return;
+    ).fail(function() {      
     });
 
     $.getJSON(`https://api.smetu.ir/contents/BLOG?per_page=3&page=1`,
         function (content) {           
             showLatestContents(content, "#latest-list-weblog", "#weblog-section");
         }
-    ).fail(function() {
-        //$("#weblog-section").hide();                          
-        return;
+    ).fail(function() {        
     });
 
     $.getJSON(`https://api.smetu.ir/course`,
         function (content) {           
             showCurrentCourse(content);
         }
-    ).fail(function() {
-        //$("#course-section").hide();                          
-        return;
+    ).fail(function() {      
     });    
    
 });

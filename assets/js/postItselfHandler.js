@@ -1,5 +1,4 @@
-async function showLoadingBox(title, html, showOrHide) {
-
+async function showLoadingBox(title, html, showOrHide, blurLevel) {
 
     $(".loading-title").text(title);
     $(".loading-sub").html(html);
@@ -11,6 +10,10 @@ async function showLoadingBox(title, html, showOrHide) {
     if(showOrHide === false) {
         $("#loading-overlay").hide();
     }
+
+    if(blurLevel) {
+        $("#loading-overlay").css({'backdrop-filter': `blur(${blurLevel}px)`});
+    }
 }
 
 
@@ -20,7 +23,7 @@ async function showPostDetails(contentId, fallbackUrl, label) {
         function (contentData) {
 
             if(contentData.error) {
-                window.location.href = fallbackUrl;
+                showLoadingBox("خطا در بارگذاری پست!", `بازگشت به  <a href="${fallbackUrl}">صفحه قبلی</a>`, true, 20);
                 return;
             }
 
@@ -64,7 +67,7 @@ async function showPostDetails(contentId, fallbackUrl, label) {
 
         }
     ).fail(() => {
-        showLoadingBox("پست پیدا نشد!", "پدرت همین دیروز مرررده", true);
+        showLoadingBox("پست پیدا نشد!", `بازگشت به  <a href="${fallbackUrl}">صفحه قبلی</a>`, true, 20);
         return;
     });
         

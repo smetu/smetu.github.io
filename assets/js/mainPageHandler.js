@@ -49,6 +49,8 @@ async function showLatestContents(contents, listContainer, sectionContainer) {
 };
 
 async function showCurrentCourse(content) {
+
+    if(content.error) return;
                            
     if(content.ended) {
        $("#course-status").text("دوره مجازی اخیر");

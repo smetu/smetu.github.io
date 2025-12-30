@@ -1,9 +1,27 @@
+async function showLoadingBox(title, html, showOrHide, blurLevel) {
+
+    $(".loading-title").text(title);
+    $(".loading-sub").html(html);
+
+    if(showOrHide === true) {
+        $("#loading-overlay").show();
+    }
+
+    if(showOrHide === false) {
+        $("#loading-overlay").hide();
+    }
+
+    if(blurLevel) {
+        $("#loading-overlay").css({'backdrop-filter': `blur(${blurLevel}px)`});
+    }
+}
+
 async function showCourseDetails() {
 
     $.getJSON(`https://api.smetu.ir/course`,
         function (courseData) {
             if(courseData.error) {
-                window.location.href = "/";
+                showLoadingBox("آموزش فعالی وجود ندارد!", `بازگشت به  <a href="/">صفحه اصلی</a>`, true, 20);
                 return;                
             }
 
@@ -75,7 +93,7 @@ async function showCourseDetails() {
             $("#loading-overlay").fadeOut();
         }
     ).fail(() => {
-        window.location.href = "/";
+        showLoadingBox("آموزش فعالی وجود ندارد!", `بازگشت به  <a href="/">صفحه اصلی</a>`, true, 20);
         return;
     });
     

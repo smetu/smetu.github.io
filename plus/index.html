@@ -447,16 +447,24 @@
 
     <script>
         $(document).ready(function () {
-            //alert()
-            $.post("https://api.smetu.ir/miniapp", { initData: window.Telegram.WebApp.initData },
-            function (data) {
-                alert(JSON.stringify(data));
-                if(data.status) {
-                    alert(data.username);
-                }
-            },
-            
-            );
+            const initData = Telegram.WebApp.initData;
+
+  $.ajax({
+    url: "https://api.smetu.ir/miniapp",
+    method: "POST",
+    contentType: "application/json; charset=utf-8",
+    dataType: "json",
+    data: JSON.stringify({
+      initData: initData
+    }),
+    success: function (res) {
+      console.log("Auth OK:", res);
+      alert(res.username)
+    },
+    error: function (xhr) {
+      console.error("Auth failed:", xhr.responseText);
+    }
+  });
         });
         
 

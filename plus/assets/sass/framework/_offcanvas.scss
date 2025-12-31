@@ -1,0 +1,71 @@
+$offcanvasWidth: 300px;
+
+.offcanvas {
+    width: $offcanvasWidth;
+    border: 0;
+    .offcanvas-header {
+        box-shadow: $boxShadow;
+        min-height: 56px;
+        padding: 10px 16px;
+        .offcanvas-title {
+            font-size: $fontSize;
+            font-weight: $medium;
+        }
+        .offcanvas-close {
+            color: $colorPrimary;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i.bi,
+            i.icon,
+            ion-icon {
+                font-size: 26px;
+            }
+        }
+    }
+    .offcanvas-body {
+        padding: 16px;
+    }
+}
+.offcanvas-start,
+.offcanvas-end,
+.offcanvas-top {
+    padding-top: $safeTop;
+}
+.offcanvas-top {
+    transform: translateY(-120%);
+}
+.offcanvas-bottom {
+    padding-bottom: $safeBottom;
+    transform: translateY(120%);
+}
+.offcanvas-top,
+.offcanvas-bottom {
+    width: 100%;
+    height: 40vh;
+}
+
+.cookies-modal{
+    background: #FFF;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    border: 1px solid $colorLine;
+    position: fixed;
+    z-index: 100;
+    bottom: 72px;
+    left: 16px;
+    right: 16px;
+    padding: 16px;
+    font-size: $fontSizeSub;
+    line-height: 1.56em;
+    transform: translate(0%, 150%);
+    transition: .4s ease-in-out;
+    .title{
+        font-size: $fontSize;
+        line-height: 1.7em;
+    }
+    &.show{
+        transform: translate(0%, 0%);
+    }
+}

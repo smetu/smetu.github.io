@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>موبایل کیت - کیت رابط کاربری موبایل</title>
+    <meta name="description" content="موبایل کیت - کیت رابط کاربری موبایل">
+    <meta name="keywords" content="bootstrap 5, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">دکمه ها</div>
+        <div class="right"></div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="section full mt-1">
+            <div class="section-title">دکمه های پر شده</div>
+            <div class="wide-block pt-2 pb-1">
+                <!-- do not forget to delete me-1 and mb-1 when copy / paste codes -->
+                <button type="button" class="btn btn-primary me-1 mb-1">PRIMARY</button>
+                <button type="button" class="btn btn-secondary me-1 mb-1">SECONDARY</button>
+                <button type="button" class="btn btn-success me-1 mb-1">SUCCESS</button>
+                <button type="button" class="btn btn-danger me-1 mb-1">DANGER</button>
+                <button type="button" class="btn btn-warning me-1 mb-1">WARNING</button>
+                <button type="button" class="btn btn-info me-1 mb-1">INFO</button>
+                <button type="button" class="btn btn-light me-1 mb-1">LIGHT</button>
+                <button type="button" class="btn btn-dark me-1 mb-1">DARK</button>
+                <button type="button" class="btn btn-link me-1 mb-1">LINK</button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">گوشه گرد</div>
+            <div class="wide-block pt-2 pb-2">
+                <!-- do not forget to delete me-1 and mb-1 when copy / paste codes -->
+                <p><button type="button" class="btn btn-primary me-1">پیش فرض</button> استایل پیشفرض</p>
+                <p><button type="button" class="btn btn-primary rounded me-1">گوشه گرد</button> استایل <code>.rounded</code></p>
+                <button type="button" class="btn btn-primary square me-1">گوشه دار</button> استایل <code>.square</code>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">دکمه سایه دار</div>
+            <div class="wide-block pt-2 pb-1">
+                <p>برای اضافه کردن سایه از کلاس <code>.shadowed</code> استفاده کنید.</p>
+                <!-- do not forget to delete me-1 and mb-1 when copy / paste codes -->
+                <button type="button" class="btn btn-primary shadowed  me-1 mb-1">دکمه</button>
+                <button type="button" class="btn btn-outline-primary shadowed me-1 mb-1">دکمه</button>
+                <button type="button" class="btn btn-text-primary shadowed me-1 mb-1">دکمه</button>
+                <button type="button" class="btn btn-primary rounded shadowed  me-1 mb-1">دکمه</button>
+                <button type="button" class="btn btn-outline-primary rounded shadowed me-1 mb-1">دکمه</button>
+                <button type="button" class="btn btn-text-primary rounded shadowed me-1 mb-1">دکمه</button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">سایزها</div>
+            <div class="wide-block pt-2 pb-2">
+                <p>تغییر سایز ساده.</p>
+                <!-- do not forget to delete me-1 and mb-1 when copy / paste codes -->
+                <p>
+                    <button type="button" class="btn btn-primary btn-sm me-1">دکمه</button> <code>.btn-sm</code>
+                </p>
+                <p>
+                    <button type="button" class="btn btn-primary me-1">دکمه</button> پیشفرض
+                </p>
+                <p class="mb-2">
+                    <button type="button" class="btn btn-primary btn-lg me-1">دکمه</button> <code>.btn-lg</code>
+                </p>
+                <p>دکمه با عرض کامل (100%) با کلاس <br> <code>.btn-block</code></p>
+                <button type="button" class="btn btn-primary btn-sm btn-block">دکمه</button>
+                <br><br>
+                <button type="button" class="btn btn-primary btn-block">دکمه</button>
+                <br><br>
+                <button type="button" class="btn btn-primary btn-lg btn-block">دکمه</button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">دکمه آیکون</div>
+            <div class="wide-block pt-2 pb-1">
+                <!-- do not forget to delete me-1 and mb-1 when copy / paste codes -->
+                <button type="button" class="btn btn-icon btn-primary me-1 mb-1">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                </button>
+                <button type="button" class="btn btn-icon btn-danger me-1 mb-1">
+                    <ion-icon name="alarm-outline"></ion-icon>
+                </button>
+                <button type="button" class="btn btn-icon btn-success me-1 mb-1">
+                    <ion-icon name="call-outline"></ion-icon>
+                </button>
+                <button type="button" class="btn btn-icon btn-warning me-1 mb-1">
+                    <ion-icon name="flash-outline"></ion-icon>
+                </button>
+                <button type="button" class="btn btn-icon btn-info me-1 mb-1">
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                </button>
+                <div class="mt-1 mb-1">سایز ها</div>
+                <button type="button" class="btn btn-icon btn-sm btn-primary me-1 mb-1">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+                <button type="button" class="btn btn-icon btn-primary me-1 mb-1">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+                <button type="button" class="btn btn-icon btn-lg btn-primary me-1 mb-1">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">دکمه با خط بیرونی</div>
+            <div class="wide-block pt-2 pb-1">
+                <!-- do not forget to delete me-1 and mb-1 when copy / paste codes -->
+                <button type="button" class="btn btn-outline-primary me-1 mb-1">PRIMARY</button>
+                <button type="button" class="btn btn-outline-secondary me-1 mb-1">SECONDARY</button>
+                <button type="button" class="btn btn-outline-success me-1 mb-1">SUCCESS</button>
+                <button type="button" class="btn btn-outline-danger me-1 mb-1">DANGER</button>
+                <button type="button" class="btn btn-outline-warning me-1 mb-1">WARNING</button>
+                <button type="button" class="btn btn-outline-info me-1 mb-1">INFO</button>
+                <br>
+                <button type="button" class="btn btn-outline-dark me-1 mb-1">DARK</button>
+                <button type="button" class="btn btn-outline-light me-1 mb-1">LIGHT</button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">دکمه متنی</div>
+            <div class="wide-block pt-2 pb-1">
+                <!-- do not forget to delete me-1 and mb-1 when copy / paste codes -->
+                <button type="button" class="btn btn-text-primary me-1 mb-1">PRIMARY</button>
+                <button type="button" class="btn btn-text-secondary me-1 mb-1">SECONDARY</button>
+                <button type="button" class="btn btn-text-success me-1 mb-1">SUCCESS</button>
+                <button type="button" class="btn btn-text-danger me-1 mb-1">DANGER</button>
+                <button type="button" class="btn btn-text-warning me-1 mb-1">WARNING</button>
+                <button type="button" class="btn btn-text-info me-1 mb-1">INFO</button>
+                <br>
+                <button type="button" class="btn btn-text-dark me-1 mb-1">DARK</button>
+                <button type="button" class="btn btn-text-light me-1 mb-1">LIGHT</button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">دکمه متن و آیکون</div>
+            <div class="wide-block pt-2 pb-1">
+                <!-- do not forget to delete me-1 and mb-1 when copy / paste codes -->
+                <button type="button" class="btn btn-primary btn-sm me-1 mb-1">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    کوچک
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary me-1 mb-1">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    پیشفرض
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary btn-lg me-1 mb-1">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    بزرگ
+                </button>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="section-title">دکمه های اجتماعی</div>
+            <div class="wide-block pt-2 pb-1">
+
+                <p>
+                    <button type="button" class="btn btn-facebook">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        فیسبوک
+                    </button>
+                    <button type="button" class="btn btn-icon btn-facebook">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-twitter">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        توئیتر
+                    </button>
+                    <button type="button" class="btn btn-icon btn-twitter">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-instagram">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        اینستاگرام
+                    </button>
+                    <button type="button" class="btn btn-icon btn-instagram">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-linkedin">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        لینکداین
+                    </button>
+                    <button type="button" class="btn btn-icon btn-linkedin">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-twitch">
+                        <ion-icon name="logo-twitch"></ion-icon>
+                        توئیچ
+                    </button>
+                    <button type="button" class="btn btn-icon btn-twitch">
+                        <ion-icon name="logo-twitch"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-whatsapp">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        واتس اپ
+                    </button>
+                    <button type="button" class="btn btn-icon btn-whatsapp">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-youtube">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                        یوتوب
+                    </button>
+                    <button type="button" class="btn btn-icon btn-youtube">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-amazon">
+                        <ion-icon name="logo-amazon"></ion-icon>
+                        آمازون
+                    </button>
+                    <button type="button" class="btn btn-icon btn-amazon">
+                        <ion-icon name="logo-amazon"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-android">
+                        <ion-icon name="logo-android"></ion-icon>
+                        اندروید
+                    </button>
+                    <button type="button" class="btn btn-icon btn-android">
+                        <ion-icon name="logo-android"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-apple">
+                        <ion-icon name="logo-apple"></ion-icon>
+                        اپل
+                    </button>
+                    <button type="button" class="btn btn-icon btn-apple">
+                        <ion-icon name="logo-apple"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-dribbble">
+                        <ion-icon name="logo-dribbble"></ion-icon>
+                        دریبل
+                    </button>
+                    <button type="button" class="btn btn-icon btn-dribbble">
+                        <ion-icon name="logo-dribbble"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-skype">
+                        <ion-icon name="logo-skype"></ion-icon>
+                        اسکایپ
+                    </button>
+                    <button type="button" class="btn btn-icon btn-skype">
+                        <ion-icon name="logo-skype"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-pinterest">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                        پینترست
+                    </button>
+                    <button type="button" class="btn btn-icon btn-pinterest">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-dropbox">
+                        <ion-icon name="logo-dropbox"></ion-icon>
+                        دراپ باکس
+                    </button>
+                    <button type="button" class="btn btn-icon btn-dropbox">
+                        <ion-icon name="logo-dropbox"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-bitcoin">
+                        <ion-icon name="logo-bitcoin"></ion-icon>
+                        بیتکوین
+                    </button>
+                    <button type="button" class="btn btn-icon btn-bitcoin">
+                        <ion-icon name="logo-bitcoin"></ion-icon>
+                    </button>
+                </p>
+
+                <p>
+                    <button type="button" class="btn btn-github">
+                        <ion-icon name="logo-github"></ion-icon>
+                        گیت هاب
+                    </button>
+                    <button type="button" class="btn btn-icon btn-github">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </button>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="section full mt-2 mb-2">
+            <div class="section-title">چک باکس و دکمه های رادیوئی</div>
+            <div class="wide-block pt-2 pb-2">
+
+
+
+                <p class="mb-1">پایه</p>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1">سیب</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2">
+                    <label class="btn btn-outline-primary" for="btnradio2">موز</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3">
+                    <label class="btn btn-outline-primary" for="btnradio3">پرتقال</label>
+                </div>
+
+                <p class="mt-2 mb-1">با آیکون</p>
+
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradiof" id="btnradioq1" checked>
+                    <label class="btn btn-outline-primary" for="btnradioq1">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        توئیتر
+                    </label>
+
+                    <input type="radio" class="btn-check" name="btnradiof" id="btnradioq2">
+                    <label class="btn btn-outline-primary" for="btnradioq2">
+                        <ion-icon name="logo-google"></ion-icon>
+                        گوگل
+                    </label>
+                </div>
+
+                <p class="mt-2 mb-1">فقط آیکون</p>
+
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="btnradiog" id="btnradios1">
+                    <label class="btn btn-icon btn-outline-primary" for="btnradios1">
+                        <ion-icon name="happy-outline"></ion-icon>
+                    </label>
+                    <input type="radio" class="btn-check" name="btnradiog" id="btnradios2">
+                    <label class="btn btn-icon btn-outline-primary" for="btnradios2">
+                        <ion-icon name="sad-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="mt-1"></div>
+
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="btnradioh" id="btnradior1">
+                    <label class="btn btn-icon btn-outline-primary" for="btnradior1">
+                        <ion-icon name="thumbs-up"></ion-icon>
+                    </label>
+                    <input type="radio" class="btn-check" name="btnradioh" id="btnradior2">
+                    <label class="btn btn-icon btn-outline-primary" for="btnradior2">
+                        <ion-icon name="thumbs-down"></ion-icon>
+                    </label>
+                </div>
+
+
+                <p class="mt-2 mb-1">رنگ ها</p>
+
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="btnradios" id="btnradioa1" checked>
+                    <label class="btn btn-outline-primary" for="btnradioa1">سیب</label>
+
+                    <input type="radio" class="btn-check" name="btnradios" id="btnradioa2">
+                    <label class="btn btn-outline-primary" for="btnradioa2">موز</label>
+
+                    <input type="radio" class="btn-check" name="btnradios" id="btnradioa3">
+                    <label class="btn btn-outline-primary" for="btnradioa3">پرتقال</label>
+                </div>
+
+                <div class="mt-1"></div>
+
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="btnradioq" id="btnradiob1" checked>
+                    <label class="btn btn-outline-secondary" for="btnradiob1">سیب</label>
+
+                    <input type="radio" class="btn-check" name="btnradioq" id="btnradiob2">
+                    <label class="btn btn-outline-secondary" for="btnradiob2">موز</label>
+
+                    <input type="radio" class="btn-check" name="btnradioq" id="btnradiob3">
+                    <label class="btn btn-outline-secondary" for="btnradiob3">پرتقال</label>
+                </div>
+
+                <div class="mt-1"></div>
+
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="btnradiow" id="btnradioc1" checked>
+                    <label class="btn btn-outline-danger" for="btnradioc1">سیب</label>
+
+                    <input type="radio" class="btn-check" name="btnradiow" id="btnradioc2">
+                    <label class="btn btn-outline-danger" for="btnradioc2">موز</label>
+
+                    <input type="radio" class="btn-check" name="btnradiow" id="btnradioc3">
+                    <label class="btn btn-outline-danger" for="btnradioc3">پرتقال</label>
+                </div>
+
+                <div class="mt-1"></div>
+
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="btnradioe" id="btnradiod1" checked>
+                    <label class="btn btn-outline-success" for="btnradiod1">سیب</label>
+
+                    <input type="radio" class="btn-check" name="btnradioe" id="btnradiod2">
+                    <label class="btn btn-outline-success" for="btnradiod2">موز</label>
+
+                    <input type="radio" class="btn-check" name="btnradioe" id="btnradiod3">
+                    <label class="btn btn-outline-success" for="btnradiod3">پرتقال</label>
+                </div>
+
+                <div class="mt-1"></div>
+
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="btnradior" id="btnradioe1" checked>
+                    <label class="btn btn-outline-warning" for="btnradioe1">سیب</label>
+
+                    <input type="radio" class="btn-check" name="btnradior" id="btnradioe2">
+                    <label class="btn btn-outline-warning" for="btnradioe2">موز</label>
+
+                    <input type="radio" class="btn-check" name="btnradior" id="btnradioe3">
+                    <label class="btn btn-outline-warning" for="btnradioe3">پرتقال</label>
+                </div>
+
+                <div class="mt-1"></div>
+
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="btnradiot" id="btnradiof1" checked>
+                    <label class="btn btn-outline-info" for="btnradiof1">سیب</label>
+
+                    <input type="radio" class="btn-check" name="btnradiot" id="btnradiof2">
+                    <label class="btn btn-outline-info" for="btnradiof2">موز</label>
+
+                    <input type="radio" class="btn-check" name="btnradiot" id="btnradiof3">
+                    <label class="btn btn-outline-info" for="btnradiof3">پرتقال</label>
+                </div>
+
+                <div class="mt-1"></div>
+
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="btnradioy" id="btnradiog1" checked>
+                    <label class="btn btn-outline-dark" for="btnradiog1">سیب</label>
+
+                    <input type="radio" class="btn-check" name="btnradioy" id="btnradiog2">
+                    <label class="btn btn-outline-dark" for="btnradiog2">موز</label>
+
+                    <input type="radio" class="btn-check" name="btnradioy" id="btnradiog3">
+                    <label class="btn btn-outline-dark" for="btnradiog3">پرتقال</label>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+        <a href="index.html" class="item">
+            <div class="col">
+                <ion-icon name="home-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="app-components.html" class="item">
+            <div class="col">
+                <ion-icon name="cube-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="page-chat.html" class="item">
+            <div class="col">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <span class="badge badge-danger">5</span>
+            </div>
+        </a>
+        <a href="app-pages.html" class="item">
+            <div class="col">
+                <ion-icon name="layers-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="#sidebarPanel" class="item" data-bs-toggle="offcanvas">
+            <div class="col">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </a>
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- App Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarPanel">
+        <div class="offcanvas-body">
+            <!-- profile box -->
+            <div class="profileBox">
+                <div class="image-wrapper">
+                    <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged rounded">
+                </div>
+                <div class="in">
+                    <strong>جولیان گروبر</strong>
+                    <div class="text-muted">
+                        <ion-icon name="location"></ion-icon>
+                        کالیفرنیا
+                    </div>
+                </div>
+                <a href="#" class="close-sidebar-button" data-bs-dismiss="offcanvas">
+                    <ion-icon name="close"></ion-icon>
+                </a>
+            </div>
+            <!-- * profile box -->
+
+            <ul class="listview flush transparent no-line image-listview mt-2">
+                <li>
+                    <a href="index.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            مرور کنید
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-components.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="cube-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            اجزاء
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-pages.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="layers-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            <div>برگه ها</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            <div>چت</div>
+                            <span class="badge badge-danger">5</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="moon-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            <div>نسخه تاریک</div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input dark-mode-switch" type="checkbox" id="darkmodesidebar">
+                                <label class="form-check-label" for="darkmodesidebar"></label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="listview-title mt-2 mb-1">
+                <span>دوستان</span>
+            </div>
+            <ul class="listview image-listview flush transparent no-line">
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>سوفی آسولد</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>سباستین بنت</div>
+                            <span class="badge badge-danger">6</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>بث مورفی</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>آملیا کابال</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>هنری دو</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- sidebar buttons -->
+        <div class="sidebar-buttons">
+            <a href="#" class="button">
+                <ion-icon name="person-outline"></ion-icon>
+            </a>
+            <a href="#" class="button">
+                <ion-icon name="archive-outline"></ion-icon>
+            </a>
+            <a href="#" class="button">
+                <ion-icon name="settings-outline"></ion-icon>
+            </a>
+            <a href="#" class="button">
+                <ion-icon name="log-out-outline"></ion-icon>
+            </a>
+        </div>
+        <!-- * sidebar buttons -->
+    </div>
+    <!-- * App Sidebar -->
+
+    <!-- ============== Js Files ==============  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Splide -->
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <!-- ProgressBar js -->
+    <script src="assets/js/plugins/progressbar-js/progressbar.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+</body>
+
+</html>

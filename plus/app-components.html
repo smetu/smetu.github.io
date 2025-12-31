@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>موبایل کیت - کیت رابط کاربری موبایل</title>
+    <meta name="description" content="موبایل کیت - کیت رابط کاربری موبایل">
+    <meta name="keywords" content="bootstrap 5, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body class="bg-white">
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary scrolled">
+        <div class="left">
+            <a href="#" class="headerButton" data-bs-toggle="offcanvas" data-bs-target="#sidebarPanel">
+                <ion-icon name="menu-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">
+            کامپوننت ها
+        </div>
+        <div class="right">
+            <a href="#" class="headerButton toggle-searchbox">
+                <ion-icon name="search-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- Search Component -->
+    <div id="search" class="appHeader">
+        <form class="search-form">
+            <div class="form-group searchbox">
+                <input type="text" class="form-control" placeholder="جستجو...">
+                <i class="input-icon">
+                    <ion-icon name="search-outline"></ion-icon>
+                </i>
+                <a href="#" class="ms-1 close toggle-searchbox">
+                    <ion-icon name="close-circle"></ion-icon>
+                </a>
+            </div>
+        </form>
+    </div>
+    <!-- * Search Component -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="header-large-title">
+            <h1 class="title">کامپوننت ها</h1>
+        </div>
+
+
+        <div class="listview-title mt-2">ناوبری</div>
+        <ul class="listview image-listview flush transparent">
+
+            <li>
+                <a href="component-appbottommenu.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="albums-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        منو پایین
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-appheader.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        هدر
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-animated-header.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="arrow-down-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        هدر انیمیشن دار
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-appheader-tab.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </div>
+                    <div class="in">
+                        هدر با تب
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#sidebarPanel" class="item" data-bs-toggle="offcanvas">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        سایدبار
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="listview-title mt-2">هشدارها</div>
+        <ul class="listview image-listview flush transparent mb-1">
+            <li>
+                <a href="component-notification.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        نوتیفیکیشن ها
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-toast.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="disc-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        توست
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-dialog.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="albums-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        دیالوگ باکس
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-alert.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="alert-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        باکس هشدار
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-error-page.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="checkmark-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        صفحه خطا
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-online-detection.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="wifi-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        بررسی آنلاین / آفلاین
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-cookies-box.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="information-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        باکس کوکی
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="listview-title mt-2">مودال اکشن</div>
+        <ul class="listview image-listview flush transparent">
+            <li>
+                <a href="component-action-sheet.html" class="item">
+                    <div class="icon-box bg-success">
+                        <ion-icon name="browsers-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        اکشن شیت
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-add-to-home.html" class="item">
+                    <div class="icon-box bg-success">
+                        <ion-icon name="add-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        افزودن به صفحه اصلی
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-modal.html" class="item">
+                    <div class="icon-box bg-success">
+                        <ion-icon name="layers-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        مودال
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-offcanvas.html" class="item">
+                    <div class="icon-box bg-success">
+                        <ion-icon name="tablet-portrait-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        آف کانوس
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-stories.html" class="item">
+                    <div class="icon-box bg-success">
+                        <ion-icon name="camera-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        استوری
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="listview-title mt-2">لیست ها</div>
+        <ul class="listview image-listview flush transparent">
+            <li>
+                <a href="component-listview.html" class="item">
+                    <div class="icon-box bg-warning">
+                        <ion-icon name="list-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        لیست ویو
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-multi-listview.html" class="item">
+                    <div class="icon-box bg-warning">
+                        <ion-icon name="filter-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        لیست ویو چندگانه
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-sticky-listview.html" class="item">
+                    <div class="icon-box bg-warning">
+                        <ion-icon name="link-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        لیست ویو چسبنده
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-accordion.html" class="item">
+                    <div class="icon-box bg-warning">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        آکاردئون
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-timeline.html" class="item">
+                    <div class="icon-box bg-warning">
+                        <ion-icon name="hourglass-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        تایم لاین
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-comment-boxes.html" class="item">
+                    <div class="icon-box bg-warning">
+                        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        باکس دیدگاه
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <div class="listview-title mt-2">المان های فرم</div>
+        <ul class="listview image-listview flush transparent">
+            <li>
+                <a href="component-inputs.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="pencil-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        ورودی ها
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-checkbox.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="checkbox-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        چک باکس
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-toggle.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="toggle"></ion-icon>
+                    </div>
+                    <div class="in">
+                        تغییر وضعیت (Toggle)
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-radio.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="radio-button-on-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        رادیو
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-stepper.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="add-circle"></ion-icon>
+                    </div>
+                    <div class="in">
+                        استپر
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-form-validation.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="checkmark-done"></ion-icon>
+                    </div>
+                    <div class="in">
+                        اعتبارسنجی فرم
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-form-wizard.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        ویزارد فرم
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-search.html" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        جستجو
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <div class="listview-title mt-2">المان های طراحی</div>
+        <ul class="listview image-listview flush transparent">
+            <li>
+                <a href="component-badge.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="radio-button-off-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        نشان ها (Badges)
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-button.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="tablet-landscape-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        دکمه ها
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-card.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="browsers-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        کارت ها
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-carousel.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="albums-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        کاروسل
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-chips.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        تراشه ها
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-dropdown.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="caret-down-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        دراپ دان
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-fab-button.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        دکمه اکشن شناور (Fab Button)
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-icons.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="leaf-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        آیکون ها
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-images.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="images-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        تصاویر
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-pagination.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        صفحه بندی
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-placeholders.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="extension-puzzle-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        نگه دارنده ها
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-preloader.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="refresh-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        پیش بارگذاری
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-progressbar.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="flame-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        نوار پیشرفت
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-table.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="apps-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        جدول
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-tabs.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </div>
+                    <div class="in">
+                        تب ها
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-tooltips.html" class="item">
+                    <div class="icon-box bg-danger">
+                        <ion-icon name="chatbox-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        تولتیپ
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <div class="listview-title mt-2">دیگر</div>
+        <ul class="listview image-listview flush transparent mb-2">
+            <li>
+                <a href="component-os-detection.html" class="item">
+                    <div class="icon-box bg-secondary">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        بررسی سیستم عامل
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-contentbox.html" class="item">
+                    <div class="icon-box bg-secondary">
+                        <ion-icon name="grid-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        باکس های محتوا
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-divider.html" class="item">
+                    <div class="icon-box bg-secondary">
+                        <ion-icon name="filter-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        جدا کننده
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-go-to-top.html" class="item">
+                    <div class="icon-box bg-secondary">
+                        <ion-icon name="arrow-up-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        رفن به بالا
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-adboxes.html" class="item">
+                    <div class="icon-box bg-secondary">
+                        <ion-icon name="easel-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        باکس تبلیغ
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="component-typography.html" class="item">
+                    <div class="icon-box bg-secondary">
+                        <ion-icon name="text-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        تایپو گرافی
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="component-grid.html" class="item">
+                    <div class="icon-box bg-secondary">
+                        <ion-icon name="grid-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        شبکه ها
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <!-- app footer -->
+        <div class="appFooter">
+            <img src="assets/img/logo.png" alt="icon" class="footer-logo mb-2">
+            <div class="footer-title">
+                کپی رایت © موبایل کیت <span class="yearNow"></span>. تمامی حقوق محفوظ است.
+            </div>
+            <div>Mobilekit قالب کیت رابط کاربری موبایل آماده PWA است.</div>
+            راه عالی برای راه اندازی وب سایت های تلفن همراه و پروژه های pwa.
+
+            <div class="mt-2">
+                <a href="#" class="btn btn-icon btn-sm btn-facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#" class="btn btn-icon btn-sm btn-twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="#" class="btn btn-icon btn-sm btn-linkedin">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="#" class="btn btn-icon btn-sm btn-instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#" class="btn btn-icon btn-sm btn-whatsapp">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+                <a href="#" class="btn btn-icon btn-sm btn-secondary goTop">
+                    <ion-icon name="arrow-up-outline"></ion-icon>
+                </a>
+            </div>
+
+        </div>
+        <!-- * app footer -->
+
+    </div>
+    <!-- * App Capsule -->
+
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+        <a href="index.html" class="item">
+            <div class="col">
+                <ion-icon name="home-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="app-components.html" class="item active">
+            <div class="col">
+                <ion-icon name="cube-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="page-chat.html" class="item">
+            <div class="col">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <span class="badge badge-danger">5</span>
+            </div>
+        </a>
+        <a href="app-pages.html" class="item">
+            <div class="col">
+                <ion-icon name="layers-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="#sidebarPanel" class="item" data-bs-toggle="offcanvas">
+            <div class="col">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </a>
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- App Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarPanel">
+        <div class="offcanvas-body">
+            <!-- profile box -->
+            <div class="profileBox">
+                <div class="image-wrapper">
+                    <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged rounded">
+                </div>
+                <div class="in">
+                    <strong>جولیان گروبر</strong>
+                    <div class="text-muted">
+                        <ion-icon name="location"></ion-icon>
+                        کالیفرنیا
+                    </div>
+                </div>
+                <a href="#" class="close-sidebar-button" data-bs-dismiss="offcanvas">
+                    <ion-icon name="close"></ion-icon>
+                </a>
+            </div>
+            <!-- * profile box -->
+
+            <ul class="listview flush transparent no-line image-listview mt-2">
+                <li>
+                    <a href="index.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            مرور کنید
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-components.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="cube-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            اجزاء
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-pages.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="layers-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            <div>برگه ها</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            <div>چت</div>
+                            <span class="badge badge-danger">5</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="moon-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            <div>نسخه تاریک</div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input dark-mode-switch" type="checkbox" id="darkmodesidebar">
+                                <label class="form-check-label" for="darkmodesidebar"></label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="listview-title mt-2 mb-1">
+                <span>دوستان</span>
+            </div>
+            <ul class="listview image-listview flush transparent no-line">
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>سوفی آسولد</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>سباستین بنت</div>
+                            <span class="badge badge-danger">6</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>بث مورفی</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>آملیا کابال</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>هنری دو</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- sidebar buttons -->
+        <div class="sidebar-buttons">
+            <a href="#" class="button">
+                <ion-icon name="person-outline"></ion-icon>
+            </a>
+            <a href="#" class="button">
+                <ion-icon name="archive-outline"></ion-icon>
+            </a>
+            <a href="#" class="button">
+                <ion-icon name="settings-outline"></ion-icon>
+            </a>
+            <a href="#" class="button">
+                <ion-icon name="log-out-outline"></ion-icon>
+            </a>
+        </div>
+        <!-- * sidebar buttons -->
+    </div>
+    <!-- * App Sidebar -->
+
+    <!-- iOS Add to Home Action Sheet -->
+    <div class="offcanvas offcanvas-bottom action-sheet inset ios-add-to-home" tabindex="-1"
+        id="ios-add-to-home-screen">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Add to Home Screen</h5>
+            <a href="#" class="close-button" data-bs-dismiss="offcanvas">
+                <ion-icon name="close"></ion-icon>
+            </a>
+        </div>
+        <div class="offcanvas-body">
+            <div class="action-sheet-content text-center">
+                <div class="mb-1"><img src="assets/img/icon/192x192.png" alt="image" class="imaged w48">
+                </div>
+                <h4>Mobilekit</h4>
+                <div>
+                    Install Mobilekit on your iPhone's home screen.
+                </div>
+                <div>
+                    Tap <ion-icon name="share-outline"></ion-icon> and Add to homescreen.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * iOS Add to Home Action Sheet -->
+
+
+    <!-- Android Add to Home Action Sheet -->
+    <div class="offcanvas offcanvas-top action-sheet inset android-add-to-home" tabindex="-1"
+        id="android-add-to-home-screen">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Add to Home Screen</h5>
+            <a href="#" class="close-button" data-bs-dismiss="offcanvas">
+                <ion-icon name="close"></ion-icon>
+            </a>
+        </div>
+        <div class="offcanvas-body">
+            <div class="action-sheet-content text-center">
+                <div class="mb-1"><img src="assets/img/icon/192x192.png" alt="image" class="imaged w48">
+                </div>
+                <h4>Mobilekit</h4>
+                <div>
+                    Install Mobilekit on your Android's home screen.
+                </div>
+                <div>
+                    Tap <ion-icon name="ellipsis-vertical"></ion-icon> and Add to homescreen.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * Android Add to Home Action Sheet -->
+
+
+    <!-- ============== Js Files ==============  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Splide -->
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <!-- ProgressBar js -->
+    <script src="assets/js/plugins/progressbar-js/progressbar.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+
+    <script>
+        // Toggle Add to Home Button with 3 seconds delay.
+        // Toggle only once
+        AddtoHome("3000", "once");
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>موبایل کیت - کیت رابط کاربری موبایل</title>
+    <meta name="description" content="موبایل کیت - کیت رابط کاربری موبایل">
+    <meta name="keywords" content="bootstrap 5, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">ورودی ها</div>
+        <div class="right">
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="section full mt-2 mb-2">
+            <div class="section-title">ورودی آپلود</div>
+            <div class="wide-block pb-2 pt-2">
+
+                <form>
+                    <div class="custom-file-upload" id="fileUpload1">
+                        <input type="file" id="fileuploadInput" accept=".png, .jpg, .jpeg">
+                        <label for="fileuploadInput">
+                            <span>
+                                <strong>
+                                    <ion-icon name="cloud-upload-outline"></ion-icon>
+                                    <i>برای آپلود ضربه بزنید</i>
+                                </strong>
+                            </span>
+                        </label>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+        <div class="section full mt-2 mb-2">
+            <div class="section-title">باکس</div>
+            <div class="wide-block pb-1 pt-2">
+
+                <form>
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="name5">نام</label>
+                            <input type="text" class="form-control" id="name5" placeholder="نام را وارد کنید"
+                                autocomplete="off">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="email5">ایمیل</label>
+                            <input type="email" class="form-control" id="email5" placeholder="آدرس ایمیل"
+                                autocomplete="off">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="city5">شهر</label>
+                            <select class="form-control form-select" id="city5">
+                                <option value="0">انتخاب شهر</option>
+                                <option value="1">تهران</option>
+                                <option value="2">اصفهان</option>
+                                <option value="3">تبریز</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="password5">رمز</label>
+                            <input type="password" class="form-control" id="password5" placeholder="رمز را وارد کنید"
+                                autocomplete="off">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="phone5">تلفن</label>
+                            <input type="tel" class="form-control" id="phone5" placeholder="شماره تلفن را وارد کنید">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="form-group boxed">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="address5">آدرس</label>
+                            <textarea id="address5" rows="2" class="form-control"></textarea>
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+        <div class="section full mt-2 mb-2">
+            <div class="section-title">پایه</div>
+            <div class="wide-block pb-1 pt-1">
+
+                <form>
+                    <div class="form-group basic">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="name1">نام</label>
+                            <input type="text" class="form-control" id="name1" placeholder="نام را وارد کنید">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="form-group basic">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="email1">ایمیل</label>
+                            <input type="email" class="form-control" id="email1" placeholder="آدرس ایمیل">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="form-group basic">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="password1">رمز</label>
+                            <input type="password" class="form-control" id="password1" placeholder="رمز را وارد کنید"
+                                autocomplete="off">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="section full mb-2">
+            <div class="section-title">انیمیشن دار</div>
+            <div class="wide-block pb-1 pt-2">
+                میتوانید ورودی های انیمیشن دار داشته باشید با افزودن کلاس <code>.animated</code>
+
+                <form>
+                    <div class="form-group basic animated">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="name2">نام</label>
+                            <input type="text" class="form-control" id="name2" placeholder="نام">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="form-group basic animated">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="email2">ایمیل</label>
+                            <input type="text" class="form-control" id="email2" placeholder="ایمیل">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="form-group basic animated">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="password2">رمز</label>
+                            <input type="text" class="form-control" id="password2" placeholder="رمز"
+                                autocomplete="off">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+
+        <div class="section full mb-2">
+            <div class="section-title">متن اضافه</div>
+            <div class="wide-block pb-1 pt-1">
+
+                <form>
+                    <div class="form-group basic">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="name3">نام</label>
+                            <input type="text" class="form-control" id="name3" placeholder="نام را وارد کنید">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                        <div class="input-info">نام کامل را وارد کنید</div>
+                    </div>
+
+                    <div class="form-group basic">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="password3">رمز</label>
+                            <input type="password" class="form-control" id="password3" placeholder="رمز را وارد کنید"
+                                autocomplete="off">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                        <div class="input-info">رمز عبور شما باید بین 8 تا 16 کاراکتر باشد</div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="section full mt-2 mb-2">
+            <div class="section-title">نوع</div>
+            <div class="wide-block pb-1 pt-1">
+
+                <form>
+                    <div class="form-group basic">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="name4">نام</label>
+                            <input type="text" class="form-control" id="name4" placeholder="نام را وارد کنید">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="form-group basic">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="email4">ایمیل</label>
+                            <input type="email" class="form-control" id="email4" placeholder="آدرس ایمیل">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="form-group basic">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="city4">شهر</label>
+                            <select class="form-control form-select" id="city4">
+                                <option value="0">انتخاب شهر</option>
+                                <option value="1">تهران</option>
+                                <option value="2">اصفهان</option>
+                                <option value="3">تبریز</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group basic">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="password4">رمز</label>
+                            <input type="password" class="form-control" id="password4" placeholder="رمز را وارد کنید"
+                                autocomplete="off">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="form-group basic">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="phone4">تلفن</label>
+                            <input type="tel" class="form-control" id="phone4" placeholder="شماره تلفن را وارد کنید">
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="form-group basic">
+                        <div class="input-wrapper">
+                            <label class="form-label" for="address4">آدرس</label>
+                            <textarea id="address4" rows="2" class="form-control"></textarea>
+                            <i class="clear-input">
+                                <ion-icon name="close-circle"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+
+        <div class="section full mt-2 mb-2">
+            <div class="section-title">آیکون با لیست</div>
+            <div class="wide-block pb-1 pt-1">
+
+                <form>
+
+                    <ul class="listview image-listview no-line no-space flush">
+                        <li>
+                            <div class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div class="form-group basic">
+                                        <div class="input-wrapper">
+                                            <label class="form-label" for="email6">ایمیل</label>
+                                            <input type="email" class="form-control" id="email6"
+                                                placeholder="ایمیل را وارد کنید">
+                                            <i class="clear-input">
+                                                <ion-icon name="close-circle"></ion-icon>
+                                            </i>
+                                        </div>
+                                        <div class="input-info">آدرس ایمیل خود را وارد کنید</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="lock-closed-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    <div class="form-group basic">
+                                        <div class="input-wrapper">
+                                            <label class="form-label" for="password6">رمز</label>
+                                            <input type="password" class="form-control" id="password6"
+                                                placeholder="رمز را وارد کنید" autocomplete="off">
+                                            <i class="clear-input">
+                                                <ion-icon name="close-circle"></ion-icon>
+                                            </i>
+                                        </div>
+                                        <div class="input-info">رمز را وارد کنید</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </form>
+
+            </div>
+        </div>
+
+        <div class="section full mt-1 mb-2">
+            <div class="section-title">با لیست تصاویر</div>
+            <div class="wide-block pb-1 pt-1">
+
+                <form>
+
+                    <ul class="listview image-listview no-line no-space flush">
+                        <li>
+                            <div class="item">
+                                <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div class="form-group basic">
+                                        <div class="input-wrapper">
+                                            <label class="form-label" for="email7">ایمیل</label>
+                                            <input type="email" class="form-control" id="email7"
+                                                placeholder="ایمیل را وارد کنید">
+                                            <i class="clear-input">
+                                                <ion-icon name="close-circle"></ion-icon>
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
+                                <div class="in">
+                                    <div class="form-group basic">
+                                        <div class="input-wrapper">
+                                            <label class="form-label" for="password7">رمز</label>
+                                            <input type="password" class="form-control" id="password7"
+                                                placeholder="رمز را وارد کنید" autocomplete="off">
+                                            <i class="clear-input">
+                                                <ion-icon name="close-circle"></ion-icon>
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </form>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+        <a href="index.html" class="item">
+            <div class="col">
+                <ion-icon name="home-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="app-components.html" class="item">
+            <div class="col">
+                <ion-icon name="cube-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="page-chat.html" class="item">
+            <div class="col">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <span class="badge badge-danger">5</span>
+            </div>
+        </a>
+        <a href="app-pages.html" class="item">
+            <div class="col">
+                <ion-icon name="layers-outline"></ion-icon>
+            </div>
+        </a>
+        <a href="#sidebarPanel" class="item" data-bs-toggle="offcanvas">
+            <div class="col">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </a>
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- App Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarPanel">
+        <div class="offcanvas-body">
+            <!-- profile box -->
+            <div class="profileBox">
+                <div class="image-wrapper">
+                    <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged rounded">
+                </div>
+                <div class="in">
+                    <strong>جولیان گروبر</strong>
+                    <div class="text-muted">
+                        <ion-icon name="location"></ion-icon>
+                        کالیفرنیا
+                    </div>
+                </div>
+                <a href="#" class="close-sidebar-button" data-bs-dismiss="offcanvas">
+                    <ion-icon name="close"></ion-icon>
+                </a>
+            </div>
+            <!-- * profile box -->
+
+            <ul class="listview flush transparent no-line image-listview mt-2">
+                <li>
+                    <a href="index.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            مرور کنید
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-components.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="cube-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            اجزاء
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-pages.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="layers-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            <div>برگه ها</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            <div>چت</div>
+                            <span class="badge badge-danger">5</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="moon-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            <div>نسخه تاریک</div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input dark-mode-switch" type="checkbox" id="darkmodesidebar">
+                                <label class="form-check-label" for="darkmodesidebar"></label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="listview-title mt-2 mb-1">
+                <span>دوستان</span>
+            </div>
+            <ul class="listview image-listview flush transparent no-line">
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>سوفی آسولد</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>سباستین بنت</div>
+                            <span class="badge badge-danger">6</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>بث مورفی</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>آملیا کابال</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>هنری دو</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- sidebar buttons -->
+        <div class="sidebar-buttons">
+            <a href="#" class="button">
+                <ion-icon name="person-outline"></ion-icon>
+            </a>
+            <a href="#" class="button">
+                <ion-icon name="archive-outline"></ion-icon>
+            </a>
+            <a href="#" class="button">
+                <ion-icon name="settings-outline"></ion-icon>
+            </a>
+            <a href="#" class="button">
+                <ion-icon name="log-out-outline"></ion-icon>
+            </a>
+        </div>
+        <!-- * sidebar buttons -->
+    </div>
+    <!-- * App Sidebar -->
+
+    <!-- ============== Js Files ==============  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Splide -->
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <!-- ProgressBar js -->
+    <script src="assets/js/plugins/progressbar-js/progressbar.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+</body>
+
+</html>

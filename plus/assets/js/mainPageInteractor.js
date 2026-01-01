@@ -13,15 +13,17 @@ async function auth() {
         data: JSON.stringify({
             initData: initData
         }),
-        success: function (res) {
-            if(res.error && res.error === "NO_TELEGRAM") {
-                window.location.href = "/component-error-page.html";
-            }
+        success: function (res) {            
             localStorage.setItem("token", res.token);
             alert(`Username : ${res.user.username}\nToken : ${res.token}`);
         },
         error: function (xhr) {
             console.error("Auth failed:", xhr.responseText);
+            if(xhr.responseText.includes("NO_TELEGRAM")) {
+                window.location.href = "/component-error-page.html";
+                return;
+            }
+            
         }
     });
 }

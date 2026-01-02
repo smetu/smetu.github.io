@@ -8,13 +8,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
-    <title>موبایل کیت - کیت رابط کاربری موبایل</title>
-    <meta name="description" content="موبایل کیت - کیت رابط کاربری موبایل">
-    <meta name="keywords" content="bootstrap 5, mobile template, cordova, phonegap, mobile, html" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="manifest" href="__manifest.json">
+    <meta name="robots" content="noindex, nofollow">
+    <title>پنل کاربری</title>
+
+    
+       
+    <link rel="stylesheet" href="assets/css/style.css">    
     <script src="./assets/js/telegram.js"></script>
 </head>
 
@@ -34,12 +33,12 @@
             </a>
         </div>
         <div class="pageTitle">
-            مرور کنید
+            پنل کاربری
         </div>
         <div class="right">
-            <a href="#" class="headerButton toggle-searchbox">
+            <!-- <a href="#" class="headerButton toggle-searchbox">
                 <ion-icon name="search-outline"></ion-icon>
-            </a>
+            </a> -->
         </div>
     </div>
     <!-- * App Header -->
@@ -64,8 +63,8 @@
     <div id="appCapsule">
 
         <div class="header-large-title">
-            <h1 class="title">مرور کنید</h1>
-            <h4 class="subtitle">به موبایل کیت خوش آمدید</h4>
+            <h1 id="panel-main-name" class="title">پنل کاربری _USER_</h1>
+            <h4 class="subtitle">به پنل کاربری انجمن ساخت و تولید خوش آمدید</h4>
         </div>
 
         <div class="section full mt-3 mb-3">
@@ -82,54 +81,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="splide__slide">
-                            <div class="card">
-                                <img src="assets/img/sample/photo/d2.jpg" class="card-img-top" alt="image">
-                                <div class="card-body pt-2">
-                                    <h4 class="mb-0">اجزای قابل استفاده مجدد</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="card">
-                                <img src="assets/img/sample/photo/d3.jpg" class="card-img-top" alt="image">
-                                <div class="card-body pt-2">
-                                    <h4 class="mb-0">عالی برای گوشی و تبلت</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="card">
-                                <img src="assets/img/sample/photo/d4.jpg" class="card-img-top" alt="image">
-                                <div class="card-body pt-2">
-                                    <h4 class="mb-0">استایل ها را در sass تغییر دهید</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="card">
-                                <img src="assets/img/sample/photo/d6.jpg" class="card-img-top" alt="image">
-                                <div class="card-body pt-2">
-                                    <h4 class="mb-0">همراه با فایل های اسکچ</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="card">
-                                <img src="assets/img/sample/photo/d7.jpg" class="card-img-top" alt="image">
-                                <div class="card-body pt-2">
-                                    <h4 class="mb-0">کاملا راست چین شده</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="card">
-                                <img src="assets/img/sample/photo/d5.jpg" class="card-img-top" alt="image">
-                                <div class="card-body pt-2">
-                                    <h4 class="mb-0">کدهای ساختار یافته</h4>
-                                </div>
-                            </div>
-                        </li>
+                       
                     </ul>
                 </div>
             </div>
@@ -142,7 +94,7 @@
             <div class="card">
                 <div class="card-body d-flex justify-content-between align-items-end">
                     <div>
-                        <h6 class="card-subtitle">مرور کنید</h6>
+                        <h6 class="card-subtitle">تنظیم رابط کاربری</h6>
                         <h5 class="card-title mb-0 d-flex align-items-center justify-content-between">
                             نسخه تاریک
                         </h5>
@@ -173,43 +125,22 @@
             </div>
         </div>
 
-        <div class="section mt-3 mb-3">
-            <div class="card">
-                <img src="assets/img/sample/photo/wide2.jpg" class="card-img-top" alt="image">
-                <div class="card-body">
-                    <h6 class="card-subtitle">مرورکنید</h6>
-                    <h5 class="card-title">برگه ها</h5>
-                    <p class="card-text">
-                        Mobilekit دارای صفحات اولیه ای است که ممکن است به آنها نیاز داشته باشید و به راحتی در پروژه های خود از آنها استفاده کنید.
-                    </p>
-                    <a href="app-pages.html" class="btn btn-primary">
-                        <ion-icon name="layers-outline"></ion-icon>
-                        مشاهده
-                    </a>
-                </div>
-            </div>
-        </div>
+        
 
 
         <!-- app footer -->
         <div class="appFooter">
             <img src="assets/img/logo.png" alt="icon" class="footer-logo mb-2">
             <div class="footer-title">
-                کپی رایت © Mobilekit <span class="yearNow"></span>. تمامی حقوق محفوظ است.
+               پنل کاربری انجمن علمی ساخت و تولید <span class="yearNow"></span> تمامی حقوق محفوظ است.
             </div>
-            <div>Mobilekit قالب کیت رابط کاربری موبایل آماده PWA است.</div>
-            راه عالی برای راه اندازی وب سایت های تلفن همراه و پروژه های pwa.
+            <div>انجمن علمی مهندسی ساخت و تولید دانشگاه تبریز</div>
+            طراحی توسعه توسط کاوه کوولـی
 
             <div class="mt-2">
-                <a href="#" class="btn btn-icon btn-sm btn-facebook">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-                <a href="#" class="btn btn-icon btn-sm btn-twitter">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-                <a href="#" class="btn btn-icon btn-sm btn-linkedin">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
+                <a href="https://smetu.ir/" target="_blank" class="btn btn-icon btn-sm btn-facebook">
+                    <ion-icon name="earth"></ion-icon>
+                </a>                               
                 <a href="#" class="btn btn-icon btn-sm btn-instagram">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
@@ -230,7 +161,7 @@
 
     <!-- App Bottom Menu -->
     <div class="appBottomMenu">
-        <a href="index.html" class="item active">
+        <a href="/plus" class="item active">
             <div class="col">
                 <ion-icon name="home-outline"></ion-icon>
             </div>
@@ -268,7 +199,7 @@
                     <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged rounded">
                 </div>
                 <div class="in">
-                    <strong>جولیان گروبر</strong>
+                    <strong>TELEGRAM NAME</strong>
                     <div class="text-muted">
                         <ion-icon name="location"></ion-icon>
                         کالیفرنیا

@@ -1,5 +1,3 @@
-
-
 function toPersianDate(dateString) {
     const date = new Date(dateString);
     
@@ -12,24 +10,6 @@ function toPersianDate(dateString) {
     const faDate = formatter.format(date);
     
     return faDate.replace(/،/g, "");
-};
-
-function extractIssueImage(body) {
-    if (!body) return null;
-
-    // --- 1. Markdown format ---
-    const mdMatch = body.match(/!\[[^\]]*\]\((https:\/\/github\.com\/user-attachments\/[^\)]+)\)/);
-    if (mdMatch && mdMatch[1]) {
-        return mdMatch[1];
-    }
-
-    // --- 2. HTML <img> format ---
-    const htmlMatch = body.match(/<img[^>]+src=["'](https:\/\/github\.com\/user-attachments\/[^"']+)["']/);
-    if (htmlMatch && htmlMatch[1]) {
-        return htmlMatch[1];
-    }
-
-    return null;
 };
 
 function getContentId() {
